@@ -35,21 +35,21 @@ That process is not equivalent to a claim that the software autonomously proves 
 
 The repository keeps the uncomfortable material on purpose:
 
-- [AUDIT_REPORT.md](AutoDiscoverProver/AUDIT_REPORT.md) records earlier soundness, identity, and implementation problems.
-- [EXHAUSTIVE_AUDIT_REPORT.md](AutoDiscoverProver/EXHAUSTIVE_AUDIT_REPORT.md) specifically checks whether derivable mathematical identities were being pre-seeded.
-- [FIX_REPORT.md](AutoDiscoverProver/FIX_REPORT.md) records the remediation pass and build/test state at that time.
+- [AUDIT_REPORT.md](AUDIT_REPORT.md) records earlier soundness, identity, and implementation problems.
+- [EXHAUSTIVE_AUDIT_REPORT.md](EXHAUSTIVE_AUDIT_REPORT.md) specifically checks whether derivable mathematical identities were being pre-seeded.
+- [FIX_REPORT.md](FIX_REPORT.md) records the remediation pass and build/test state at that time.
 
 Current source should be judged against current code, not against the earlier bug list. For example, the phi-ring normalizer now explicitly removes several derivable identities from the preset rewrite table, and the scalar-discovery path documents which relations are definitions versus candidates for discovery.
 
 ## Build and test
 
 ```bash
-cmake -S AutoDiscoverProver -B build/autodiscover \
+cmake -S . -B build \
   -DBUILD_TESTS=ON \
   -DCMAKE_BUILD_TYPE=Release
 
-cmake --build build/autodiscover --config Release --parallel
-ctest --test-dir build/autodiscover -C Release --output-on-failure
+cmake --build build --config Release --parallel
+ctest --test-dir build -C Release --output-on-failure
 ```
 
 The CMake suite registers tests for the golden-ratio domain, terms, normalization, canonical scalar behavior, property/round-trip behavior, deep modules, scalar discovery, and universal multi-algebra discovery.
@@ -71,7 +71,7 @@ The audit files are therefore part of the project, not historical clutter.
 
 ## Repository layout
 
-The active implementation lives under `AutoDiscoverProver/`. Root-level legacy text artifacts are retained for provenance but are not required to build the prover.
+The active CMake project now lives at repository root. Historical equation dumps, exploratory outputs, and one-off scripts are retained under `archive/legacy/` for provenance and are not part of the build.
 
 ## License
 
