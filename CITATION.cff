@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use or discuss this software in research, please cite this repository."
+title: "AutoDiscoverProver"
+type: software
+authors:
+  - family-names: "Delucchi"
+    given-names: "Daxx"
+abstract: "Experimental C++ equational reasoning, proof checking, and bounded symbolic discovery engine"
+version: 0.1.0
+date-released: 2026-09-17
+keywords:
+  - "automated-reasoning"
+  - "symbolic-computation"
+  - "c++"
+  - "proofs"
