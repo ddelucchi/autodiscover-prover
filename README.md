@@ -1,1 +1,78 @@
-# Autodiscoverer\n\nImported from the local VS Code workspace `C:/Users/deluc/Desktop/Autodiscoverer/attempt2.1`.\n\nThis repository contains the source, tests, configuration, and documentation snapshot. Generated build/evidence output and external dependencies are intentionally omitted.
+# AutoDiscoverProver
+
+AutoDiscoverProver is an experimental C++17 equational-reasoning and symbolic-discovery engine. It combines hash-consed term construction, rewriting, e-graph-style equivalence machinery, exact algebraic evaluation, proof objects, certificate checking, and bounded candidate discovery.
+
+The project is intentionally public with its audit history visible.
+
+## What "discovery" means here
+
+In this repository, discovery is a software pipeline:
+
+1. generate bounded candidate terms from an explicit grammar
+2. evaluate eligible ground terms in exact algebraic domains when possible
+3. group candidates that evaluate to the same exact value
+4. attempt to lift candidate equalities into proof steps
+5. check the resulting certificate against the registered rules
+6. retain only equations that satisfy the configured verification path
+
+That process is not equivalent to a claim that the software autonomously proves arbitrary mathematics or establishes external novelty.
+
+## Core components
+
+- term/type/symbol infrastructure
+- equation and knowledge-base representation
+- matching, unification, normalization, and inference
+- proof objects and proof checking
+- exact `Z[phi]` arithmetic with arbitrary-precision support
+- prefix-free structural encoding
+- canonicalization and semantic fingerprints
+- content-addressable proof storage
+- e-graph and rule-mining machinery
+- scalar and multi-algebra candidate discovery
+- Cayley-Dickson, SCOUT, and related experimental domain modules
+
+## Audit trail
+
+The repository keeps the uncomfortable material on purpose:
+
+- [AUDIT_REPORT.md](AutoDiscoverProver/AUDIT_REPORT.md) records earlier soundness, identity, and implementation problems.
+- [EXHAUSTIVE_AUDIT_REPORT.md](AutoDiscoverProver/EXHAUSTIVE_AUDIT_REPORT.md) specifically checks whether derivable mathematical identities were being pre-seeded.
+- [FIX_REPORT.md](AutoDiscoverProver/FIX_REPORT.md) records the remediation pass and build/test state at that time.
+
+Current source should be judged against current code, not against the earlier bug list. For example, the phi-ring normalizer now explicitly removes several derivable identities from the preset rewrite table, and the scalar-discovery path documents which relations are definitions versus candidates for discovery.
+
+## Build and test
+
+```bash
+cmake -S AutoDiscoverProver -B build/autodiscover \
+  -DBUILD_TESTS=ON \
+  -DCMAKE_BUILD_TYPE=Release
+
+cmake --build build/autodiscover --config Release --parallel
+ctest --test-dir build/autodiscover -C Release --output-on-failure
+```
+
+The CMake suite registers tests for the golden-ratio domain, terms, normalization, canonical scalar behavior, property/round-trip behavior, deep modules, scalar discovery, and universal multi-algebra discovery.
+
+## Trust boundary and limitations
+
+This is experimental theorem/discovery software.
+
+Important limits include:
+
+- candidate generation is bounded
+- some normalization passes remain explicit extension stubs
+- domain axioms determine what can be derived
+- implementation tests are self-authored and are not independent mathematical validation
+- numerical or structural checks outside exact domains do not become theorems merely because a residual is small
+- the presence of a proof object is meaningful only to the extent that the checker and registered inference rules are sound
+
+The audit files are therefore part of the project, not historical clutter.
+
+## Repository layout
+
+The active implementation lives under `AutoDiscoverProver/`. Root-level legacy text artifacts are retained for provenance but are not required to build the prover.
+
+## License
+
+Source is publicly viewable for portfolio and technical evaluation. See [LICENSE](LICENSE).
