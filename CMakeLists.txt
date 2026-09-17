@@ -330,35 +330,3 @@ message(STATUS "  - EGraph: E-graph quotient structure")
 message(STATUS "  - Canon: Full canonicalization pipeline")
 message(STATUS "  - Discovery: Scalar-driven forced discovery loop")
 message(STATUS "")
-
-# ============================================================================
-# Post-Build: Dump all source into a single text file (opt-in, Windows only)
-# ============================================================================
-option(AUTODISCOVER_DUMP_SOURCES "Run source dump script after build (POST_BUILD)" OFF)
-
-if(WIN32)
-  find_program(POWERSHELL_EXECUTABLE NAMES pwsh powershell)
-  if(POWERSHELL_EXECUTABLE)
-    # POST_BUILD hook (only if explicitly opted in — OFF by default)
-    if(AUTODISCOVER_DUMP_SOURCES)
-      add_custom_command(TARGET autodiscover POST_BUILD
-          COMMAND ${POWERSHELL_EXECUTABLE} -NoProfile -ExecutionPolicy Bypass -File
-              "${CMAKE_SOURCE_DIR}/dump_source.ps1"
-              -ProjectRoot "${CMAKE_SOURCE_DIR}"
-              -OutputFile "${CMAKE_SOURCE_DIR}/full_source_dump.txt"
-          COMMENT "Dumping full source tree to full_source_dump.txt"
-          VERBATIM
-      )
-    endif()
-
-    # Manual target: cmake --build . --target dump_source
-    add_custom_target(dump_source
-      COMMAND ${POWERSHELL_EXECUTABLE} -NoProfile -ExecutionPolicy Bypass -File
-          "${CMAKE_SOURCE_DIR}/dump_source.ps1"
-          -ProjectRoot "${CMAKE_SOURCE_DIR}"
-          -OutputFile "${CMAKE_SOURCE_DIR}/full_source_dump.txt"
-      WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
-      COMMENT "Manually dumping full source tree to full_source_dump.txt"
-    )
-  endif()
-endif()
