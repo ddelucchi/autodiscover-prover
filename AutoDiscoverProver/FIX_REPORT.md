@@ -1,5 +1,7 @@
 # AutoDiscoverProver — Comprehensive Fix Report
 
+> **Historical verification snapshot:** this report records the remediation state at the time it was written. The current CMake configuration registers additional discovery test executables beyond the six listed in the snapshot. Use the current CI/CMake configuration as the authoritative test inventory.
+
 **Scope**: All issues identified in `AUDIT_REPORT.md` + all compiler warnings  
 **Date**: 2025  
 **Build**: 0 errors, 0 warnings (MSVC 14.41, Release x64)  
