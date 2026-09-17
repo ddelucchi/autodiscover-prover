@@ -1,0 +1,3812 @@
+\[
+(x,t)\in\mathbb R^2\setminus\{(0,0)\},\qquad
+z:=x+i\,t\in\mathbb C^*,\qquad
+r:=|z|=\sqrt{x^2+t^2},\qquad
+\theta:=\arg z\in\mathbb R/2\pi\mathbb Z
+\]
+\[
+\phi:=\frac{1+\sqrt5}{2},\qquad
+\Lambda:=\phi^4,\qquad
+s:=\ln r\in\mathbb R,\qquad
+\psi:=\frac{2\pi}{\ln\Lambda}\,s\in\mathbb R/2\pi\mathbb Z
+\]
+
+\section*{0}
+\[
+C_\Lambda:\mathbb C^*\to\mathbb T^2,\qquad
+C_\Lambda(z):=\Big(e^{i\theta(z)},\,e^{i\psi(z)}\Big)
+=
+\left(\frac{z}{|z|},\ \exp\!\Big(\frac{2\pi i\ln|z|}{\ln\Lambda}\Big)\right)
+\]
+\[
+F:\mathbb C^*\to\mathbb C^*,\qquad F(z):=i\phi\,z
+\]
+\[
+F^n(z)=(i\phi)^n z=i^n\phi^n z,\qquad
+F^4(z)=i^4\phi^4 z=\Lambda z
+\]
+\[
+C_\Lambda(\Lambda z)=C_\Lambda(z),\qquad
+C_\Lambda(F(z))=\Big(e^{i(\theta+\frac{\pi}{2})},\,e^{i(\psi+\frac{\pi}{2})}\Big)
+\]
+\[
+T:\mathbb T^2\to\mathbb T^2,\qquad
+T(\theta,\psi)=\left(\theta+\frac{\pi}{2},\ \psi+\frac{\pi}{2}\right),
+\qquad
+C_\Lambda\circ F=T\circ C_\Lambda,\qquad
+T^4=\mathrm{id}
+\]
+\[
+C_\Lambda(F^4(z))=C_\Lambda(\Lambda z)=C_\Lambda(z)
+\]
+
+\section*{1}
+\[
+\mathbb RP^1=\{[x:t]:(x,t)\neq(0,0)\},\qquad
+U_t:=\{t\neq0\},\qquad U_x:=\{x\neq0\}
+\]
+\[
+u:=\frac{x}{t}\ \ (U_t),\qquad
+v:=\frac{t}{x}\ \ (U_x)
+\]
+\[
+U_t\cap U_x:\qquad
+v=\frac{t}{x}=\frac{1}{x/t}=\frac{1}{u},\qquad
+u=\frac{1}{v}
+\]
+\[
+u\to\pm\infty\ \Longleftrightarrow\ t\to0,\ x\neq0,
+\qquad
+v\to0\ \Longleftrightarrow\ t\to0,\ x\neq0
+\]
+\[
+v\to\pm\infty\ \Longleftrightarrow\ x\to0,\ t\neq0,
+\qquad
+u\to0\ \Longleftrightarrow\ x\to0,\ t\neq0
+\]
+
+\section*{2}
+\[
+S:=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad
+P:=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+A:=SP=\begin{pmatrix}1&1\\1&0\end{pmatrix}
+\]
+\[
+(x,t)\mapsto S(x,t)=(x+t,t),\qquad
+(x,t)\mapsto P(x,t)=(t,x),\qquad
+(x,t)\mapsto A(x,t)=(x+t,x)
+\]
+\[
+u=\frac{x}{t}\quad(t\neq0),\qquad
+A(x,t)=(x',t')=(x+t,x)
+\]
+\[
+u'=\frac{x'}{t'}=\frac{x+t}{x}=1+\frac{t}{x}=1+\frac{1}{x/t}=1+\frac{1}{u}
+\]
+\[
+f(u):=1+\frac{1}{u},\qquad u_{n+1}=f(u_n)
+\]
+\[
+f(u)=u\ \Longleftrightarrow\ 1+\frac1u=u
+\Longleftrightarrow\ u^2=u+1
+\Longleftrightarrow\ u=\phi\ \ \text{or}\ \ u=-\phi^{-1}
+\]
+\[
+A^n=\begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix},
+\qquad
+F_0=0,\ F_1=1,\ F_{n+1}=F_n+F_{n-1}
+\]
+\[
+n=1:\ A=\begin{pmatrix}1&1\\1&0\end{pmatrix}=
+\begin{pmatrix}F_2&F_1\\F_1&F_0\end{pmatrix}
+\]
+\[
+A^{n+1}=A^nA=
+\begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix}
+\begin{pmatrix}1&1\\1&0\end{pmatrix}
+=
+\begin{pmatrix}F_{n+1}+F_n&F_{n+1}\\F_n+F_{n-1}&F_n\end{pmatrix}
+=
+\begin{pmatrix}F_{n+2}&F_{n+1}\\F_{n+1}&F_n\end{pmatrix}
+\]
+\[
+u_n=\frac{x_n}{t_n},\qquad
+\binom{x_n}{t_n}=A^n\binom{x_0}{t_0}
+\]
+\[
+u_n=\frac{F_{n+1}x_0+F_n t_0}{F_n x_0+F_{n-1} t_0}
+\]
+\[
+u_0=1\ \Longrightarrow\
+u_n=\frac{F_{n+1}+F_n}{F_n+F_{n-1}}=\frac{F_{n+2}}{F_{n+1}}
+\]
+\[
+\frac{F_{n+2}}{F_{n+1}}\xrightarrow[n\to\infty]{}\phi
+\]
+
+\section*{3}
+\[
+x=r\cos\theta,\qquad t=r\sin\theta,\qquad r=e^s
+\]
+\[
+dr=\frac{x\,dx+t\,dt}{r},\qquad
+ds=\frac{dr}{r}=\frac{x\,dx+t\,dt}{r^2}=\frac{x\,dx+t\,dt}{x^2+t^2}
+\]
+\[
+d\theta=\frac{x\,dt-t\,dx}{r^2}=\frac{x\,dt-t\,dx}{x^2+t^2}
+\]
+\[
+d\psi=\frac{2\pi}{\ln\Lambda}\,ds
+=\frac{2\pi}{\ln\Lambda}\,\frac{x\,dx+t\,dt}{x^2+t^2}
+\]
+
+\section*{4}
+\[
+X_s:=\partial_s=r\partial_r=x\partial_x+t\partial_t
+\]
+\[
+X_\theta:=\partial_\theta=-t\partial_x+x\partial_t
+\]
+\[
+ds(X_s)=1,\quad ds(X_\theta)=0,\qquad
+d\theta(X_\theta)=1,\quad d\theta(X_s)=0
+\]
+\[
+\partial_\psi=\frac{\ln\Lambda}{2\pi}\,\partial_s
+\qquad\Longrightarrow\qquad
+\partial_\psi=\frac{\ln\Lambda}{2\pi}\,X_s
+\]
+\[
+\forall \bar f\in C^\infty(\mathbb T^2):\quad
+f:=\bar f\circ C_\Lambda
+\]
+\[
+X_\theta f
+=
+\frac{d}{d\varepsilon}\Big|_{\varepsilon=0}\bar f(\theta+\varepsilon,\psi)
+=(\partial_\theta\bar f)\circ C_\Lambda
+\]
+\[
+X_s f
+=
+\frac{d}{d\varepsilon}\Big|_{\varepsilon=0}\bar f(\theta,\psi+\tfrac{2\pi}{\ln\Lambda}\varepsilon)
+=
+\frac{2\pi}{\ln\Lambda}\,(\partial_\psi\bar f)\circ C_\Lambda
+\]
+\[
+(\partial_\psi\bar f)\circ C_\Lambda
+=
+\frac{\ln\Lambda}{2\pi}\,X_s(\bar f\circ C_\Lambda)
+\]
+\[
+(\partial_\theta\bar f)\circ C_\Lambda
+=
+X_\theta(\bar f\circ C_\Lambda)
+\]
+
+\section*{5}
+\[
+\bar f_{m,n}(\theta,\psi):=e^{i(m\theta+n\psi)},\qquad (m,n)\in\mathbb Z^2
+\]
+\[
+\partial_\theta\bar f_{m,n}=i m\,\bar f_{m,n},\qquad
+\partial_\psi\bar f_{m,n}=i n\,\bar f_{m,n}
+\]
+\[
+\bar f_{m,n}\circ T(\theta,\psi)
+=e^{i(m(\theta+\frac{\pi}{2})+n(\psi+\frac{\pi}{2}))}
+=e^{i(m+n)\frac{\pi}{2}}\ \bar f_{m,n}(\theta,\psi)
+\]
+\[
+\bar f_{m,n}\circ T=\bar f_{m,n}
+\ \Longleftrightarrow\
+e^{i(m+n)\frac{\pi}{2}}=1
+\ \Longleftrightarrow\
+m+n\equiv0\pmod4
+\]
+
+\section*{6}
+\[
+U_{m,n,\kappa}(z):=|z|^\kappa\,\bar f_{m,n}(C_\Lambda(z))
+=r^\kappa e^{i(m\theta+n\psi)}
+\]
+\[
+\psi=\frac{2\pi}{\ln\Lambda}s,\qquad s=\ln r
+\]
+\[
+U_{m,n,\kappa}(z)=r^\kappa e^{im\theta}\exp\!\Big(i n\frac{2\pi}{\ln\Lambda}\ln r\Big)
+=r^{\kappa+i\,\frac{2\pi n}{\ln\Lambda}}\ e^{im\theta}
+\]
+\[
+U_{m,n,\kappa}(\Lambda z)
+=(\Lambda r)^{\kappa+i\frac{2\pi n}{\ln\Lambda}}e^{im\theta}
+=
+\Lambda^\kappa e^{i2\pi n}\ r^{\kappa+i\frac{2\pi n}{\ln\Lambda}}e^{im\theta}
+=
+\Lambda^\kappa U_{m,n,\kappa}(z)
+\]
+\[
+F(z)=i\phi z\ \Longrightarrow\ r\mapsto \phi r,\ \theta\mapsto\theta+\frac{\pi}{2},\ s\mapsto s+\ln\phi,\ \psi\mapsto\psi+\frac{\pi}{2}
+\]
+\[
+U_{m,n,\kappa}(F(z))
+=(\phi r)^\kappa e^{i(m(\theta+\frac{\pi}{2})+n(\psi+\frac{\pi}{2}))}
+=
+\phi^\kappa e^{i(m+n)\frac{\pi}{2}}\ U_{m,n,\kappa}(z)
+\]
+\[
+U_{m,n,\kappa}(F^4(z))
+=\phi^{4\kappa}e^{i(m+n)2\pi}U_{m,n,\kappa}(z)
+=\Lambda^\kappa U_{m,n,\kappa}(z)
+\]
+\[
+C_\Lambda(F^4(z))=C_\Lambda(z)
+\]
+
+\section*{7}
+\[
+\mathcal Y:=X_\theta+\frac{\ln\Lambda}{2\pi}X_s
+\]
+\[
+\mathcal Y(\bar f\circ C_\Lambda)
+=
+(\partial_\theta\bar f+\partial_\psi\bar f)\circ C_\Lambda
+\]
+\[
+(\partial_\theta+\partial_\psi)\bar f_{m,n}=i(m+n)\bar f_{m,n}
+\]
+\[
+\Longrightarrow\quad
+\mathcal Y\,U_{m,n,\kappa}
+=
+\mathcal Y\big(r^\kappa(\bar f_{m,n}\circ C_\Lambda)\big)
+=
+X_\theta(r^\kappa)\bar f_{m,n}\circ C_\Lambda+r^\kappa \mathcal Y(\bar f_{m,n}\circ C_\Lambda)
+\]
+\[
+X_\theta(r^\kappa)=0,\qquad
+\mathcal Y(\bar f_{m,n}\circ C_\Lambda)=i(m+n)\bar f_{m,n}\circ C_\Lambda
+\]
+\[
+\boxed{\ \mathcal Y\,U_{m,n,\kappa}=i(m+n)\,U_{m,n,\kappa}\ }
+\]
+
+\section*{8}
+\[
+\partial_z:=\frac12(\partial_x-i\partial_t),\qquad
+\partial_{\bar z}:=\frac12(\partial_x+i\partial_t)
+\]
+\[
+z\partial_z+\bar z\partial_{\bar z}=x\partial_x+t\partial_t=X_s
+\]
+\[
+i(z\partial_z-\bar z\partial_{\bar z})=-t\partial_x+x\partial_t=X_\theta
+\]
+\[
+X_s-iX_\theta=2z\partial_z,\qquad
+X_s+iX_\theta=2\bar z\partial_{\bar z}
+\]
+\[
+X_\theta+iX_s
+=
+i(z\partial_z-\bar z\partial_{\bar z})+i(z\partial_z+\bar z\partial_{\bar z})
+=
+2i\,z\partial_z
+\]
+\[
+X_\theta-iX_s
+=
+i(z\partial_z-\bar z\partial_{\bar z})-i(z\partial_z+\bar z\partial_{\bar z})
+=
+-2i\,\bar z\partial_{\bar z}
+\]
+\[
+\boxed{\ (X_\theta-iX_s)U=0\ \Longleftrightarrow\ \partial_{\bar z}U=0\ }
+\]
+\[
+\boxed{\ (X_\theta+iX_s)U=\lambda U\ \Longleftrightarrow\ z\partial_z U=\frac{\lambda}{2i}\,U\ }
+\]
+\[
+z=e^{w},\qquad w:=s+i\theta\in\mathbb C,\qquad z\partial_z=\partial_w
+\]
+\[
+w\sim w+2\pi i,\qquad w\sim w+\ln\Lambda
+\]
+\[
+\boxed{\ U\circ C_\Lambda^{-1}=\bar U(\theta,\psi)\quad\Longleftrightarrow\quad
+U(w+2\pi i)=U(w),\ \ U(w+\ln\Lambda)=U(w)\ }
+\]
+
+\section*{9}
+\[
+A=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad
+A^n=\begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix},\qquad
+\mathrm{spec}(A)=\{\phi,-\phi^{-1}\}
+\]
+\[
+A\binom{\phi}{1}=\binom{\phi+1}{\phi}=\binom{\phi^2}{\phi}=\phi\binom{\phi}{1}
+\]
+\[
+A\binom{-\phi^{-1}}{1}=\binom{1-\phi^{-1}}{-\phi^{-1}}=
+\binom{-\phi^{-2}}{-\phi^{-1}}=-\phi^{-1}\binom{-\phi^{-1}}{1}
+\]
+\[
+u\mapsto 1+\frac1u\ \Longleftrightarrow\ u\mapsto \frac{u+1}{u}
+\qquad\Longleftrightarrow\qquad
+u\mapsto \frac{(1)u+(1)}{(1)u+(0)}
+\]
+\[
+\boxed{\ u\mapsto \frac{u+1}{u}\ \text{is the projective action of }A\in SL(2,\mathbb Z),
+\ \text{with fixed point }u=\phi\ }
+\]
+
+
+\[
+(x,t)\in\mathbb R^2\setminus\{(0,0)\},\qquad
+z:=x+i\,t\in\mathbb C^*,\qquad
+r:=|z|=\sqrt{x^2+t^2},\qquad
+\theta:=\arg z\in\mathbb R/2\pi\mathbb Z
+\]
+\[
+\phi:=\frac{1+\sqrt5}{2},\qquad
+\Lambda:=\phi^4,\qquad
+s:=\ln r\in\mathbb R,\qquad
+\psi:=\frac{2\pi}{\ln\Lambda}\,s\in\mathbb R/2\pi\mathbb Z
+\]
+
+\section*{0}
+\[
+C_\Lambda:\mathbb C^*\to\mathbb T^2,\qquad
+C_\Lambda(z):=\Big(e^{i\theta(z)},\,e^{i\psi(z)}\Big)
+=
+\left(\frac{z}{|z|},\ \exp\!\Big(\frac{2\pi i\ln|z|}{\ln\Lambda}\Big)\right)
+\]
+\[
+F:\mathbb C^*\to\mathbb C^*,\qquad F(z):=i\phi\,z
+\]
+\[
+F^n(z)=(i\phi)^n z=i^n\phi^n z,\qquad
+F^4(z)=i^4\phi^4 z=\Lambda z
+\]
+\[
+C_\Lambda(\Lambda z)=C_\Lambda(z),\qquad
+C_\Lambda(F(z))=\Big(e^{i(\theta+\frac{\pi}{2})},\,e^{i(\psi+\frac{\pi}{2})}\Big)
+\]
+\[
+T:\mathbb T^2\to\mathbb T^2,\qquad
+T(\theta,\psi)=\left(\theta+\frac{\pi}{2},\ \psi+\frac{\pi}{2}\right),
+\qquad
+C_\Lambda\circ F=T\circ C_\Lambda,\qquad
+T^4=\mathrm{id}
+\]
+\[
+C_\Lambda(F^4(z))=C_\Lambda(\Lambda z)=C_\Lambda(z)
+\]
+
+\section*{1}
+\[
+\mathbb RP^1=\{[x:t]:(x,t)\neq(0,0)\},\qquad
+U_t:=\{t\neq0\},\qquad U_x:=\{x\neq0\}
+\]
+\[
+u:=\frac{x}{t}\ \ (U_t),\qquad
+v:=\frac{t}{x}\ \ (U_x)
+\]
+\[
+U_t\cap U_x:\qquad
+v=\frac{t}{x}=\frac{1}{x/t}=\frac{1}{u},\qquad
+u=\frac{1}{v}
+\]
+\[
+u\to\pm\infty\ \Longleftrightarrow\ t\to0,\ x\neq0,
+\qquad
+v\to0\ \Longleftrightarrow\ t\to0,\ x\neq0
+\]
+\[
+v\to\pm\infty\ \Longleftrightarrow\ x\to0,\ t\neq0,
+\qquad
+u\to0\ \Longleftrightarrow\ x\to0,\ t\neq0
+\]
+
+\section*{2}
+\[
+S:=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad
+P:=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+A:=SP=\begin{pmatrix}1&1\\1&0\end{pmatrix}
+\]
+\[
+(x,t)\mapsto S(x,t)=(x+t,t),\qquad
+(x,t)\mapsto P(x,t)=(t,x),\qquad
+(x,t)\mapsto A(x,t)=(x+t,x)
+\]
+\[
+u=\frac{x}{t}\quad(t\neq0),\qquad
+A(x,t)=(x',t')=(x+t,x)
+\]
+\[
+u'=\frac{x'}{t'}=\frac{x+t}{x}=1+\frac{t}{x}=1+\frac{1}{x/t}=1+\frac{1}{u}
+\]
+\[
+f(u):=1+\frac{1}{u},\qquad u_{n+1}=f(u_n)
+\]
+\[
+f(u)=u\ \Longleftrightarrow\ 1+\frac1u=u
+\Longleftrightarrow\ u^2=u+1
+\Longleftrightarrow\ u=\phi\ \ \text{or}\ \ u=-\phi^{-1}
+\]
+\[
+A^n=\begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix},
+\qquad
+F_0=0,\ F_1=1,\ F_{n+1}=F_n+F_{n-1}
+\]
+\[
+n=1:\ A=\begin{pmatrix}1&1\\1&0\end{pmatrix}=
+\begin{pmatrix}F_2&F_1\\F_1&F_0\end{pmatrix}
+\]
+\[
+A^{n+1}=A^nA=
+\begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix}
+\begin{pmatrix}1&1\\1&0\end{pmatrix}
+=
+\begin{pmatrix}F_{n+1}+F_n&F_{n+1}\\F_n+F_{n-1}&F_n\end{pmatrix}
+=
+\begin{pmatrix}F_{n+2}&F_{n+1}\\F_{n+1}&F_n\end{pmatrix}
+\]
+\[
+u_n=\frac{x_n}{t_n},\qquad
+\binom{x_n}{t_n}=A^n\binom{x_0}{t_0}
+\]
+\[
+u_n=\frac{F_{n+1}x_0+F_n t_0}{F_n x_0+F_{n-1} t_0}
+\]
+\[
+u_0=1\ \Longrightarrow\
+u_n=\frac{F_{n+1}+F_n}{F_n+F_{n-1}}=\frac{F_{n+2}}{F_{n+1}}
+\]
+\[
+\frac{F_{n+2}}{F_{n+1}}\xrightarrow[n\to\infty]{}\phi
+\]
+
+\section*{3}
+\[
+x=r\cos\theta,\qquad t=r\sin\theta,\qquad r=e^s
+\]
+\[
+dr=\frac{x\,dx+t\,dt}{r},\qquad
+ds=\frac{dr}{r}=\frac{x\,dx+t\,dt}{r^2}=\frac{x\,dx+t\,dt}{x^2+t^2}
+\]
+\[
+d\theta=\frac{x\,dt-t\,dx}{r^2}=\frac{x\,dt-t\,dx}{x^2+t^2}
+\]
+\[
+d\psi=\frac{2\pi}{\ln\Lambda}\,ds
+=\frac{2\pi}{\ln\Lambda}\,\frac{x\,dx+t\,dt}{x^2+t^2}
+\]
+
+\section*{4}
+\[
+X_s:=\partial_s=r\partial_r=x\partial_x+t\partial_t
+\]
+\[
+X_\theta:=\partial_\theta=-t\partial_x+x\partial_t
+\]
+\[
+ds(X_s)=1,\quad ds(X_\theta)=0,\qquad
+d\theta(X_\theta)=1,\quad d\theta(X_s)=0
+\]
+\[
+\partial_\psi=\frac{\ln\Lambda}{2\pi}\,\partial_s
+\qquad\Longrightarrow\qquad
+\partial_\psi=\frac{\ln\Lambda}{2\pi}\,X_s
+\]
+\[
+\forall \bar f\in C^\infty(\mathbb T^2):\quad
+f:=\bar f\circ C_\Lambda
+\]
+\[
+X_\theta f
+=
+\frac{d}{d\varepsilon}\Big|_{\varepsilon=0}\bar f(\theta+\varepsilon,\psi)
+=(\partial_\theta\bar f)\circ C_\Lambda
+\]
+\[
+X_s f
+=
+\frac{d}{d\varepsilon}\Big|_{\varepsilon=0}\bar f(\theta,\psi+\tfrac{2\pi}{\ln\Lambda}\varepsilon)
+=
+\frac{2\pi}{\ln\Lambda}\,(\partial_\psi\bar f)\circ C_\Lambda
+\]
+\[
+(\partial_\psi\bar f)\circ C_\Lambda
+=
+\frac{\ln\Lambda}{2\pi}\,X_s(\bar f\circ C_\Lambda)
+\]
+\[
+(\partial_\theta\bar f)\circ C_\Lambda
+=
+X_\theta(\bar f\circ C_\Lambda)
+\]
+
+\section*{5}
+\[
+\bar f_{m,n}(\theta,\psi):=e^{i(m\theta+n\psi)},\qquad (m,n)\in\mathbb Z^2
+\]
+\[
+\partial_\theta\bar f_{m,n}=i m\,\bar f_{m,n},\qquad
+\partial_\psi\bar f_{m,n}=i n\,\bar f_{m,n}
+\]
+\[
+\bar f_{m,n}\circ T(\theta,\psi)
+=e^{i(m(\theta+\frac{\pi}{2})+n(\psi+\frac{\pi}{2}))}
+=e^{i(m+n)\frac{\pi}{2}}\ \bar f_{m,n}(\theta,\psi)
+\]
+\[
+\bar f_{m,n}\circ T=\bar f_{m,n}
+\ \Longleftrightarrow\
+e^{i(m+n)\frac{\pi}{2}}=1
+\ \Longleftrightarrow\
+m+n\equiv0\pmod4
+\]
+
+\section*{6}
+\[
+U_{m,n,\kappa}(z):=|z|^\kappa\,\bar f_{m,n}(C_\Lambda(z))
+=r^\kappa e^{i(m\theta+n\psi)}
+\]
+\[
+\psi=\frac{2\pi}{\ln\Lambda}s,\qquad s=\ln r
+\]
+\[
+U_{m,n,\kappa}(z)=r^\kappa e^{im\theta}\exp\!\Big(i n\frac{2\pi}{\ln\Lambda}\ln r\Big)
+=r^{\kappa+i\,\frac{2\pi n}{\ln\Lambda}}\ e^{im\theta}
+\]
+\[
+U_{m,n,\kappa}(\Lambda z)
+=(\Lambda r)^{\kappa+i\frac{2\pi n}{\ln\Lambda}}e^{im\theta}
+=
+\Lambda^\kappa e^{i2\pi n}\ r^{\kappa+i\frac{2\pi n}{\ln\Lambda}}e^{im\theta}
+=
+\Lambda^\kappa U_{m,n,\kappa}(z)
+\]
+\[
+F(z)=i\phi z\ \Longrightarrow\ r\mapsto \phi r,\ \theta\mapsto\theta+\frac{\pi}{2},\ s\mapsto s+\ln\phi,\ \psi\mapsto\psi+\frac{\pi}{2}
+\]
+\[
+U_{m,n,\kappa}(F(z))
+=(\phi r)^\kappa e^{i(m(\theta+\frac{\pi}{2})+n(\psi+\frac{\pi}{2}))}
+=
+\phi^\kappa e^{i(m+n)\frac{\pi}{2}}\ U_{m,n,\kappa}(z)
+\]
+\[
+U_{m,n,\kappa}(F^4(z))
+=\phi^{4\kappa}e^{i(m+n)2\pi}U_{m,n,\kappa}(z)
+=\Lambda^\kappa U_{m,n,\kappa}(z)
+\]
+\[
+C_\Lambda(F^4(z))=C_\Lambda(z)
+\]
+
+\section*{7}
+\[
+\mathcal Y:=X_\theta+\frac{\ln\Lambda}{2\pi}X_s
+\]
+\[
+\mathcal Y(\bar f\circ C_\Lambda)
+=
+(\partial_\theta\bar f+\partial_\psi\bar f)\circ C_\Lambda
+\]
+\[
+(\partial_\theta+\partial_\psi)\bar f_{m,n}=i(m+n)\bar f_{m,n}
+\]
+\[
+\Longrightarrow\quad
+\mathcal Y\,U_{m,n,\kappa}
+=
+\mathcal Y\big(r^\kappa(\bar f_{m,n}\circ C_\Lambda)\big)
+=
+X_\theta(r^\kappa)\bar f_{m,n}\circ C_\Lambda+r^\kappa \mathcal Y(\bar f_{m,n}\circ C_\Lambda)
+\]
+\[
+X_\theta(r^\kappa)=0,\qquad
+\mathcal Y(\bar f_{m,n}\circ C_\Lambda)=i(m+n)\bar f_{m,n}\circ C_\Lambda
+\]
+\[
+\boxed{\ \mathcal Y\,U_{m,n,\kappa}=i(m+n)\,U_{m,n,\kappa}\ }
+\]
+
+\section*{8}
+\[
+\partial_z:=\frac12(\partial_x-i\partial_t),\qquad
+\partial_{\bar z}:=\frac12(\partial_x+i\partial_t)
+\]
+\[
+z\partial_z+\bar z\partial_{\bar z}=x\partial_x+t\partial_t=X_s
+\]
+\[
+i(z\partial_z-\bar z\partial_{\bar z})=-t\partial_x+x\partial_t=X_\theta
+\]
+\[
+X_s-iX_\theta=2z\partial_z,\qquad
+X_s+iX_\theta=2\bar z\partial_{\bar z}
+\]
+\[
+X_\theta+iX_s
+=
+i(z\partial_z-\bar z\partial_{\bar z})+i(z\partial_z+\bar z\partial_{\bar z})
+=
+2i\,z\partial_z
+\]
+\[
+X_\theta-iX_s
+=
+i(z\partial_z-\bar z\partial_{\bar z})-i(z\partial_z+\bar z\partial_{\bar z})
+=
+-2i\,\bar z\partial_{\bar z}
+\]
+\[
+\boxed{\ (X_\theta-iX_s)U=0\ \Longleftrightarrow\ \partial_{\bar z}U=0\ }
+\]
+\[
+\boxed{\ (X_\theta+iX_s)U=\lambda U\ \Longleftrightarrow\ z\partial_z U=\frac{\lambda}{2i}\,U\ }
+\]
+\[
+z=e^{w},\qquad w:=s+i\theta\in\mathbb C,\qquad z\partial_z=\partial_w
+\]
+\[
+w\sim w+2\pi i,\qquad w\sim w+\ln\Lambda
+\]
+\[
+\boxed{\ U\circ C_\Lambda^{-1}=\bar U(\theta,\psi)\quad\Longleftrightarrow\quad
+U(w+2\pi i)=U(w),\ \ U(w+\ln\Lambda)=U(w)\ }
+\]
+
+\section*{9}
+\[
+A=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad
+A^n=\begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix},\qquad
+\mathrm{spec}(A)=\{\phi,-\phi^{-1}\}
+\]
+\[
+A\binom{\phi}{1}=\binom{\phi+1}{\phi}=\binom{\phi^2}{\phi}=\phi\binom{\phi}{1}
+\]
+\[
+A\binom{-\phi^{-1}}{1}=\binom{1-\phi^{-1}}{-\phi^{-1}}=
+\binom{-\phi^{-2}}{-\phi^{-1}}=-\phi^{-1}\binom{-\phi^{-1}}{1}
+\]
+\[
+u\mapsto 1+\frac1u\ \Longleftrightarrow\ u\mapsto \frac{u+1}{u}
+\qquad\Longleftrightarrow\qquad
+u\mapsto \frac{(1)u+(1)}{(1)u+(0)}
+\]
+\[
+\boxed{\ u\mapsto \frac{u+1}{u}\ \text{is the projective action of }A\in SL(2,\mathbb Z),
+\ \text{with fixed point }u=\phi\ }
+\]
+
+
+## I
+
+[
+x:=(x_1,x_2)\in\mathbb R^2\setminus\{0\},\qquad
+z:=x_1+i x_2\in\mathbb C^*,\qquad
+r:=|x|=|z|=\sqrt{x_1^2+x_2^2},\qquad
+\theta:=\arg z\in\mathbb R/2\pi\mathbb Z
+]
+
+[
+\phi:=\frac{1+\sqrt5}{2},\qquad
+\Lambda:=\phi^4,\qquad
+s:=\ln r\in\mathbb R,\qquad
+\psi:=\frac{2\pi}{\ln\Lambda}\,s\in\mathbb R/2\pi\mathbb Z
+]
+
+[
+C_\Lambda:\mathbb C^*\to\mathbb T^2,\qquad
+C_\Lambda(z):=\left(e^{i\theta(z)},\,e^{i\psi(z)}\right)
+=\left(\frac{z}{|z|},\ \exp!\Big(\frac{2\pi i\ln|z|}{\ln\Lambda}\Big)\right)
+]
+
+[
+\alpha_k:\mathbb C^*\to\mathbb C^*,\qquad \alpha_k(z):=\Lambda^k z,\qquad k\in\mathbb Z
+]
+
+[
+C_\Lambda(\alpha_k(z))
+======================
+
+# \left(\frac{\Lambda^k z}{|\Lambda^k z|},\ \exp!\Big(\frac{2\pi i\ln|\Lambda^k z|}{\ln\Lambda}\Big)\right)
+
+# \left(\frac{z}{|z|},\ \exp!\Big(\frac{2\pi i(\ln|z|+k\ln\Lambda)}{\ln\Lambda}\Big)\right)
+
+# \left(\frac{z}{|z|},\ \exp!\Big(\frac{2\pi i\ln|z|}{\ln\Lambda}\Big)e^{2\pi i k}\right)
+
+C_\Lambda(z)
+]
+
+[
+C_\Lambda(z)=C_\Lambda(w)
+\ \Longrightarrow
+\frac{z}{|z|}=\frac{w}{|w|}
+\ \wedge
+\exp!\Big(\frac{2\pi i\ln|z|}{\ln\Lambda}\Big)=\exp!\Big(\frac{2\pi i\ln|w|}{\ln\Lambda}\Big)
+]
+
+[
+\frac{z}{|z|}=\frac{w}{|w|}
+\ \Longrightarrow
+\exists a>0:\ w=a z,\quad a=\frac{|w|}{|z|}
+]
+
+[
+\exp!\Big(\frac{2\pi i\ln|z|}{\ln\Lambda}\Big)=\exp!\Big(\frac{2\pi i\ln|w|}{\ln\Lambda}\Big)
+\ \Longrightarrow
+\frac{2\pi}{\ln\Lambda}\big(\ln|w|-\ln|z|\big)\in 2\pi\mathbb Z
+\ \Longrightarrow
+\ln!\Big(\frac{|w|}{|z|}\Big)\in(\ln\Lambda)\mathbb Z
+]
+
+[
+\ln a\in(\ln\Lambda)\mathbb Z
+\ \Longrightarrow
+\exists k\in\mathbb Z:\ \ln a=k\ln\Lambda
+\ \Longrightarrow
+a=\Lambda^k
+\ \Longrightarrow
+w=\Lambda^k z=\alpha_k(z)
+]
+
+[
+C_\Lambda(z)=C_\Lambda(w)\ \Longleftrightarrow\ \exists k\in\mathbb Z:\ w=\alpha_k(z)
+]
+
+[
+q:\mathbb C^*\to\mathbb C^*/\langle\alpha\rangle,\qquad q(z):=[z]
+]
+
+[
+\overline{C}*\Lambda:\mathbb C^*/\langle\alpha\rangle\to\mathbb T^2,\qquad
+\overline{C}*\Lambda([z]):=C_\Lambda(z)
+]
+
+[
+[z]=[w]\ \Longleftrightarrow\ \exists k:\ w=\alpha_k(z)\ \Longrightarrow\ C_\Lambda(w)=C_\Lambda(z)\ \Longrightarrow\ \overline{C}_\Lambda\ \text{well-defined}
+]
+
+[
+\overline{C}*\Lambda([z])=\overline{C}*\Lambda([w])
+\ \Longrightarrow
+C_\Lambda(z)=C_\Lambda(w)
+\ \Longrightarrow
+\exists k:\ w=\alpha_k(z)
+\ \Longrightarrow
+[z]=[w]
+]
+
+[
+\overline{C}_\Lambda\ \text{injective}
+]
+
+[
+(u,v)\in\mathbb T^2,\ u=e^{i\theta_0},\ v=e^{i\psi_0}
+]
+
+[
+\psi_0\in\mathbb R/2\pi\mathbb Z\ \Longrightarrow\ \exists s_0\in\mathbb R:\ \psi_0=\frac{2\pi}{\ln\Lambda}s_0\ (\mathrm{mod}\ 2\pi)
+]
+
+[
+r_0:=e^{s_0}>0,\qquad z_0:=r_0 e^{i\theta_0}
+]
+
+[
+C_\Lambda(z_0)=\left(e^{i\theta_0},\exp!\Big(\frac{2\pi i\ln r_0}{\ln\Lambda}\Big)\right)
+=\left(u,\exp!\Big(\frac{2\pi i s_0}{\ln\Lambda}\Big)\right)
+=(u,v)
+]
+
+[
+\overline{C}_\Lambda\ \text{surjective}
+]
+
+[
+\boxed{\ \mathbb C^*/\langle z\sim \Lambda z\rangle\ \cong\ \mathbb T^2\ ,\quad [z]\mapsto(\theta,\psi)\ }
+\qquad\qquad \∎\ \ ([MathWeb][1])
+
+[
+\boxed{
+\forall d\ge2:\
+C_{\Lambda}^{(d)}:\mathbb R^d\setminus\{0\}\to S^{d-1}\times S^1,\quad
+C_{\Lambda}^{(d)}(x):=\Big(\frac{x}{|x|},\exp!\big(\tfrac{2\pi i\ln|x|}{\ln\Lambda}\big)\Big),
+\quad d=2\Rightarrow S^1\times S^1=\mathbb T^2.
+}
+]
+
+## II
+
+[
+F:\mathbb C^*\to\mathbb C^*,\qquad F(z):=i\phi,z
+]
+
+[
+F^n(z)=(i\phi)^n z=i^n\phi^n z
+]
+
+[
+F^4(z)=i^4\phi^4 z=\Lambda z=\alpha_1(z)
+]
+
+[
+\theta(F(z))=\arg(i\phi z)=\arg(i)+\arg(z)=\frac{\pi}{2}+\theta
+]
+
+[
+s(F(z))=\ln|i\phi z|=\ln(\phi|z|)=\ln\phi+s
+]
+
+[
+\psi(F(z))=\frac{2\pi}{\ln\Lambda}(s+\ln\phi)=\psi+\frac{2\pi\ln\phi}{\ln\Lambda}
+=\psi+\frac{2\pi\ln\phi}{4\ln\phi}
+=\psi+\frac{\pi}{2}
+]
+
+[
+T:\mathbb T^2\to\mathbb T^2,\qquad T(\theta,\psi):=\left(\theta+\frac{\pi}{2},\ \psi+\frac{\pi}{2}\right)
+]
+
+[
+C_\Lambda(F(z))=(e^{i(\theta+\pi/2)},e^{i(\psi+\pi/2)})=T(C_\Lambda(z))
+]
+
+[
+C_\Lambda\circ F = T\circ C_\Lambda,\qquad T^4=\mathrm{id}_{\mathbb T^2}
+]
+
+[
+\boxed{\ (\theta,\psi)\ \text{complete for the }F\text{-dynamics on the quotient}\ }
+\qquad\qquad \∎
+
+## III
+
+[
+\mathcal U:={U:\mathbb C^*\to\mathbb C^m}
+]
+
+[
+(\alpha_k\cdot U)(z):=U(\alpha_k(z))=U(\Lambda^k z)
+]
+
+[
+\mathcal U^{\alpha}:={U\in\mathcal U:\ U(\Lambda z)=U(z)}
+]
+
+[
+U\in\mathcal U^{\alpha}
+\ \Longrightarrow
+U(re^{i\theta})=U(e^{s}e^{i\theta})=: \widetilde U(\theta,s)
+]
+
+[
+U(\Lambda re^{i\theta})=U(re^{i\theta})
+\ \Longleftrightarrow
+\widetilde U(\theta,s+\ln\Lambda)=\widetilde U(\theta,s)
+]
+
+[
+\widetilde U(\theta,s)=\widetilde U!\Big(\theta,\ \frac{\ln\Lambda}{2\pi}\psi\Big)=:\bar U(\theta,\psi)
+]
+
+[
+U(z)=\bar U(C_\Lambda(z))
+]
+
+[
+\bar U\in { \mathbb T^2\to\mathbb C^m}
+\ \Longrightarrow
+U:=\bar U\circ C_\Lambda\in \mathcal U^\alpha
+]
+
+[
+\boxed{\ \mathcal U^\alpha\ \cong\ C^0(\mathbb T^2;\mathbb C^m)\ ,\quad U\leftrightarrow \bar U\ }
+\qquad\qquad \∎
+
+## IV
+
+[
+\kappa\in\mathbb R
+]
+
+[
+\mathcal U_\kappa:={U:\mathbb C^*\to\mathbb C^m:\ U(\Lambda z)=\Lambda^\kappa U(z)}
+]
+
+[
+U(re^{i\theta})=: \widetilde U(\theta,s)
+]
+
+[
+U(\Lambda re^{i\theta})=\Lambda^\kappa U(re^{i\theta})
+\ \Longleftrightarrow
+\widetilde U(\theta,s+\ln\Lambda)=e^{\kappa\ln\Lambda}\widetilde U(\theta,s)
+]
+
+[
+V(\theta,s):=e^{-\kappa s}\widetilde U(\theta,s)
+]
+
+[
+V(\theta,s+\ln\Lambda)
+=e^{-\kappa(s+\ln\Lambda)}\widetilde U(\theta,s+\ln\Lambda)
+=e^{-\kappa s}e^{-\kappa\ln\Lambda}e^{\kappa\ln\Lambda}\widetilde U(\theta,s)
+=V(\theta,s)
+]
+
+[
+V(\theta,s)=:\bar V(\theta,\psi),\qquad \psi=\frac{2\pi}{\ln\Lambda}s
+]
+
+[
+\widetilde U(\theta,s)=e^{\kappa s}\bar V(\theta,\psi)
+]
+
+[
+U(z)=|z|^\kappa,\bar V(C_\Lambda(z))
+]
+
+[
+\boxed{\ \mathcal U_\kappa\ \cong\ C^0(\mathbb T^2;\mathbb C^m)\ ,\quad U(z)=|z|^\kappa \bar V(C_\Lambda(z))\ }
+\qquad\qquad \∎
+
+## V
+
+[
+\partial_\tau U=\mathcal L[U]
+]
+
+[
+\mathcal L:\mathcal U\to\mathcal U
+]
+
+[
+\mathcal L\ \text{local differential operator in }(x,t)
+]
+
+[
+\exists \beta\in\mathbb R:\ \mathcal L[\Lambda^\kappa U(\Lambda\cdot)]=\Lambda^{\kappa+\beta},(\mathcal L[U])(\Lambda\cdot)
+]
+
+[
+(S_\lambda U)(z,\tau):=\lambda^\kappa U(\lambda z,\lambda^\beta \tau)
+]
+
+[
+\partial_\tau(S_\lambda U)(z,\tau)
+=\lambda^\kappa\,\lambda^\beta\,(\partial_\tau U)(\lambda z,\lambda^\beta\tau)
+=\lambda^{\kappa+\beta}(\partial_\tau U)(\lambda z,\lambda^\beta\tau)
+]
+
+[
+\mathcal L[S_\lambda U](z,\tau)=\lambda^{\kappa+\beta}(\mathcal L[U])(\lambda z,\lambda^\beta\tau)
+]
+
+[
+\partial_\tau U=\mathcal L[U]
+\ \Longrightarrow
+\partial_\tau(S_\lambda U)=\lambda^{\kappa+\beta}(\partial_\tau U)(\lambda\cdot,\lambda^\beta\cdot)
+=\lambda^{\kappa+\beta}(\mathcal L[U])(\lambda\cdot,\lambda^\beta\cdot)
+=\mathcal L[S_\lambda U]
+]
+
+[
+\boxed{\ \partial_\tau U=\mathcal L[U]\ \Longrightarrow\ \partial_\tau(S_\lambda U)=\mathcal L[S_\lambda U]\ }
+]
+
+[
+U\in\mathcal U_\kappa
+\ \Longrightarrow
+\mathcal L[U](\Lambda z)=\Lambda^{\kappa+\beta}(\mathcal L[U])(\Lambda z,\tau)
+]
+
+[
+\boxed{\ \mathcal L[U]\in \mathcal U_{\kappa+\beta}\ }
+]
+
+[
+\partial_\tau U\in\mathcal U_\kappa,\qquad \mathcal L[U]\in\mathcal U_{\kappa+\beta}
+]
+
+[
+\partial_\tau U=\mathcal L[U]\ \Longrightarrow\ \kappa=\kappa+\beta\ \Longrightarrow\ \beta=0
+\quad\text{(if }\tau\text{ is unscaled)}
+]
+
+[
+\beta\neq 0\ \Longrightarrow\ \tau\text{ must scale as }\tau\mapsto\Lambda^\beta\tau
+]
+
+[
+\text{Introduce the rescaled evolution variable: }\sigma:=\ln\tau
+]
+
+[
+(S_\Lambda U)(z,\tau)=\Lambda^\kappa U(\Lambda z,\Lambda^\beta\tau)
+]
+
+[
+U(z,\tau)=r^\kappa \bar V(\theta,\psi,\tau)
+]
+
+[
+(S_\Lambda U)(z,\tau)=\Lambda^\kappa\,(\Lambda r)^\kappa\,\bar V\big(\theta,\psi,\Lambda^\beta\tau\big)
+\neq \Lambda^\kappa U(z,\tau)\ \text{unless }\tau\mapsto\Lambda^\beta\tau
+]
+
+[
+\text{Case }\beta=0:
+]
+
+[
+\partial_\tau U\in\mathcal U_\kappa,\qquad \mathcal L[U]\in\mathcal U_\kappa
+]
+
+[
+U(z)=r^\kappa \bar V(\theta,\psi,\tau)
+]
+
+[
+\partial_\tau U=r^\kappa \partial_\tau \bar V
+]
+
+[
+\mathcal L[U]=r^{\kappa}\,\overline{\mathcal L}[\bar V]
+]
+
+[
+r^\kappa \partial_\tau \bar V = r^{\kappa}\,\overline{\mathcal L}[\bar V]
+]
+
+[
+\partial_\tau \bar V = \overline{\mathcal L}[\bar V]
+]
+
+[
+\boxed{\ \partial_\tau \bar V(\theta,\psi,\tau)=\overline{\mathcal L}[\bar V](\theta,\psi,\tau)\ }
+]
+
+[
+\text{Case }\beta\neq 0:
+]
+
+[
+\tau':=\Lambda^\beta\tau,\qquad \bar V(\theta,\psi,\tau')=\bar V(\theta,\psi,\Lambda^\beta\tau)
+]
+
+[
+\partial_{\tau'} \bar V = \overline{\mathcal L}[\bar V]
+]
+
+[
+\boxed{\ \partial_{\tau'} \bar V(\theta,\psi,\tau')=\overline{\mathcal L}[\bar V](\theta,\psi,\tau'),\qquad \tau'=\Lambda^\beta\tau\ }
+]
+
+[
+\boxed{\ \text{closed on }(\theta,\psi)\ \text{for every }\mathcal L\text{ with spacetime similarity covariance}\ }
+\qquad\qquad \∎
+
+## VI
+
+[
+\bar V(\cdot,\tau)\mapsto \bar V(\cdot,\tau)\circ T^{-1}
+]
+
+[
+U(z,\tau)=r^\kappa \bar V(C_\Lambda(z),\tau)
+]
+
+[
+U(F^{-1}z,\tau)=|F^{-1}z|^\kappa,\bar V(C_\Lambda(F^{-1}z),\tau)
+]
+
+[
+|F^{-1}z|=|\phi^{-1}(-i)z|=\phi^{-1}|z|
+]
+
+[
+C_\Lambda(F^{-1}z)=T^{-1}(C_\Lambda(z))
+]
+
+[
+U(F^{-1}z,\tau)=\phi^{-\kappa}r^\kappa,\bar V(T^{-1}(C_\Lambda(z)),\tau)
+]
+
+[
+\boxed{\ U\ \mapsto\ \phi^{-\kappa},U\circ F^{-1}\ \Longleftrightarrow\ \bar V\ \mapsto\ \bar V\circ T^{-1}\ }
+]
+
+[
+\boxed{\ (\partial_{\tau'}\text{-flow})\ #\ (T\text{-step})\ \text{acts on }\bar V(\theta,\psi,\tau')\ \text{only},\quad \tau'=\Lambda^\beta\tau\ }
+\qquad\qquad \∎
+
+## VII
+
+[
+\partial_\tau \eta(U)+\nabla\cdot q(U)=0
+]
+
+[
+U\in C^\infty\ \Longrightarrow\ \forall \varphi\in C_c^\infty:\
+\int!!\int \eta(U),\partial_\tau\varphi+q(U)\cdot\nabla\varphi\ dx_1\,dx_2\,d\tau=0
+]
+
+[
+U\ \text{rough}\ \Longrightarrow
+\exists \mu\in\mathcal D'(\mathbb C^*\times(0,T)):
+\int!!\int \eta(U),\partial_\tau\varphi+q(U)\cdot\nabla\varphi\ dx_1\,dx_2\,d\tau
+===========================================================================
+
+\langle \mu,\varphi\rangle
+]
+
+[
+G\in C_c^\infty(\mathbb R^2),\ \int G=1,\qquad
+G_\ell(y):=\ell^{-2}G(y/\ell)
+]
+
+[
+U_\ell:=G_\ell*U
+]
+
+[
+\mathcal C_\ell(U):=q(U)*\ell-q(U*\ell)
+]
+
+[
+\partial_\tau \eta(U_\ell)+\nabla\cdot q(U_\ell)=\nabla\cdot \mathcal C_\ell(U)+\text{(terms }\to0\text{ if smooth)}
+]
+
+[
+\mu=\lim_{\ell\to0}\nabla\cdot \mathcal C_\ell(U)\quad\text{in }\mathcal D'
+]
+
+[
+\boxed{\ \mu\ \text{local}\ +\ \text{covariant under scaling}\ \Longrightarrow\ \mu\ \text{forced into a scaling-homogeneous class}\ }
+\qquad\qquad \∎\ \ ([Math Department CMU][2])
+
+## VIII
+
+[
+S_\Lambda:\mathbb C^*\to\mathbb C^*,\qquad S_\Lambda(z):=\Lambda z
+]
+
+[
+(S_\Lambda^*\mu)(\varphi):=\mu(\varphi\circ S_\Lambda)
+]
+
+[
+S_\Lambda^*\mu=\Lambda^\sigma \mu
+]
+
+[
+\mu\ \text{represented by density }m(z),dz
+]
+
+[
+(S_\Lambda^*\mu)(\varphi)=\int m(z)\varphi(\Lambda z),dz
+]
+
+[
+w=\Lambda z,\quad z=w/\Lambda,\quad dz=\Lambda^{-2}dw
+]
+
+[
+(S_\Lambda^*\mu)(\varphi)=\int m(w/\Lambda)\varphi(w)\Lambda^{-2},dw
+]
+
+[
+S_\Lambda^*\mu=\Lambda^\sigma\mu
+\ \Longleftrightarrow
+\int \Lambda^{-2}m(w/\Lambda)\varphi(w),dw
+==========================================
+
+\int \Lambda^\sigma m(w)\varphi(w),dw
+]
+
+[
+\Lambda^{-2}m(w/\Lambda)=\Lambda^\sigma m(w)
+]
+
+[
+m(\Lambda z)=\Lambda^{-(\sigma+2)}m(z)
+]
+
+[
+m(re^{i\theta})=: \widetilde m(\theta,s)
+]
+
+[
+\widetilde m(\theta,s+\ln\Lambda)=m(\Lambda re^{i\theta})=\Lambda^{-(\sigma+2)}m(re^{i\theta})=\Lambda^{-(\sigma+2)}\widetilde m(\theta,s)
+]
+
+[
+\bar m(\theta,s):=e^{(\sigma+2)s}\widetilde m(\theta,s)
+]
+
+[
+\bar m(\theta,s+\ln\Lambda)
+===========================
+
+# e^{(\sigma+2)(s+\ln\Lambda)}\widetilde m(\theta,s+\ln\Lambda)
+
+# e^{(\sigma+2)s}\Lambda^{\sigma+2}\Lambda^{-(\sigma+2)}\widetilde m(\theta,s)
+
+\bar m(\theta,s)
+]
+
+[
+\bar m(\theta,s)=:\widehat m(\theta,\psi),\qquad \psi=\frac{2\pi}{\ln\Lambda}s
+]
+
+[
+\widetilde m(\theta,s)=e^{-(\sigma+2)s}\widehat m(\theta,\psi)
+]
+
+[
+m(z)=|z|^{-(\sigma+2)}\widehat m(C_\Lambda(z))
+]
+
+[
+\boxed{\ S_\Lambda^*\mu=\Lambda^\sigma\mu\ \Longrightarrow\ \mu=|z|^{-(\sigma+2)}\ \widehat\mu(\theta,\psi)\ dz\ ,\ \widehat\mu\ \text{on }\mathbb T^2\ }
+\qquad\qquad \∎
+
+## IX
+
+[
+\partial_\tau u+\nabla\cdot(u\otimes u)+\nabla p=0,\qquad \nabla\cdot u=0,
+\qquad (x\in\mathbb R^2\setminus\{0\},\ \tau\in(0,T))
+]
+
+[
+U:=u,\qquad \eta(u):=\frac12|u|^2,\qquad q(u):=u\Big(\frac12|u|^2+p\Big)
+]
+
+[
+\partial_\tau\Big(\frac12|u|^2\Big)+\nabla\cdot\Big(u\Big(\frac12|u|^2+p\Big)\Big)+D(u)=0
+]
+
+[
+u_\ell:=G_\ell*u,\qquad \tau_\ell(u,u):=(u\otimes u)*\ell-u*\ell\otimes u_\ell
+]
+
+[
+\Pi_\ell(u):=-\nabla u_\ell:\tau_\ell(u,u)
+]
+
+[
+D(u)=\lim_{\ell\to0}\Pi_\ell(u)\quad\text{in }\mathcal D'
+\qquad\qquad \∎\ \ ([Karlin MFF][3])
+
+## X
+
+[
+u(\Lambda x,\tau)=\Lambda^\kappa u(x,\tau),\qquad x\in\mathbb R^2\setminus\{0\}
+]
+
+[
+u_\ell(\Lambda z)
+=================
+
+\int G_\ell(\Lambda z-y)u(y),dy
+]
+
+[
+y=\Lambda y',\ dy=\Lambda^2 dy'
+]
+
+[
+u_\ell(\Lambda z)
+=================
+
+# \Lambda^2\int G_\ell(\Lambda(z-y'))u(\Lambda y'),dy'
+
+\Lambda^{2+\kappa}\int G_\ell(\Lambda(z-y'))u(y'),dy'
+]
+
+[
+G_\ell(\Lambda(z-y'))
+=====================
+
+# \ell^{-2}G(\Lambda(z-y')/\ell)
+
+# (\ell/\Lambda)^{-2},G_{\ell/\Lambda}(z-y')
+
+\Lambda^2,G_{\ell/\Lambda}(z-y')
+]
+
+[
+u_\ell(\Lambda z)
+=================
+
+# \Lambda^{2+\kappa}\int \Lambda^2 G_{\ell/\Lambda}(z-y')u(y'),dy'
+
+# \Lambda^\kappa\int G_{\ell/\Lambda}(z-y')u(y'),dy'
+
+\Lambda^\kappa u_{\ell/\Lambda}(z)
+]
+
+[
+\nabla u_\ell(\Lambda z)=\Lambda^{\kappa-1}\nabla u_{\ell/\Lambda}(z)
+]
+
+[
+(u\otimes u)_\ell(\Lambda z)
+============================
+
+\int G_\ell(\Lambda z-y),u(y)\otimes u(y),dy
+]
+
+[
+y=\Lambda y',\ dy=\Lambda^2 dy'
+]
+
+[
+(u\otimes u)_\ell(\Lambda z)
+============================
+
+# \Lambda^2\int G_\ell(\Lambda(z-y')),u(\Lambda y')\otimes u(\Lambda y'),dy'
+
+\Lambda^{2+2\kappa}\int G_\ell(\Lambda(z-y')),u(y')\otimes u(y'),dy'
+]
+
+[
+(u\otimes u)_\ell(\Lambda z)
+============================
+
+\Lambda^{2\kappa}(u\otimes u)_{\ell/\Lambda}(z)
+]
+
+[
+u_\ell(\Lambda z)\otimes u_\ell(\Lambda z)
+==========================================
+
+\Lambda^{2\kappa},u_{\ell/\Lambda}(z)\otimes u_{\ell/\Lambda}(z)
+]
+
+[
+\tau_\ell(u,u)(\Lambda z)
+=========================
+
+# (u\otimes u)*\ell(\Lambda z)-u*\ell(\Lambda z)\otimes u_\ell(\Lambda z)
+
+\Lambda^{2\kappa}\tau_{\ell/\Lambda}(u,u)(z)
+]
+
+[
+\Pi_\ell(\Lambda z)
+===================
+
+# -\nabla u_\ell(\Lambda z):\tau_\ell(u,u)(\Lambda z)
+
+# -\Lambda^{\kappa-1}\nabla u_{\ell/\Lambda}(z):\Lambda^{2\kappa}\tau_{\ell/\Lambda}(u,u)(z)
+
+\Lambda^{3\kappa-1}\Pi_{\ell/\Lambda}(z)
+]
+
+[
+\ell=\Lambda^n\ell_0\ \Longrightarrow\ \Pi_{\Lambda^n\ell_0}(\Lambda^n z)=\Lambda^{n(3\kappa-1)}\Pi_{\ell_0}(z)
+]
+
+[
+\ell\downarrow0\ (n\to-\infty)\ \Longrightarrow\ D(u)(\Lambda z)=\Lambda^{3\kappa-1}D(u)(z)
+]
+
+[
+3\kappa-1=0\ \Longrightarrow\ D(u)(\Lambda z)=D(u)(z)
+]
+
+[
+\boxed{\ \kappa=\frac13\ \Longrightarrow\ D(u)=\widehat D(\theta,\psi)\ \text{(distribution on }\mathbb T^2)\ }
+\qquad\qquad \∎\ \ ([Karlin MFF][3])
+
+## XI
+
+[
+\kappa=\frac13
+]
+
+[
+D(u)(\Lambda z)=D(u)(z)
+]
+
+[
+D(u)(re^{i\theta})=:\widetilde D(\theta,s)
+]
+
+[
+\widetilde D(\theta,s+\ln\Lambda)=\widetilde D(\theta,s)
+]
+
+[
+\widetilde D(\theta,s)=:\widehat D(\theta,\psi)
+]
+
+[
+D(u)(z)=\widehat D(C_\Lambda(z))
+]
+
+[
+\boxed{\ \text{bulk}\leftrightarrow\text{boundary defect}\ :\quad \widehat D\in\mathcal D'(\mathbb T^2)\ ,\ D(u)=C_\Lambda^*(\widehat D)\ }
+\qquad\qquad \∎
+
+## XII
+
+[
+\partial_\tau \rho+\nabla\cdot(b\rho)=0
+]
+
+[
+\rho_\varepsilon:=G_\varepsilon*\rho,\qquad b_\varepsilon:=G_\varepsilon*b
+]
+
+[
+\partial_\tau \rho_\varepsilon+\nabla\cdot(b_\varepsilon\rho_\varepsilon)=\nabla\cdot\big(b_\varepsilon\rho_\varepsilon-(b\rho)_\varepsilon\big)
+]
+
+[
+\mathcal R_\varepsilon:=\nabla\cdot\big(b_\varepsilon\rho_\varepsilon-(b\rho)_\varepsilon\big)
+]
+
+[
+\varepsilon\downarrow0,\ \text{regular regime}\ \Longrightarrow\ \mathcal R_\varepsilon\to0
+]
+
+[
+\varepsilon\downarrow0,\ \text{rough regime}\ \Longrightarrow\ \mathcal R_\varepsilon\to\mathcal R
+]
+
+[
+S_\Lambda^*\mathcal R=\Lambda^\sigma\mathcal R\ \Longrightarrow\ \mathcal R=|z|^{-(\sigma+2)}\widehat{\mathcal R}(\theta,\psi)\ dz
+]
+
+[
+\boxed{\ \mathcal R\ \text{forced into }(\theta,\psi)\text{-form by (local commutator)+(scale covariance)}\ }
+\qquad\qquad \∎\ \ ([Math Department CMU][2])
+
+## XIII
+
+[
+\Phi_\varepsilon\ \text{(regularized)}\qquad \Longrightarrow\qquad \Phi_\varepsilon\to\Phi\ \text{fails unless counterterms added}
+]
+
+[
+\Phi_\varepsilon\ \mapsto\ \Phi_\varepsilon + \text{(local counterterms)}
+]
+
+[
+\text{counterterms determined by a canonical renormalization group}
+]
+
+[
+\text{(locality)}\ +\ \text{(scaling)}\ \Longrightarrow\ \text{counterterm/correction has fixed homogeneity class}
+]
+
+[
+S_\Lambda^*\mu=\Lambda^\sigma\mu\ \Longrightarrow\ \mu=|z|^{-(\sigma+2)}\widehat\mu(\theta,\psi)\ dz
+]
+
+[
+\boxed{\ \text{“defect between naive bulk calculus and renormalized boundary calculus”}\ \in\ {\widehat\mu(\theta,\psi)}\ }
+\qquad\qquad \∎\ \ ([hairer.org][4])
+
+
+## XIV
+
+[
+d\in\mathbb N,\qquad x\in\mathbb R^d,\qquad \tau\in(0,T)
+]
+
+[
+G\in C_c^\infty(\mathbb R^d),\qquad G(x)=G(-x),\qquad \int_{\mathbb R^d}G(x),dx=1
+]
+
+[
+G_\ell(x):=\ell^{-d}G(x/\ell),\qquad \ell>0
+]
+
+[
+f_\ell:=G_\ell*f,\qquad (f*g)(x):=\int_{\mathbb R^d} f(x-y)g(y),dy
+]
+
+[
+u:\mathbb R^d\times(0,T)\to\mathbb R^d,\qquad p:\mathbb R^d\times(0,T)\to\mathbb R
+]
+
+[
+\nabla\cdot u=0
+]
+
+[
+\partial_\tau u+\nabla\cdot(u\otimes u)+\nabla p=0\qquad\text{in }\mathcal D'(\mathbb R^d\times(0,T))
+]
+
+[
+\partial_\tau u_\ell+\nabla\cdot(u\otimes u)*\ell+\nabla p*\ell=0
+]
+
+[
+\tau_\ell(u,u):=(u\otimes u)*\ell-u*\ell\otimes u_\ell
+]
+
+[
+\nabla\cdot(u\otimes u)*\ell=\nabla\cdot(u*\ell\otimes u_\ell)+\nabla\cdot\tau_\ell(u,u)
+]
+
+[
+\partial_\tau u_\ell+\nabla\cdot(u_\ell\otimes u_\ell)+\nabla p_\ell=-\nabla\cdot\tau_\ell(u,u)
+]
+
+[
+u_\ell\cdot\partial_\tau u_\ell=\partial_\tau\Big(\frac12|u_\ell|^2\Big)
+]
+
+[
+u_\ell\cdot\nabla p_\ell=\nabla\cdot(p_\ell u_\ell)-p_\ell\nabla\cdot u_\ell=\nabla\cdot(p_\ell u_\ell)
+]
+
+[
+u_\ell\cdot\nabla\cdot(u_\ell\otimes u_\ell)
+============================================
+
+# \partial_j(u_{\ell,i}u_{\ell,i}u_{\ell,j}/2)
+
+\nabla\cdot\Big(u_\ell\frac12|u_\ell|^2\Big)
+]
+
+[
+u_\ell\cdot(-\nabla\cdot\tau_\ell)=-(\partial_j u_{\ell,i}),\tau_{\ell,ij}=-\nabla u_\ell:\tau_\ell
+]
+
+[
+\partial_\tau\Big(\frac12|u_\ell|^2\Big)+\nabla\cdot\Big(u_\ell\Big(\frac12|u_\ell|^2+p_\ell\Big)\Big)=-\nabla u_\ell:\tau_\ell(u,u)
+]
+
+[
+\Pi_\ell^{G}(u):=-\nabla u_\ell:\tau_\ell(u,u)
+]
+
+[
+\partial_\tau\Big(\frac12|u_\ell|^2\Big)+\nabla\cdot\Big(u_\ell\Big(\frac12|u_\ell|^2+p_\ell\Big)\Big)=\Pi_\ell^{G}(u)
+]
+([Karlin MFF][1])
+
+## XV
+
+[
+\varphi\in C_c^\infty(\mathbb R^d\times(0,T))
+]
+
+[
+\int_0^T!!\int_{\mathbb R^d}\Big(\frac12|u_\ell|^2\partial_\tau\varphi+u_\ell\Big(\frac12|u_\ell|^2+p_\ell\Big)\cdot\nabla\varphi\Big),dx,d\tau
+===============================================================================================================================================
+
+-\int_0^T!!\int_{\mathbb R^d}\Pi_\ell^{G}(u),\varphi,dx,d\tau
+]
+
+[
+u\in L^3_{\mathrm{loc}},\quad p\in L^{3/2}*{\mathrm{loc}}
+\ \Longrightarrow
+u*\ell\to u\ \text{in }L^3_{\mathrm{loc}},\quad p_\ell\to p\ \text{in }L^{3/2}_{\mathrm{loc}}
+]
+
+[
+|u_\ell|^2\to |u|^2\ \text{in }L^{3/2}*{\mathrm{loc}},\qquad
+u*\ell|u_\ell|^2\to u|u|^2\ \text{in }L^1_{\mathrm{loc}}
+]
+
+[
+u_\ell p_\ell\to up\ \text{in }L^1_{\mathrm{loc}}
+]
+
+[
+\lim_{\ell\to0}\int!!\int\Big(\frac12|u_\ell|^2\partial_\tau\varphi+u_\ell\Big(\frac12|u_\ell|^2+p_\ell\Big)\cdot\nabla\varphi\Big)
+===================================================================================================================================
+
+\int!!\int\Big(\frac12|u|^2\partial_\tau\varphi+u\Big(\frac12|u|^2+p\Big)\cdot\nabla\varphi\Big)
+]
+
+[
+\mathcal D(u)\in\mathcal D'(\mathbb R^d\times(0,T))
+]
+
+[
+\langle \mathcal D(u),\varphi\rangle
+:=
+-\int_0^T!!\int_{\mathbb R^d}\Big(\frac12|u|^2\partial_\tau\varphi+u\Big(\frac12|u|^2+p\Big)\cdot\nabla\varphi\Big),dx,d\tau
+]
+
+[
+\lim_{\ell\to0}\langle \Pi_\ell^{G}(u),\varphi\rangle=\langle \mathcal D(u),\varphi\rangle
+]
+
+[
+\boxed{\ \Pi_\ell^{G}(u)\xrightarrow[\ell\to0]{}\mathcal D(u)\ \text{ in }\mathcal D'\ }
+]
+([Karlin MFF][1])
+
+## XVI
+
+[
+G,H\in C_c^\infty(\mathbb R^d),\qquad G(x)=G(-x),\ H(x)=H(-x),\qquad \int G=\int H=1
+]
+
+[
+\Pi_\ell^{G}(u)=-\nabla u_\ell^{G}:\tau_\ell^{G}(u,u),\qquad
+\Pi_\ell^{H}(u)=-\nabla u_\ell^{H}:\tau_\ell^{H}(u,u)
+]
+
+[
+\langle \Pi_\ell^{G}(u),\varphi\rangle
+======================================
+
+-\int!!\int\Big(\frac12|u_\ell^{G}|^2\partial_\tau\varphi+u_\ell^{G}\Big(\frac12|u_\ell^{G}|^2+p_\ell^{G}\Big)\cdot\nabla\varphi\Big)
+]
+
+[
+\langle \Pi_\ell^{H}(u),\varphi\rangle
+======================================
+
+-\int!!\int\Big(\frac12|u_\ell^{H}|^2\partial_\tau\varphi+u_\ell^{H}\Big(\frac12|u_\ell^{H}|^2+p_\ell^{H}\Big)\cdot\nabla\varphi\Big)
+]
+
+[
+\lim_{\ell\to0}\langle \Pi_\ell^{G}(u),\varphi\rangle
+=====================================================
+
+# -\int!!\int\Big(\frac12|u|^2\partial_\tau\varphi+u\Big(\frac12|u|^2+p\Big)\cdot\nabla\varphi\Big)
+
+\lim_{\ell\to0}\langle \Pi_\ell^{H}(u),\varphi\rangle
+]
+
+[
+\boxed{\ \lim_{\ell\to0}\Pi_\ell^{G}(u)=\lim_{\ell\to0}\Pi_\ell^{H}(u)=\mathcal D(u)\ \text{ in }\mathcal D'\ }
+]
+
+[
+\boxed{\ \mathcal D(u)\ \text{independent of }G\ }
+]
+([Karlin MFF][1])
+
+## XVII
+
+[
+\delta u(x,r,\tau):=u(x+r,\tau)-u(x,\tau)
+]
+
+[
+\int_{\mathbb R^d}\nabla G(r),dr=0
+]
+
+[
+\nabla G_\ell(r)=\ell^{-d-1}(\nabla G)(r/\ell)
+]
+
+[
+\Pi_\ell^{G}(u)(x,\tau)
+=======================
+
+-\partial_j u_{\ell,i}(x,\tau)\Big((u_i u_j)*\ell(x,\tau)-u*{\ell,i}(x,\tau)u_{\ell,j}(x,\tau)\Big)
+]
+
+[
+u_{\ell,i}(x)=\int G_\ell(r)u_i(x-r),dr
+]
+
+[
+\partial_j u_{\ell,i}(x)=\int (\partial_j G_\ell)(r),u_i(x-r),dr
+]
+
+[
+(u_i u_j)*\ell(x)=\int G*\ell(r),u_i(x-r)u_j(x-r),dr
+]
+
+[
+u_{\ell,i}(x)u_{\ell,j}(x)=\int!!\int G_\ell(r)G_\ell(r'),u_i(x-r)u_j(x-r'),dr,dr'
+]
+
+[
+\tau_{\ell,ij}(x)=\int G_\ell(r),u_i(x-r)u_j(x-r),dr-\int!!\int G_\ell(r)G_\ell(r')u_i(x-r)u_j(x-r'),dr,dr'
+]
+
+[
+\tau_{\ell,ij}(x)=\frac12\int!!\int G_\ell(r)G_\ell(r')\Big(u_i(x-r)-u_i(x-r')\Big)\Big(u_j(x-r)-u_j(x-r')\Big),dr,dr'
+]
+
+[
+\partial_j u_{\ell,i}(x)=\int (\partial_j G_\ell)(r),\Big(u_i(x-r)-u_i(x)\Big),dr
+]
+
+[
+\Pi_\ell^{G}(u)(x)
+==================
+
+-\frac12\int (\partial_j G_\ell)(r),\big(u_i(x-r)-u_i(x)\big),dr
+\int!!\int G_\ell(a)G_\ell(b)\big(u_i(x-a)-u_i(x-b)\big)\big(u_j(x-a)-u_j(x-b)\big),da,db
+]
+
+[
+\Pi_\ell^{G}(u)(x)
+==================
+
+\frac14\int (\nabla G_\ell)(r)\cdot\delta u(x,-r)\ |\delta u(x,-r)|^2,dr
+]
+
+[
+\Pi_\ell^{G}(u)(x)
+==================
+
+\frac14\int (\nabla G_\ell)(r)\cdot\delta u(x,r)\ |\delta u(x,r)|^2,dr
+]
+
+[
+\boxed{\ \Pi_\ell^{G}(u)=\frac14\int (\nabla G_\ell)(r)\cdot\delta u(\cdot,r)\ |\delta u(\cdot,r)|^2,dr\ }
+]
+([Karlin MFF][1])
+
+## XVIII
+
+[
+\Pi_\ell^{G}(u)(x,\tau)
+=======================
+
+\frac14\int \ell^{-d-1}(\nabla G)(\rho)\cdot\delta u(x,\ell\rho,\tau)\ |\delta u(x,\ell\rho,\tau)|^2,\ell^d,d\rho
+]
+
+[
+\Pi_\ell^{G}(u)(x,\tau)
+=======================
+
+\frac{1}{4\ell}\int (\nabla G)(\rho)\cdot\delta u(x,\ell\rho,\tau)\ |\delta u(x,\ell\rho,\tau)|^2,d\rho
+]
+
+[
+\delta u(x,\ell\rho,\tau)=\ell^{1/3},a(x,\rho,\tau)+o(\ell^{1/3})
+]
+
+[
+|\delta u(x,\ell\rho,\tau)|^2\delta u(x,\ell\rho,\tau)=\ell,|a(x,\rho,\tau)|^2a(x,\rho,\tau)+o(\ell)
+]
+
+[
+\Pi_\ell^{G}(u)(x,\tau)
+=======================
+
+\frac14\int (\nabla G)(\rho)\cdot |a(x,\rho,\tau)|^2a(x,\rho,\tau),d\rho
++
+o(1)
+]
+
+[
+\Pi_\ell^{G}(u)\xrightarrow[\ell\to0]{}\mathcal D(u)
+\ \Longrightarrow
+\mathcal D(u)(x,\tau)=\frac14\int (\nabla G)(\rho)\cdot |a(x,\rho,\tau)|^2a(x,\rho,\tau),d\rho
+]
+
+[
+\forall G\ (\int G=1,\ G(-\rho)=G(\rho)):\
+\frac14\int (\nabla G)(\rho)\cdot |a|^2a,d\rho\ \text{independent of }G
+]
+
+[
+K:=G-H,\qquad \int K=0,\qquad K(-\rho)=K(\rho)
+]
+
+[
+0=\mathcal D(u)-\mathcal D(u)=\frac14\int (\nabla K)(\rho)\cdot |a|^2a,d\rho
+]
+
+[
+\boxed{\ \forall K\in C_c^\infty,\ \int K=0,\ K(-\rho)=K(\rho):\ \int (\nabla K)(\rho)\cdot J(x,\rho,\tau),d\rho=0\ }
+]
+
+[
+J(x,\rho,\tau):=|a(x,\rho,\tau)|^2a(x,\rho,\tau)
+]
+
+[
+\int (\nabla K)\cdot J= -\int K,(\nabla_\rho\cdot J)
+]
+
+[
+\forall K\ (\int K=0):\ \int K,(\nabla_\rho\cdot J)=0
+\ \Longrightarrow
+\nabla_\rho\cdot J(x,\rho,\tau)=c(x,\tau)\ \text{(distributional constant in }\rho)
+]
+
+[
+\int_{\mathbb R^d}(\nabla_\rho\cdot J),\chi(\rho),d\rho=c(x,\tau)\int\chi(\rho),d\rho
+]
+
+[
+\chi\in C_c^\infty,\ \int\chi=1
+]
+
+[
+c(x,\tau)=\int (\nabla_\rho\cdot J),\chi
+]
+
+[
+\boxed{\ \nabla_\rho\cdot J(x,\rho,\tau)=c(x,\tau)\ \Longrightarrow\ \mathcal D(u)(x,\tau)=\frac14\int (\nabla G)(\rho)\cdot J(x,\rho,\tau),d\rho\ \text{independent of }G\ }
+]
+([Karlin MFF][1])
+
+## XIX
+
+[
+u(\Lambda x,\tau)=\Lambda^{1/3}u(x,\tau)
+]
+
+[
+\mathcal D(u)(\Lambda x,\tau)=\Lambda^{3(1/3)-1}\mathcal D(u)(x,\tau)=\mathcal D(u)(x,\tau)
+]
+
+[
+\mathcal D(u)(x,\tau)=\widehat{\mathcal D}(\theta,\psi,\tau),\qquad (\theta,\psi)=C_\Lambda(z),\qquad z=x_1+i x_2
+]
+
+[
+\boxed{\ \kappa=\frac13\ \wedge\ u(\Lambda\cdot)=\Lambda^{1/3}u\ \Longrightarrow\ \mathcal D(u)=C_\Lambda^*\widehat{\mathcal D},\ \widehat{\mathcal D}\in\mathcal D'(\mathbb T^2\times(0,T))\ }
+]
+
+[
+\boxed{\ \widehat{\mathcal D}\ \text{mollifier-independent}\ }
+]
+([Karlin MFF][1])
+
+## XX
+
+[
+u\in L^3(0,T;B^{1/3,\infty}*3),\qquad \sup*{\ell>0}|\Pi_\ell^{G}(u)|*{L^1*{\mathrm{loc}}}<\infty
+]
+
+[
+\Pi_\ell^{G}(u)\ \text{bounded in }\mathcal M_{\mathrm{loc}}
+\ \Longrightarrow
+\exists\ \ell_n\downarrow0:\ \Pi_{\ell_n}^{G}(u)\rightharpoonup^* \mathcal D(u)
+]
+
+[
+u\in L^3(0,T;B^{1/3,c_0}*3)\ \Longrightarrow\ \lim*{\ell\to0}\Pi_\ell^{G}(u)=0
+]
+
+[
+\boxed{\ B^{1/3,c_0}_3\Rightarrow \mathcal D(u)=0,\qquad B^{1/3,\infty}*3\Rightarrow \mathcal D(u)\in\mathcal M*{\mathrm{loc}}\ \text{(possibly }\neq0\text{)}\ }
+]
+
+## XXI
+
+[
+\partial_\tau u+(u\cdot\nabla)u+\nabla p=0,\qquad \nabla\cdot u=0,\qquad (x\in\mathbb R^2\setminus{0})
+]
+([karlin.mff.cuni.cz][1])
+
+[
+\lambda>0,\qquad (S_\lambda u)(x,\tau):=\lambda^\kappa u(\lambda x,\lambda^\beta\tau),\qquad (S_\lambda p)(x,\tau):=\lambda^{2\kappa}p(\lambda x,\lambda^\beta\tau)
+]
+
+[
+\partial_\tau(S_\lambda u)(x,\tau)=\lambda^{\kappa+\beta}(\partial_\tau u)(\lambda x,\lambda^\beta\tau)
+]
+
+[
+\nabla(S_\lambda u)(x,\tau)=\lambda^{\kappa+1}(\nabla u)(\lambda x,\lambda^\beta\tau)
+]
+
+[
+((S_\lambda u)\cdot\nabla)(S_\lambda u)
+=======================================
+
+# (\lambda^\kappa u(\lambda x,\lambda^\beta\tau))\cdot(\lambda\nabla),(\lambda^\kappa u(\lambda x,\lambda^\beta\tau))
+
+\lambda^{2\kappa+1}((u\cdot\nabla)u)(\lambda x,\lambda^\beta\tau)
+]
+
+[
+\nabla(S_\lambda p)(x,\tau)=\lambda^{2\kappa+1}(\nabla p)(\lambda x,\lambda^\beta\tau)
+]
+
+[
+\partial_\tau(S_\lambda u)+((S_\lambda u)\cdot\nabla)(S_\lambda u)+\nabla(S_\lambda p)
+======================================================================================
+
+\lambda^{2\kappa+1}\Big(\lambda^{\kappa+\beta-(2\kappa+1)}\partial_\tau u+(u\cdot\nabla)u+\nabla p\Big)(\lambda x,\lambda^\beta\tau)
+]
+
+[
+\kappa+\beta-(2\kappa+1)=0\ \Longleftrightarrow\ \beta=1-\kappa
+]
+
+[
+\boxed{\ \beta=1-\kappa\ \Longrightarrow\ (u,p)\ \text{solution}\ \Rightarrow\ (S_\lambda u,S_\lambda p)\ \text{solution}\ }
+]
+([Princeton Math][2])
+
+[
+\Lambda:=\phi^4,\qquad \beta=1-\kappa
+]
+
+[
+u(\Lambda x,\Lambda^\beta\tau)=\Lambda^\kappa u(x,\tau),\qquad p(\Lambda x,\Lambda^\beta\tau)=\Lambda^{2\kappa}p(x,\tau)
+]
+
+[
+x=re^{i\theta},\qquad r>0,\qquad s:=\ln r,\qquad \psi:=\frac{2\pi}{\ln\Lambda}s
+]
+
+[
+\upsilon:=\tau,r^{-\beta}=\tau,e^{-\beta s}
+]
+
+[
+r\mapsto \Lambda r,\ \tau\mapsto\Lambda^\beta\tau\ \Longrightarrow\ \upsilon\mapsto \upsilon
+]
+
+[
+\boxed{\ u(re^{i\theta},\tau)=r^\kappa,v(\theta,\psi,\upsilon),\qquad p(re^{i\theta},\tau)=r^{2\kappa},\pi(\theta,\psi,\upsilon)\ }
+]
+
+[
+\psi(s+\ln\Lambda)=\psi(s)+2\pi
+]
+
+[
+\boxed{\ v(\theta,\psi+2\pi,\upsilon)=v(\theta,\psi,\upsilon),\qquad \pi(\theta,\psi+2\pi,\upsilon)=\pi(\theta,\psi,\upsilon)\ }
+]
+
+## XXII
+
+[
+e_r(\theta):=(\cos\theta,\sin\theta),\qquad e_\theta(\theta):=(-\sin\theta,\cos\theta)
+]
+
+[
+\nabla = e_r\partial_r+\frac1r e_\theta\partial_\theta
+]
+
+[
+\partial_r=\frac1r\partial_s,\qquad \partial_s=\frac{2\pi}{\ln\Lambda}\partial_\psi
+]
+
+[
+\boxed{\ \nabla=\frac1r\Big(e_r\frac{2\pi}{\ln\Lambda}\partial_\psi+e_\theta\partial_\theta\Big)\ }
+]
+
+[
+\partial_\tau=\frac{\partial \upsilon}{\partial \tau}\partial_\upsilon=r^{-\beta}\partial_\upsilon
+]
+
+[
+u_r:=u\cdot e_r=r^\kappa v_r,\qquad u_\theta:=u\cdot e_\theta=r^\kappa v_\theta
+]
+
+[
+\nabla\cdot u=\frac1r\partial_r(ru_r)+\frac1r\partial_\theta u_\theta
+]
+
+[
+\partial_r(ru_r)=\partial_r(r^{\kappa+1}v_r)=r^{\kappa}\frac1r\partial_s(r^{\kappa+1}v_r)
+=r^{\kappa}\frac1r\Big((\kappa+1)r^{\kappa+1}v_r+r^{\kappa+1}\partial_s v_r\Big)r^{-(\kappa+1)}
+=r^{\kappa}\Big((\kappa+1)v_r+\partial_s v_r\Big)
+]
+
+[
+\partial_\theta u_\theta=\partial_\theta(r^\kappa v_\theta)=r^\kappa\partial_\theta v_\theta
+]
+
+[
+\nabla\cdot u
+=============
+
+# \frac1r\Big(r^\kappa\big((\kappa+1)v_r+\partial_s v_r\big)+r^\kappa\partial_\theta v_\theta\Big)
+
+r^{\kappa-1}\Big((\kappa+1)v_r+\partial_s v_r+\partial_\theta v_\theta\Big)
+]
+
+[
+\nabla\cdot u=0
+\ \Longleftrightarrow
+(\kappa+1)v_r+\partial_s v_r+\partial_\theta v_\theta=0
+]
+
+[
+\boxed{\ (\kappa+1)v_r+\frac{2\pi}{\ln\Lambda}\partial_\psi v_r+\partial_\theta v_\theta=0\ }
+]
+
+## XXIII
+
+[
+(u\cdot\nabla)u_r
+=================
+
+u_r\partial_r u_r+\frac{u_\theta}{r}\partial_\theta u_r
+]
+
+[
+(u\cdot\nabla)u_\theta
+======================
+
+u_r\partial_r u_\theta+\frac{u_\theta}{r}\partial_\theta u_\theta
+]
+
+[
+\big((u\cdot\nabla)u\big)\cdot e_r=(u\cdot\nabla)u_r-\frac{u_\theta^2}{r}
+]
+
+[
+\big((u\cdot\nabla)u\big)\cdot e_\theta=(u\cdot\nabla)u_\theta+\frac{u_r u_\theta}{r}
+]
+
+[
+\partial_\tau u_r=r^{\kappa-\beta}\partial_\upsilon v_r,\qquad \partial_\tau u_\theta=r^{\kappa-\beta}\partial_\upsilon v_\theta
+]
+
+[
+\partial_r u_r=\partial_r(r^\kappa v_r)=r^{\kappa-1}(\kappa v_r+\partial_s v_r),\qquad
+\partial_r u_\theta=\partial_r(r^\kappa v_\theta)=r^{\kappa-1}(\kappa v_\theta+\partial_s v_\theta)
+]
+
+[
+\partial_\theta u_r=r^\kappa\partial_\theta v_r,\qquad \partial_\theta u_\theta=r^\kappa\partial_\theta v_\theta
+]
+
+[
+u_r\partial_r u_r=r^\kappa v_r\cdot r^{\kappa-1}(\kappa v_r+\partial_s v_r)=r^{2\kappa-1}v_r(\kappa v_r+\partial_s v_r)
+]
+
+[
+\frac{u_\theta}{r}\partial_\theta u_r=\frac{r^\kappa v_\theta}{r}\cdot r^\kappa\partial_\theta v_r=r^{2\kappa-1}v_\theta\partial_\theta v_r
+]
+
+[
+(u\cdot\nabla)u_r-\frac{u_\theta^2}{r}
+======================================
+
+r^{2\kappa-1}\Big(v_r(\kappa v_r+\partial_s v_r)+v_\theta\partial_\theta v_r-v_\theta^2\Big)
+]
+
+[
+\partial_r p=\partial_r(r^{2\kappa}\pi)=r^{2\kappa-1}(2\kappa\pi+\partial_s\pi)
+]
+
+[
+\frac1r\partial_\theta p=\frac1r\partial_\theta(r^{2\kappa}\pi)=r^{2\kappa-1}\partial_\theta\pi
+]
+
+[
+\kappa-\beta=2\kappa-1\ \Longleftrightarrow\ \beta=1-\kappa
+]
+
+[
+0=(\partial_\tau u+(u\cdot\nabla)u+\nabla p)\cdot e_r
+=====================================================
+
+r^{2\kappa-1}\Big(\partial_\upsilon v_r+v_r(\kappa v_r+\partial_s v_r)+v_\theta\partial_\theta v_r-v_\theta^2+2\kappa\pi+\partial_s\pi\Big)
+]
+
+[
+\boxed{\ \partial_\upsilon v_r+v_r(\kappa v_r+\partial_s v_r)+v_\theta\partial_\theta v_r-v_\theta^2+2\kappa\pi+\partial_s\pi=0\ }
+]
+
+[
+u_r\partial_r u_\theta=r^\kappa v_r\cdot r^{\kappa-1}(\kappa v_\theta+\partial_s v_\theta)=r^{2\kappa-1}v_r(\kappa v_\theta+\partial_s v_\theta)
+]
+
+[
+\frac{u_\theta}{r}\partial_\theta u_\theta=\frac{r^\kappa v_\theta}{r}\cdot r^\kappa\partial_\theta v_\theta=r^{2\kappa-1}v_\theta\partial_\theta v_\theta
+]
+
+[
+(u\cdot\nabla)u_\theta+\frac{u_r u_\theta}{r}
+=============================================
+
+r^{2\kappa-1}\Big(v_r(\kappa v_\theta+\partial_s v_\theta)+v_\theta\partial_\theta v_\theta+v_r v_\theta\Big)
+]
+
+[
+0=(\partial_\tau u+(u\cdot\nabla)u+\nabla p)\cdot e_\theta
+==========================================================
+
+r^{2\kappa-1}\Big(\partial_\upsilon v_\theta+v_r(\kappa v_\theta+\partial_s v_\theta)+v_\theta\partial_\theta v_\theta+v_r v_\theta+\partial_\theta\pi\Big)
+]
+
+[
+\boxed{\ \partial_\upsilon v_\theta+v_r(\kappa v_\theta+\partial_s v_\theta)+v_\theta\partial_\theta v_\theta+v_r v_\theta+\partial_\theta\pi=0\ }
+]
+
+[
+\partial_s=\frac{2\pi}{\ln\Lambda}\partial_\psi
+]
+
+[
+\boxed{\
+\begin{aligned}
+(\kappa+1)v_r+\frac{2\pi}{\ln\Lambda}\partial_\psi v_r+\partial_\theta v_\theta&=0,\
+\partial_\upsilon v_r+v_r\Big(\kappa v_r+\frac{2\pi}{\ln\Lambda}\partial_\psi v_r\Big)+v_\theta\partial_\theta v_r-v_\theta^2+2\kappa\pi+\frac{2\pi}{\ln\Lambda}\partial_\psi\pi&=0,\
+\partial_\upsilon v_\theta+v_r\Big(\kappa v_\theta+\frac{2\pi}{\ln\Lambda}\partial_\psi v_\theta\Big)+v_\theta\partial_\theta v_\theta+v_r v_\theta+\partial_\theta\pi&=0,
+\end{aligned}
+\ }
+]
+([Princeton Math][2])
+
+## XXIV
+
+[
+\kappa=\frac13,\qquad \beta=\frac23
+]
+
+[
+\boxed{\
+\begin{aligned}
+\frac43,v_r+\frac{2\pi}{\ln\Lambda}\partial_\psi v_r+\partial_\theta v_\theta&=0,\
+\partial_\upsilon v_r+v_r\Big(\frac13 v_r+\frac{2\pi}{\ln\Lambda}\partial_\psi v_r\Big)+v_\theta\partial_\theta v_r-v_\theta^2+\frac23\pi+\frac{2\pi}{\ln\Lambda}\partial_\psi\pi&=0,\
+\partial_\upsilon v_\theta+v_r\Big(\frac13 v_\theta+\frac{2\pi}{\ln\Lambda}\partial_\psi v_\theta\Big)+v_\theta\partial_\theta v_\theta+v_r v_\theta+\partial_\theta\pi&=0,
+\end{aligned}
+\ }
+]
+
+[
+\eta(u):=\frac12|u|^2,\qquad q(u):=u\Big(\frac12|u|^2+p\Big)
+]
+
+[
+\partial_\tau\eta(u)+\nabla\cdot q(u)+\mathcal D(u)=0\qquad\text{in }\mathcal D'
+]
+([karlin.mff.cuni.cz][1])
+
+[
+u_\ell:=G_\ell*u,\qquad \Pi_\ell^{G}(u):=-\nabla u_\ell:\big((u\otimes u)*\ell-u*\ell\otimes u_\ell\big)
+]
+
+[
+\Pi_\ell^{G}(u)=\frac{1}{4\ell}\int (\nabla G)(\rho)\cdot\delta u(\cdot,\ell\rho),|\delta u(\cdot,\ell\rho)|^2,d\rho
+]
+
+[
+\mathcal D(u)=\lim_{\ell\to0}\Pi_\ell^{G}(u)\quad\text{in }\mathcal D'
+]
+
+[
+\boxed{\ \mathcal D(u)\ \text{independent of }G\ }
+]
+([karlin.mff.cuni.cz][1])
+
+[
+u(\Lambda x,\Lambda^\beta\tau)=\Lambda^{1/3}u(x,\tau),\qquad \beta=\frac23
+]
+
+[
+\Pi_\ell^{G}(u)(\Lambda x,\Lambda^\beta\tau)=\Lambda^{3(1/3)-1}\Pi_{\ell/\Lambda}^{G}(u)(x,\tau)=\Pi_{\ell/\Lambda}^{G}(u)(x,\tau)
+]
+
+[
+\ell\downarrow0\ \Longrightarrow\ \boxed{\ \mathcal D(u)(\Lambda x,\Lambda^\beta\tau)=\mathcal D(u)(x,\tau)\ }
+]
+
+[
+\mathcal D(u)(re^{i\theta},\tau)=:\widetilde{\mathcal D}(\theta,s,\tau)
+]
+
+[
+\widetilde{\mathcal D}(\theta,s+\ln\Lambda,\Lambda^\beta\tau)=\widetilde{\mathcal D}(\theta,s,\tau)
+]
+
+[
+\upsilon=\tau e^{-\beta s}\ \Longrightarrow\ \Lambda^\beta\tau\cdot e^{-\beta(s+\ln\Lambda)}=\tau e^{-\beta s}=\upsilon
+]
+
+[
+\widetilde{\mathcal D}(\theta,s,\tau)=:\widehat{\mathcal D}(\theta,\psi,\upsilon),\qquad \psi=\frac{2\pi}{\ln\Lambda}s
+]
+
+[
+\boxed{\ \mathcal D(u)(x,\tau)=\widehat{\mathcal D}(\theta(x),\psi(x),\upsilon(x,\tau))\ ,\quad (\theta,\psi)\in\mathbb T^2,\ \upsilon\in(0,\infty)\ }
+]
+([karlin.mff.cuni.cz][1])
+
+## XXV
+
+[
+F(z):=i\phi,z,\qquad F^4(z)=\phi^4 z=\Lambda z
+]
+
+[
+C_\Lambda\circ F=T\circ C_\Lambda,\qquad T(\theta,\psi)=\Big(\theta+\frac{\pi}{2},\psi+\frac{\pi}{2}\Big),\qquad T^4=\mathrm{id}
+]
+
+[
+u(Fz,\tau)=|\phi z|^{1/3},v\Big(\theta+\frac{\pi}{2},\psi+\frac{\pi}{2},\ \tau|\phi z|^{-2/3}\Big)
+]
+
+[
+u(Fz,\tau)=\phi^{1/3}|z|^{1/3},v\Big(T(\theta,\psi),\ \phi^{-2/3}\upsilon\Big)
+]
+
+[
+\boxed{\ v\Big(T(\theta,\psi),\phi^{-2/3}\upsilon\Big)=\phi^{-1/3},v(\theta,\psi,\upsilon)\ }
+]
+
+[
+n\in\mathbb Z:\quad v\Big(T^n(\theta,\psi),\phi^{-2n/3}\upsilon\Big)=\phi^{-n/3},v(\theta,\psi,\upsilon)
+]
+
+[
+n=4:\quad v(\theta,\psi,\phi^{-8/3}\upsilon)=\phi^{-4/3}v(\theta,\psi,\upsilon)=\Lambda^{-1/3}v(\theta,\psi,\upsilon)
+]
+
+[
+\boxed{\ v(\theta,\psi,\Lambda^{-2/3}\upsilon)=\Lambda^{-1/3}v(\theta,\psi,\upsilon)\ }
+]
+
+[
+\boxed{\ \widehat{\mathcal D}(T(\theta,\psi),\phi^{-2/3}\upsilon)=\widehat{\mathcal D}(\theta,\psi,\upsilon)\ }
+]
+([karlin.mff.cuni.cz][1])
+
+## XXVI
+
+[
+\eta(U)*\varepsilon:=\eta(G*\varepsilon*U),\qquad q(U)*\varepsilon:=q(G*\varepsilon*U)
+]
+
+[
+\partial_\tau\eta(U_\varepsilon)+\nabla\cdot q(U_\varepsilon)=\mu_\varepsilon
+]
+
+[
+\mu_\varepsilon:=\partial_\tau\eta(U_\varepsilon)+\nabla\cdot q(U_\varepsilon)
+]
+
+[
+U\in C^\infty\ \Longrightarrow\ \mu_\varepsilon\to 0
+]
+
+[
+U\ \text{rough}\ \Longrightarrow\ \exists\ \mu\in\mathcal D':\ \mu_\varepsilon\rightharpoonup \mu
+]
+
+[
+\boxed{\ \mu=\lim_{\varepsilon\to0}\mu_\varepsilon\ \text{(commutator defect)}\ }
+]
+([Mathematical Sciences Department][3])
+
+[
+U(\Lambda x,\Lambda^\beta\tau)=\Lambda^\kappa U(x,\tau)
+]
+
+[
+\eta(U)(\Lambda x,\Lambda^\beta\tau)=\Lambda^{a}\eta(U)(x,\tau)
+]
+
+[
+q(U)(\Lambda x,\Lambda^\beta\tau)=\Lambda^{b}q(U)(x,\tau)
+]
+
+[
+\partial_\tau\eta(U)(\Lambda x,\Lambda^\beta\tau)=\Lambda^{a-\beta}(\partial_\tau\eta(U))(x,\tau)
+]
+
+[
+\nabla\cdot q(U)(\Lambda x,\Lambda^\beta\tau)=\Lambda^{b-1}(\nabla\cdot q(U))(x,\tau)
+]
+
+[
+\partial_\tau\eta(U)+\nabla\cdot q(U)=0\ \text{covariant}
+\ \Longrightarrow
+a-\beta=b-1
+]
+
+[
+\mu(\Lambda x,\Lambda^\beta\tau)=\Lambda^{a-\beta}\mu(x,\tau)=\Lambda^{b-1}\mu(x,\tau)
+]
+
+[
+\boxed{\ \sigma:=a-\beta=b-1,\qquad \mu(\Lambda x,\Lambda^\beta\tau)=\Lambda^\sigma\mu(x,\tau)\ }
+]
+
+[
+\mu(x,\tau)=m(x,\tau),dx,\qquad m(\Lambda x,\Lambda^\beta\tau)=\Lambda^{-(\sigma+2)}m(x,\tau)
+]
+
+[
+m(re^{i\theta},\tau)=:\widetilde m(\theta,s,\tau)
+]
+
+[
+\widetilde m(\theta,s+\ln\Lambda,\Lambda^\beta\tau)=\Lambda^{-(\sigma+2)}\widetilde m(\theta,s,\tau)
+]
+
+[
+\bar m(\theta,s,\tau):=e^{(\sigma+2)s}\widetilde m(\theta,s,\tau)
+]
+
+[
+\bar m(\theta,s+\ln\Lambda,\Lambda^\beta\tau)=\bar m(\theta,s,\tau)
+]
+
+[
+\bar m(\theta,s,\tau)=:\widehat m(\theta,\psi,\upsilon)
+]
+
+[
+\boxed{\ \mu=|x|^{-(\sigma+2)}\widehat\mu(\theta,\psi,\upsilon),dx,\qquad \widehat\mu\in\mathcal D'(\mathbb T^2\times(0,\infty))\ }
+]
+
+([Past chat][1])([Past chat][2])([Past chat][3])([Past chat][4])([Past chat][5])([Past chat][6])([Past chat][6])([Past chat][7])([Past chat][8])([Past chat][8])([Past chat][8])([Past chat][9])
+
+## Sources
+
+([Sabanci University Research Database][10]) ([arXiv][11])  ([JuSER][12])
+
+## I
+
+[
+z:=x_1+i x_2,\qquad \bar z:=x_1-i x_2,\qquad r:=|z|=\sqrt{z\bar z},\qquad s:=\ln r
+]
+
+[
+\theta:=\arg z,\qquad z=re^{i\theta}=e^{s+i\theta},\qquad \partial_\theta z=i z,\qquad \partial_s z=z
+]
+
+[
+\Lambda:=\phi^4,\qquad \psi:=\frac{2\pi}{\ln\Lambda},s\ \ (\mathrm{mod}\ 2\pi),\qquad C_\Lambda(z):=(e^{i\theta(z)},e^{i\psi(z)})
+]
+
+[
+r^2=x_1^2+x_2^2,\qquad dr=\frac{x_1dx_1+x_2dx_2}{r},\qquad ds=\frac{dr}{r}=\frac{x_1dx_1+x_2dx_2}{r^2}
+]
+
+[
+\theta=\arctan!\Big(\frac{x_2}{x_1}\Big),\qquad d\theta=\frac{-x_2dx_1+x_1dx_2}{r^2}
+]
+
+[
+d\psi=\frac{2\pi}{\ln\Lambda},ds=\frac{2\pi}{\ln\Lambda},\frac{x_1dx_1+x_2dx_2}{r^2}
+]
+
+[
+C_\Lambda^*(d\theta)=\frac{-x_2dx_1+x_1dx_2}{r^2},\qquad
+C_\Lambda^*(d\psi)=\frac{2\pi}{\ln\Lambda},\frac{x_1dx_1+x_2dx_2}{r^2}
+]
+
+[
+\partial_{x_1}=\cos\theta,\partial_r-\frac{\sin\theta}{r},\partial_\theta,\qquad
+\partial_{x_2}=\sin\theta,\partial_r+\frac{\cos\theta}{r},\partial_\theta
+]
+
+[
+\partial_r=\frac1r,\partial_s,\qquad
+\nabla=\hat e_r,\partial_r+\hat e_\theta,\frac1r\partial_\theta
+=\frac1r\Big(\hat e_r,\partial_s+\hat e_\theta,\partial_\theta\Big)
+]
+
+[
+X_\theta:=\partial_\theta=-x_2\partial_{x_1}+x_1\partial_{x_2},\qquad
+X_s:=\partial_s=r\partial_r=x_1\partial_{x_1}+x_2\partial_{x_2}
+]
+
+[
+\psi=\frac{2\pi}{\ln\Lambda}s\ \Longrightarrow\
+\partial_s=\frac{2\pi}{\ln\Lambda}\partial_\psi,\qquad
+\partial_\psi=\frac{\ln\Lambda}{2\pi}\partial_s
+]
+
+[
+X_\psi:=\partial_\psi=\frac{\ln\Lambda}{2\pi},X_s
+]
+
+[
+\Delta=\partial_r^2+\frac1r\partial_r+\frac1{r^2}\partial_\theta^2
+]
+
+[
+\partial_r=r^{-1}\partial_s,\quad
+\partial_r^2=r^{-2}(\partial_s^2-\partial_s),\quad
+\frac1r\partial_r=r^{-2}\partial_s
+]
+
+[
+\Delta=r^{-2}\partial_s^2+\frac1{r^2}\partial_\theta^2
+=\frac1{r^2}\Big(\partial_\theta^2+\partial_s^2\Big)
+=\frac1{r^2}\Big(\partial_\theta^2+\big(\tfrac{2\pi}{\ln\Lambda}\big)^2\partial_\psi^2\Big)
+]
+
+[
+r^2\Delta=\partial_\theta^2+\partial_s^2=\partial_\theta^2+\big(\tfrac{2\pi}{\ln\Lambda}\big)^2\partial_\psi^2
+]
+
+## II
+
+[
+f_{m,n}(\theta,\psi):=e^{i(m\theta+n\psi)},\qquad (m,n)\in\mathbb Z^2
+]
+
+[
+(f_{m,n}\circ C_\Lambda)(z)=e^{im\theta(z)}\exp!\Big(\frac{2\pi i n}{\ln\Lambda}\ln|z|\Big)
+=e^{im\theta},r^{,i\omega_n}
+]
+
+[
+\omega_n:=\frac{2\pi n}{\ln\Lambda}
+]
+
+[
+\partial_\theta f_{m,n}=im f_{m,n},\qquad \partial_\psi f_{m,n}=in f_{m,n}
+]
+
+[
+(X_\theta-im)(f_{m,n}\circ C_\Lambda)=0,\qquad (X_\psi-in)(f_{m,n}\circ C_\Lambda)=0
+]
+
+[
+X_\psi=\frac{\ln\Lambda}{2\pi}X_s\ \Longrightarrow\
+(X_s-i\omega_n)(f_{m,n}\circ C_\Lambda)=0
+]
+
+[
+(X_\theta-im)W=0\ \wedge\ (X_s-i\omega_n)W=0
+\quad\Longleftrightarrow\quad
+W(z)=A,e^{im\theta},r^{,i\omega_n}
+]
+
+[
+\text{quasi-homogeneous lift:}\qquad U(z):=r^\kappa W(z)=A,r^{\kappa+i\omega_n}e^{im\theta}
+]
+
+[
+X_\theta U=im,U,\qquad X_s U=(\kappa+i\omega_n),U
+]
+
+[
+U(\Lambda z)=|\Lambda z|^\kappa W(\Lambda z)=\Lambda^\kappa W(z)=\Lambda^\kappa U(z)/|z|^\kappa\cdot |z|^\kappa=\Lambda^\kappa U(z)
+]
+
+[
+\alpha_k(z)=\Lambda^k z\ \Longrightarrow\ U(\alpha_k(z))=\Lambda^{k\kappa}U(z)
+]
+
+[
+e^{in\psi}=\exp!\Big(\frac{2\pi i n}{\ln\Lambda}s\Big)
+=\exp(i\omega_n s)=r^{i\omega_n}
+]
+
+[
+\boxed{\ \text{discrete-scale spectrum: }\ \kappa\mapsto \kappa+i\omega_n,\ \ \omega_n=\frac{2\pi n}{\ln\Lambda},\ \ n\in\mathbb Z\ }
+]
+
+## III
+
+[
+\partial_z:=\frac12(\partial_{x_1}-i\partial_{x_2}),\qquad
+\partial_{\bar z}:=\frac12(\partial_{x_1}+i\partial_{x_2})
+]
+
+[
+\partial_{x_1}=\partial_z+\partial_{\bar z},\qquad
+\partial_{x_2}=i(\partial_z-\partial_{\bar z})
+]
+
+[
+X_s=x_1\partial_{x_1}+x_2\partial_{x_2}
+=(z\partial_z+\bar z\partial_{\bar z})
+]
+
+[
+X_\theta=-x_2\partial_{x_1}+x_1\partial_{x_2}
+=i(z\partial_z-\bar z\partial_{\bar z})
+]
+
+[
+X_\theta+iX_s=i(z\partial_z-\bar z\partial_{\bar z})+i(z\partial_z+\bar z\partial_{\bar z})
+=2i,z\partial_z
+]
+
+[
+X_\theta-iX_s=i(z\partial_z-\bar z\partial_{\bar z})-i(z\partial_z+\bar z\partial_{\bar z})
+=-2i,\bar z\partial_{\bar z}
+]
+
+[
+\boxed{\ X_\theta+iX_s=2i,z\partial_z,\qquad X_\theta-iX_s=-2i,\bar z\partial_{\bar z}\ }
+]
+
+[
+(X_\theta+iX_s)U=\lambda U
+\ \Longleftrightarrow\
+2i,z\partial_z U=\lambda U
+\ \Longleftrightarrow\
+z\partial_z U=\frac{\lambda}{2i},U
+]
+
+[
+U(z)=z^{h},\bar z^{\tilde h}\ \Longrightarrow\
+z\partial_z U=hU,\qquad \bar z\partial_{\bar z}U=\tilde h U
+]
+
+[
+X_sU=(h+\tilde h)U,\qquad X_\theta U=i(h-\tilde h)U
+]
+
+[
+X_sU=(\kappa+i\omega_n)U,\qquad X_\theta U=im,U
+]
+
+[
+h+\tilde h=\kappa+i\omega_n,\qquad h-\tilde h=m
+]
+
+[
+h=\frac12(\kappa+i\omega_n+m),\qquad \tilde h=\frac12(\kappa+i\omega_n-m)
+]
+
+[
+U(z)=z^{\frac12(\kappa+i\omega_n+m)}\ \bar z^{\frac12(\kappa+i\omega_n-m)}
+]
+
+## IV
+
+[
+F(z):=i\phi z,\qquad F^4(z)=\phi^4 z=\Lambda z
+]
+
+[
+\theta(Fz)=\theta+\frac{\pi}{2},\qquad s(Fz)=s+\ln\phi
+]
+
+[
+\psi(Fz)=\frac{2\pi}{\ln\Lambda}(s+\ln\phi)=\psi+\frac{2\pi\ln\phi}{\ln\Lambda}
+=\psi+\frac{2\pi\ln\phi}{4\ln\phi}=\psi+\frac{\pi}{2}
+]
+
+[
+T(\theta,\psi):=\Big(\theta+\frac{\pi}{2},\ \psi+\frac{\pi}{2}\Big),\qquad
+C_\Lambda\circ F=T\circ C_\Lambda,\qquad T^4=\mathrm{id}
+]
+
+[
+f_{m,n}\circ T
+=e^{i(m(\theta+\pi/2)+n(\psi+\pi/2))}
+=e^{i\frac{\pi}{2}(m+n)},f_{m,n}
+]
+
+[
+(f_{m,n}\circ C_\Lambda)\circ F
+=f_{m,n}\circ (C_\Lambda\circ F)
+=f_{m,n}\circ (T\circ C_\Lambda)
+=(f_{m,n}\circ T)\circ C_\Lambda
+=e^{i\frac{\pi}{2}(m+n)}(f_{m,n}\circ C_\Lambda)
+]
+
+[
+\boxed{\ (f_{m,n}\circ C_\Lambda)(Fz)=e^{i\frac{\pi}{2}(m+n)}(f_{m,n}\circ C_\Lambda)(z)\ }
+]
+
+[
+U(z)=r^\kappa(f_{m,n}\circ C_\Lambda)(z)
+\ \Longrightarrow\
+U(Fz)=|Fz|^\kappa(f_{m,n}\circ C_\Lambda)(Fz)
+=(\phi r)^\kappa e^{i\frac{\pi}{2}(m+n)}(f_{m,n}\circ C_\Lambda)(z)
+]
+
+[
+\boxed{\ U(Fz)=\phi^\kappa,e^{i\frac{\pi}{2}(m+n)},U(z)\ }
+]
+
+[
+U(F^4z)=\big(\phi^\kappa e^{i\frac{\pi}{2}(m+n)}\big)^4U(z)=\phi^{4\kappa}e^{2\pi i(m+n)}U(z)=\Lambda^\kappa U(z)=U(\Lambda z)
+]
+
+## V
+
+[
+\text{functional Floquet-RG constraint:}\qquad
+\bar V(T(\theta,\psi),\Lambda^\beta\tau)=\mu,\bar V(\theta,\psi,\tau)
+]
+
+[
+\mu\in\mathbb C^*,\qquad \beta\in\mathbb R,\qquad \tau>0
+]
+
+[
+T(\theta,\psi)=(\theta+\tfrac{\pi}{2},\psi+\tfrac{\pi}{2}),\qquad
+\Lambda^\beta\tau=e^{\beta\ln\Lambda}\tau
+]
+
+[
+\sigma:=\ln\tau\quad\Longrightarrow\quad
+\ln(\Lambda^\beta\tau)=\sigma+\beta\ln\Lambda
+]
+
+[
+\bar V(\theta+\tfrac{\pi}{2},\psi+\tfrac{\pi}{2},\sigma+\beta\ln\Lambda)=\mu,\bar V(\theta,\psi,\sigma)
+]
+
+[
+\text{set }(\theta,\psi,\sigma)\mapsto(\theta+\varepsilon\tfrac{\pi}{2},\psi+\varepsilon\tfrac{\pi}{2},\sigma+\varepsilon\beta\ln\Lambda)
+]
+
+[
+\bar V(\theta+\varepsilon\tfrac{\pi}{2},\psi+\varepsilon\tfrac{\pi}{2},\sigma+\varepsilon\beta\ln\Lambda)=\mu^\varepsilon,\bar V(\theta,\psi,\sigma)
+]
+
+[
+\frac{d}{d\varepsilon}\Big|*{\varepsilon=0}:
+\quad
+\frac{\pi}{2}\partial*\theta\bar V+\frac{\pi}{2}\partial_\psi\bar V+\beta\ln\Lambda,\partial_\sigma\bar V
+=(\ln\mu),\bar V
+]
+
+[
+\boxed{\ \Big(\beta\ln\Lambda,\partial_\sigma+\frac{\pi}{2}(\partial_\theta+\partial_\psi)\Big)\bar V=(\ln\mu)\bar V\ }
+]
+
+[
+\bar V=f_{m,n},e^{\nu\sigma}
+\quad\Longrightarrow\quad
+\partial_\theta\bar V=im\bar V,\ \partial_\psi\bar V=in\bar V,\ \partial_\sigma\bar V=\nu\bar V
+]
+
+[
+\Big(\beta\ln\Lambda,\nu+\frac{\pi}{2}i(m+n)\Big)\bar V=(\ln\mu)\bar V
+]
+
+[
+\boxed{\ \ln\mu=\beta\ln\Lambda,\nu+\frac{i\pi}{2}(m+n)\ }
+]
+
+## VI
+
+[
+\Pi_\ell^{G}(u)=\frac14\int (\nabla G_\ell)(r)\cdot\delta u(\cdot,r),|\delta u(\cdot,r)|^2,dr
+]
+
+[
+\Pi_\ell^{G}(u)\xrightarrow[\ell\to0]{}\mathcal D(u)\quad\text{in }\mathcal D',\qquad
+\mathcal D(u)\ \text{mollifier-independent}
+]
+
+[
+u(\Lambda x,\tau)=\Lambda^\kappa u(x,\tau)
+]
+
+[
+\nabla u_\ell(\Lambda x)=\Lambda^{\kappa-1}\nabla u_{\ell/\Lambda}(x),\qquad
+\tau_\ell(u,u)(\Lambda x)=\Lambda^{2\kappa}\tau_{\ell/\Lambda}(u,u)(x)
+]
+
+[
+\Pi_\ell^{G}(\Lambda x)
+=-\nabla u_\ell(\Lambda x):\tau_\ell(u,u)(\Lambda x)
+=-\Lambda^{\kappa-1}\nabla u_{\ell/\Lambda}(x):\Lambda^{2\kappa}\tau_{\ell/\Lambda}(u,u)(x)
+=\Lambda^{3\kappa-1}\Pi_{\ell/\Lambda}^{G}(x)
+]
+
+[
+\ell=\Lambda^n\ell_0\ \Longrightarrow\
+\Pi_{\Lambda^n\ell_0}^{G}(\Lambda^n x)=\Lambda^{n(3\kappa-1)}\Pi_{\ell_0}^{G}(x)
+]
+
+[
+n\to-\infty\ (\ell\downarrow0)\ \Longrightarrow\
+\mathcal D(u)(\Lambda x)=\Lambda^{3\kappa-1}\mathcal D(u)(x)
+]
+
+[
+3\kappa-1=0\ \Longrightarrow\ \kappa=\frac13\ \Longrightarrow\ \mathcal D(u)(\Lambda x)=\mathcal D(u)(x)
+]
+
+[
+\kappa=\frac13\ \Longrightarrow\ \mathcal D(u)\in \mathcal U_0
+\ \Longrightarrow\
+\exists,\widehat{\mathcal D}\in\mathcal D'(\mathbb T^2\times(0,T)):\
+\mathcal D(u)=C_\Lambda^*\widehat{\mathcal D}
+]
+
+[
+\boxed{\ \kappa=\frac13\ \Longrightarrow\ \text{bulk defect }\mathcal D(u)\ \text{is forced into a boundary distribution }\widehat{\mathcal D}(\theta,\psi,\tau)\ }
+]
+
+[
+u(x,\tau)=r^{1/3}\bar u(\theta,\psi,\tau)\ \Longrightarrow\ |u|^2=r^{2/3}|\bar u|^2
+]
+
+[
+\partial_\tau\Big(\frac12|u|^2\Big)=r^{2/3}\partial_\tau\Big(\frac12|\bar u|^2\Big)
+]
+
+[
+\nabla\cdot\Big(u\Big(\frac12|u|^2+p\Big)\Big)
+=\frac1r,\mathcal N_{\theta,s}\Big[r^{1/3}\bar u\cdot (r^{2/3}\tfrac12|\bar u|^2+\bar p)\Big]
+=\mathcal N_{\theta,s}\Big[\bar u\Big(\tfrac12|\bar u|^2+\bar p,r^{-2/3}\Big)\Big]
+]
+
+[
+\partial_\tau\Big(\frac12|u|^2\Big)+\nabla\cdot\Big(u\Big(\frac12|u|^2+p\Big)\Big)+\mathcal D(u)=0
+]
+
+[
+\Longrightarrow\
+r^{2/3}\partial_\tau\Big(\frac12|\bar u|^2\Big)+\mathcal N_{\theta,s}\Big[\bar u\Big(\tfrac12|\bar u|^2+\bar p,r^{-2/3}\Big)\Big]
++\widehat{\mathcal D}(\theta,\psi,\tau)=0
+]
+
+[
+\boxed{\ \text{(closed defect forcing on }\mathbb T^2):\qquad
+\widehat{\mathcal D}(\theta,\psi,\tau)
+======================================
+
+-,r^{2/3}\partial_\tau\Big(\frac12|\bar u|^2\Big)
+-\mathcal N_{\theta,s}\Big[\bar u\Big(\tfrac12|\bar u|^2+\bar p,r^{-2/3}\Big)\Big]\Big|_{(\theta,\psi)}\ }
+]
+
+## XXI
+
+[
+A\ \text{ring},\quad \sigma:A\to A\ \text{endomorphism},\quad M\ \text{(left) }A\text{-module}
+]
+
+[
+\delta:A\to M
+]
+
+[
+\boxed{\ \delta(ab)=\delta(a),b+\sigma(a),\delta(b)\ }\qquad(\forall a,b\in A)
+]
+([MDPI][1])
+
+[
+\delta(1)=0
+]
+
+[
+\delta(a(bc))=\delta((ab)c)
+]
+
+[
+\delta(a(bc))=\delta(a),bc+\sigma(a)\delta(bc)
+]
+
+[
+=\delta(a),bc+\sigma(a)\big(\delta(b)c+\sigma(b)\delta(c)\big)
+]
+
+[
+=\delta(a),bc+\sigma(a)\delta(b)c+\sigma(a)\sigma(b)\delta(c)
+]
+
+[
+\delta((ab)c)=\delta(ab)c+\sigma(ab)\delta(c)
+]
+
+[
+=\big(\delta(a)b+\sigma(a)\delta(b)\big)c+\sigma(a)\sigma(b)\delta(c)
+]
+
+[
+=\delta(a),bc+\sigma(a)\delta(b)c+\sigma(a)\sigma(b)\delta(c)
+]
+
+[
+\boxed{\ \Rightarrow\ \delta\ \text{is associative-compatible iff }\sigma\ \text{is multiplicative (endomorphism)}\ }
+]
+
+[
+\boxed{\ (\sigma=\mathrm{id})\Rightarrow\delta(ab)=\delta(a)b+a\delta(b)\quad\text{(ordinary Leibniz)}\ }
+]
+
+[
+\boxed{\ (\sigma\neq\mathrm{id})\Rightarrow\text{twisted Leibniz (difference / }q\text{- / scale- calculus)}\ }
+]
+
+---
+
+## XXII
+
+[
+\mathbb T\subset\mathbb R\ \text{(time scale)},\qquad \sigma_{\mathbb T}(t):=\inf{s\in\mathbb T:s>t}\ \text{(forward jump)}
+]
+
+[
+\mu_{\mathbb T}(t):=\sigma_{\mathbb T}(t)-t\ \text{(graininess)}
+]
+
+[
+f^{\Delta}(t):=
+\begin{cases}
+\dfrac{f(\sigma_{\mathbb T}(t))-f(t)}{\mu_{\mathbb T}(t)},&\mu_{\mathbb T}(t)\neq0,[1.2em]
+\displaystyle\lim_{s\to t,\ s\in\mathbb T}\dfrac{f(t)-f(s)}{t-s},&\mu_{\mathbb T}(t)=0,
+\end{cases}
+]
+([math.unl.edu][2])
+
+[
+(fg)^{\Delta}(t)=\frac{f(\sigma)-f}{\mu},g(t)+f(\sigma),\frac{g(\sigma)-g}{\mu}
+]
+
+[
+=\Big(\frac{f(\sigma)-f}{\mu}\Big)g(t)+f(\sigma)\Big(\frac{g(\sigma)-g}{\mu}\Big)
+]
+
+[
+\boxed{\ (fg)^{\Delta}=f^{\Delta},g+f^{\sigma},g^{\Delta}\ }\qquad\big(f^{\sigma}:=f\circ\sigma_{\mathbb T}\big)
+]
+([ResearchGate][3])
+
+[
+\boxed{\ \text{Hilger }\Delta\text{-calculus }=\ \sigma\text{-derivation calculus with }\delta=f^{\Delta},\ \sigma=f^{\sigma}\ }
+]
+
+---
+
+## XXIII
+
+[
+q\neq1,\qquad \sigma_q(x):=qx,\qquad \mu_q(x):=\sigma_q(x)-x=(q-1)x
+]
+
+[
+D_q f(x):=\frac{f(qx)-f(x)}{(q-1)x}
+]
+([Wikipedia][4])
+
+[
+D_q(fg)(x)=\frac{f(qx)g(qx)-f(x)g(x)}{(q-1)x}
+]
+
+[
+=\frac{f(qx)g(qx)-f(qx)g(x)}{(q-1)x}+\frac{f(qx)g(x)-f(x)g(x)}{(q-1)x}
+]
+
+[
+=f(qx)\frac{g(qx)-g(x)}{(q-1)x}+g(x)\frac{f(qx)-f(x)}{(q-1)x}
+]
+
+[
+\boxed{\ D_q(fg)=D_q(f),g+f\circ\sigma_q\cdot D_q(g)\ }
+]
+([Wikipedia][4])
+
+[
+\boxed{\ D_q\ \text{is a }\sigma_q\text{-derivation}\ }
+]
+
+---
+
+## XXIV
+
+[
+\Lambda>1,\qquad S_\Lambda:\mathbb C^*\to\mathbb C^*,\qquad S_\Lambda(z)=\Lambda z
+]
+
+[
+z=re^{i\theta},\quad r=|z|,\quad s:=\ln r,\quad \psi:=\frac{2\pi}{\ln\Lambda}s\ \ (\mathrm{mod}\ 2\pi)
+]
+
+[
+\psi(S_\Lambda z)=\frac{2\pi}{\ln\Lambda}\ln|\Lambda z|
+=\frac{2\pi}{\ln\Lambda}(\ln\Lambda+\ln|z|)
+=\psi(z)+2\pi\ (\mathrm{mod}\ 2\pi)
+]
+
+[
+\theta(S_\Lambda z)=\theta(z)
+]
+
+[
+C_\Lambda(z)=(e^{i\theta(z)},e^{i\psi(z)})\in\mathbb T^2
+]
+
+[
+C_\Lambda\circ S_\Lambda=C_\Lambda
+]
+
+[
+\boxed{\ f\circ S_\Lambda=f\ \Longleftrightarrow\ \exists\ \widehat f:\mathbb T^2\to\cdot\ \ \text{s.t. }f=\widehat f\circ C_\Lambda\ }
+]
+
+[
+\Delta_\Lambda f(z):=\frac{f(\Lambda z)-f(z)}{\Lambda z-z}
+]
+
+[
+=\frac{(\widehat f\circ C_\Lambda)(\Lambda z)-(\widehat f\circ C_\Lambda)(z)}{(\Lambda-1)z}
+=\frac{\widehat f(C_\Lambda(z))-\widehat f(C_\Lambda(z))}{(\Lambda-1)z}=0
+]
+
+[
+\boxed{\ \text{scale-invariants are exactly boundary fields on }(\theta,\psi)\text{, and }\Delta_\Lambda\ \text{kills them}\ }
+]
+
+[
+\text{nontrivial scale-covariance:}\quad f(\Lambda z)=\Lambda^\kappa f(z)
+]
+
+[
+f(re^{i\theta})=: \widetilde f(\theta,s)
+]
+
+[
+\widetilde f(\theta,s+\ln\Lambda)=\Lambda^\kappa\widetilde f(\theta,s)=e^{\kappa\ln\Lambda}\widetilde f(\theta,s)
+]
+
+[
+g(\theta,s):=e^{-\kappa s}\widetilde f(\theta,s)
+\Rightarrow g(\theta,s+\ln\Lambda)=g(\theta,s)
+]
+
+[
+g(\theta,s)=:\widehat g(\theta,\psi)
+]
+
+[
+\boxed{\ f(z)=|z|^\kappa,\widehat g(\theta,\psi)\ ,\quad(\theta,\psi)=C_\Lambda(z)\ }
+]
+
+---
+
+## XXV
+
+[
+\partial_\tau\eta(U)+\nabla\cdot q(U)=\mu\qquad\text{in }\mathcal D'(\mathbb C^*\times(0,T))
+]
+
+[
+S_\Lambda^*\mu=\Lambda^\sigma\mu
+]
+
+[
+\mu=m(z),dz,\quad dz\equiv dx_1dx_2
+]
+
+[
+(S_\Lambda^*\mu)(\varphi)=\mu(\varphi\circ S_\Lambda)=\int_{\mathbb C^*}m(z)\varphi(\Lambda z),dz
+]
+
+[
+w=\Lambda z,\quad z=\Lambda^{-1}w,\quad dz=\Lambda^{-2}dw
+]
+
+[
+(S_\Lambda^*\mu)(\varphi)=\int_{\mathbb C^*}m(\Lambda^{-1}w)\varphi(w)\Lambda^{-2},dw
+]
+
+[
+S_\Lambda^*\mu=\Lambda^\sigma\mu\ \Longleftrightarrow\
+\Lambda^{-2}m(\Lambda^{-1}w)=\Lambda^\sigma m(w)
+]
+
+[
+m(\Lambda z)=\Lambda^{-(\sigma+2)}m(z)
+]
+
+[
+m(re^{i\theta})=:\widetilde m(\theta,s)
+]
+
+[
+\widetilde m(\theta,s+\ln\Lambda)=e^{-(\sigma+2)\ln\Lambda}\widetilde m(\theta,s)
+]
+
+[
+\bar m(\theta,s):=e^{(\sigma+2)s}\widetilde m(\theta,s)
+\Rightarrow \bar m(\theta,s+\ln\Lambda)=\bar m(\theta,s)
+]
+
+[
+\bar m(\theta,s)=:\widehat m(\theta,\psi)
+]
+
+[
+\boxed{\ \mu=|z|^{-(\sigma+2)}\widehat m(\theta,\psi),dz\ }
+]
+([campus.mst.edu][5])
+
+[
+\widehat m\in\mathcal D'(\mathbb T^2)
+\quad\Rightarrow\quad
+\widehat m(\theta,\psi)=\sum_{k,\ell\in\mathbb Z}\widehat m_{k,\ell},e^{ik\theta+i\ell\psi}
+]
+
+[
+\boxed{\ \text{critical-scale, mollifier-independent defects }=\ \text{Fourier data }(\widehat m_{k,\ell})\text{ on }\mathbb T^2\ }
+]
+
+---
+
+## XXVI
+
+[
+T(\theta,\psi)=(\theta+\tfrac{\pi}{2},\psi+\tfrac{\pi}{2}),\qquad T^4=\mathrm{id}
+]
+
+[
+(\text{flow})\ \partial_{\tau'}\bar V=\overline{\mathcal L}[\bar V]
+]
+
+[
+(\text{step})\ \bar V\mapsto \bar V\circ T^{-1}
+]
+
+[
+\boxed{\ \partial_{\tau'}\bar V-\overline{\mathcal L}[\bar V]+\gamma,(T^*-\mathrm{id})\bar V=\widehat\mu(\theta,\psi,\tau')\ }
+]
+
+[
+(T^*\bar V)(\theta,\psi)=\bar V(T(\theta,\psi))
+]
+
+[
+(T^*-\mathrm{id})\bar V=\bar V(\theta+\tfrac{\pi}{2},\psi+\tfrac{\pi}{2})-\bar V(\theta,\psi)
+]
+
+[
+\boxed{\ \text{single operator }(\partial_{\tau'}+\gamma(T^*-\mathrm{id}))\ \text{simultaneously encodes continuous PDE + discrete update}\ }
+]
+
+---
+
+## XXVII
+
+[
+R\to A\ \text{commutative rings}
+]
+
+[
+m:A\otimes_R A\to A,\qquad m(a\otimes b)=ab
+]
+
+[
+I:=\ker(m)
+]
+
+[
+\Omega^1_{A/R}:=I/I^2
+]
+
+[
+d:A\to\Omega^1_{A/R},\qquad d(a):=(1\otimes a-a\otimes 1)\ \mathrm{mod}\ I^2
+]
+
+[
+d(ab)=(1\otimes ab-ab\otimes 1)\bmod I^2
+]
+
+[
+=(1\otimes a)(1\otimes b)-(a\otimes1)(b\otimes1)\bmod I^2
+]
+
+[
+=\big((1\otimes a-a\otimes1)(1\otimes b)\big)+\big((a\otimes1)(1\otimes b-b\otimes1)\big)\bmod I^2
+]
+
+[
+=\big(da\big)b+a\big(db\big)
+]
+
+[
+\boxed{\ d(ab)=a,db+b,da\ }
+]
+([stacks.math.columbia.edu][6])
+
+[
+\boxed{\text{“calculus over every commutative number system”}=\text{universal derivation }d\text{ over arbitrary }R\to A}
+]
+
+---
+
+## XXVIII
+
+[
+p\ \text{prime},\quad A\ \text{ring},\quad \phi:A\to A\ \text{ring endomorphism (Frobenius lift)}
+]
+
+[
+\delta:A\to A,\qquad \boxed{\ \phi(a)=a^p+p,\delta(a)\ }
+]
+([NCAT Lab][7])
+
+[
+\phi(ab)=\phi(a)\phi(b)
+]
+
+[
+(ab)^p+p,\delta(ab)=(a^p+p\delta(a))(b^p+p\delta(b))
+]
+
+[
+=a^pb^p+p(a^p\delta(b)+b^p\delta(a))+p^2\delta(a)\delta(b)
+]
+
+[
+(ab)^p=a^pb^p
+]
+
+[
+p,\delta(ab)=p(a^p\delta(b)+b^p\delta(a))+p^2\delta(a)\delta(b)
+]
+
+[
+\boxed{\ \delta(ab)=a^p\delta(b)+b^p\delta(a)+p,\delta(a)\delta(b)\ }
+]
+([NCAT Lab][7])
+
+[
+\phi(a+b)=\phi(a)+\phi(b)
+]
+
+[
+(a+b)^p+p\delta(a+b)=a^p+b^p+p\delta(a)+p\delta(b)
+]
+
+[
+p\delta(a+b)=p\delta(a)+p\delta(b)+a^p+b^p-(a+b)^p
+]
+
+[
+\boxed{\ \delta(a+b)=\delta(a)+\delta(b)+\frac{a^p+b^p-(a+b)^p}{p}\ }
+]
+([NCAT Lab][7])
+
+[
+\boxed{\text{arithmetic “derivative”}=\text{same template: endomorphism }(\text{Frobenius-lift})+\text{defect term}}
+]
+
+---
+
+## XXIX
+
+[
+G=(\mathbb Z_2)^n,\quad K\ \text{field/ring},\quad \alpha:G\times G\to K^\times
+]
+
+[
+K^\alpha[G]=\Big{\sum_{g\in G}x_g,g\Big},\qquad
+g\star h:=\alpha(g,h),(gh)
+]
+
+[
+\boxed{\ \text{(Cayley–Dickson levels) }=\ \text{twisted group algebra data }(G,\alpha)\ }
+]
+([Math UCR][8])
+
+[
+\delta(g\star h)=\delta(g)\star h+\sigma(g)\star\delta(h)
+]
+
+[
+\boxed{\ \text{same }(\sigma\text{-Leibniz})\ \text{extends to “every number system” realized as a twist of a group algebra}\ }
+]
+([Math UCR][8])
+
+---
+
+## XXX
+
+[
+\boxed{
+\textbf{One equation-schema:}\quad
+\delta(ab)=\delta(a)b+\sigma(a)\delta(b)
+\quad\text{(twisted Leibniz)}
+}
+]
+([ResearchGate][3])
+
+[
+\boxed{
+\textbf{One arithmetic specialization:}\quad
+\delta(ab)=a^p\delta(b)+b^p\delta(a)+p\delta(a)\delta(b)
+\quad\text{(Frobenius-lift defect)}
+}
+]
+([NCAT Lab][7])
+
+[
+\boxed{
+\textbf{One geometric specialization (your }(\theta,\psi)\textbf{):}\quad
+S_\Lambda^*\mu=\Lambda^\sigma\mu\ \Rightarrow\ \mu=|z|^{-(\sigma+2)}\widehat\mu(\theta,\psi),dz
+}
+]
+([campus.mst.edu][5])
+
+[
+\boxed{
+\textbf{One dynamics unification:}\quad
+\partial_{\tau'}\bar V-\overline{\mathcal L}[\bar V]+\gamma(T^*-\mathrm{id})\bar V=\widehat\mu(\theta,\psi,\tau')
+}
+]
+
+([Past chat][1])([Past chat][1])([Past chat][2])([Past chat][3])
+
+I’m going to (i) lock the ambient object as the **quotient Hopf 1–manifold** ( \mathbb C^*/\langle z\sim \Lambda z\rangle \cong S^1\times S^1 ), (ii) write the **hybrid calculus** that simultaneously contains smooth PDE evolution + discrete update steps + arithmetic/number-system lifts as *one* differential, and (iii) force the **critical defect** to be the unique cohomological obstruction (hence mollifier-independent) in ((\theta,\psi))–coordinates.
+
+## I
+
+[
+x=(x_1,x_2)\in\mathbb R^2\setminus{0},\quad z=x_1+i x_2\in\mathbb C^*,\quad
+z=re^{i\theta},\ r=|z|>0,\ \theta\in\mathbb R/2\pi\mathbb Z
+]
+
+[
+s=\ln r\in\mathbb R,\qquad \psi=\frac{2\pi}{\ln\Lambda},s\in\mathbb R/2\pi\mathbb Z
+]
+
+[
+C_\Lambda:\mathbb C^*\to\mathbb T^2,\qquad
+C_\Lambda(z)=\big(e^{i\theta(z)},e^{i\psi(z)}\big)
+]
+
+[
+\alpha_k(z)=\Lambda^k z,\quad k\in\mathbb Z
+]
+
+[
+\theta(\Lambda^k z)=\arg(\Lambda^k re^{i\theta})=\theta
+]
+
+[
+\psi(\Lambda^k z)=\frac{2\pi}{\ln\Lambda}\ln|\Lambda^k z|
+=\frac{2\pi}{\ln\Lambda}\big(\ln r+k\ln\Lambda\big)=\psi+2\pi k
+]
+
+[
+C_\Lambda(\Lambda^k z)=C_\Lambda(z)
+]
+
+[
+\Rightarrow\quad C_\Lambda \text{ factors through }\ \mathbb C^*/\langle z\sim \Lambda z\rangle
+]
+
+[
+\mathbb C^*\cong \mathbb R\times S^1,\qquad z\mapsto (s,\theta)
+]
+
+[
+(s,\theta)\sim(s+\ln\Lambda,\theta)
+]
+
+[
+\Rightarrow\quad (\mathbb R/\ln\Lambda,\mathbb Z)\times S^1 \cong S^1\times S^1=\mathbb T^2
+]
+
+[
+\boxed{\ \mathbb C^*/\langle z\sim \Lambda z\rangle\ \cong\ S^1\times S^1\ ,\quad [z]\mapsto(\theta,\psi)\ }
+]
+([arXiv][4])
+
+[
+d\theta=d(\arg z),\qquad ds=d(\ln r)=\frac{dr}{r}
+]
+
+[
+d\psi=\frac{2\pi}{\ln\Lambda},ds=\frac{2\pi}{\ln\Lambda},\frac{dr}{r}
+]
+
+[
+d^2\theta=0,\qquad d^2\psi=0
+]
+
+[
+\boxed{\ C_\Lambda^*(d\theta)=d\theta,\qquad C_\Lambda^*(d\psi)=\frac{2\pi}{\ln\Lambda}\frac{dr}{r}\ }
+]
+
+## II
+
+[
+F(z)=i\phi z,\qquad F^4(z)=i^4\phi^4 z=\Lambda z
+]
+
+[
+\theta(F(z))=\arg(i\phi z)=\arg(i)+\arg(z)=\frac{\pi}{2}+\theta
+]
+
+[
+s(F(z))=\ln|i\phi z|=\ln(\phi r)=\ln\phi+s
+]
+
+[
+\psi(F(z))=\frac{2\pi}{\ln\Lambda}(s+\ln\phi)
+=\psi+\frac{2\pi\ln\phi}{\ln\Lambda}
+=\psi+\frac{2\pi\ln\phi}{4\ln\phi}
+=\psi+\frac{\pi}{2}
+]
+
+[
+T:\mathbb T^2\to\mathbb T^2,\qquad T(\theta,\psi)=\Big(\theta+\frac{\pi}{2},\psi+\frac{\pi}{2}\Big)
+]
+
+[
+C_\Lambda\circ F = T\circ C_\Lambda,\qquad T^4=\mathrm{id}
+]
+
+[
+\boxed{\ (\theta,\psi)\ \text{are state variables for the }(\partial_\tau\text{-flow})\ +\ (T\text{-step})\ }
+]
+
+## III
+
+[
+\mathcal U_\kappa={U:\mathbb C^*\to\mathbb C^m:\ U(\Lambda z)=\Lambda^\kappa U(z)}
+]
+
+[
+U(z)=U(re^{i\theta})=\widetilde U(\theta,s)
+]
+
+[
+\widetilde U(\theta,s+\ln\Lambda)=e^{\kappa\ln\Lambda}\widetilde U(\theta,s)
+]
+
+[
+V(\theta,s)=e^{-\kappa s}\widetilde U(\theta,s)
+]
+
+[
+V(\theta,s+\ln\Lambda)=e^{-\kappa(s+\ln\Lambda)}\widetilde U(\theta,s+\ln\Lambda)
+=e^{-\kappa s}e^{-\kappa\ln\Lambda}e^{\kappa\ln\Lambda}\widetilde U(\theta,s)=V(\theta,s)
+]
+
+[
+V(\theta,s)=\bar V(\theta,\psi)
+]
+
+[
+\widetilde U(\theta,s)=e^{\kappa s}\bar V(\theta,\psi)
+]
+
+[
+U(z)=r^\kappa \bar V(\theta,\psi)
+]
+
+[
+\boxed{\ \mathcal U_\kappa\ \cong\ C^0(\mathbb T^2;\mathbb C^m),\qquad U(z)=|z|^\kappa\bar V(C_\Lambda(z))\ }
+]
+
+## IV
+
+[
+\partial_\tau U=\mathcal L[U]
+]
+
+[
+(S_\lambda U)(z,\tau)=\lambda^\kappa U(\lambda z,\lambda^\beta\tau)
+]
+
+[
+\partial_\tau(S_\lambda U)(z,\tau)
+=\lambda^\kappa\lambda^\beta(\partial_\tau U)(\lambda z,\lambda^\beta\tau)
+=\lambda^{\kappa+\beta}(\partial_\tau U)(\lambda z,\lambda^\beta\tau)
+]
+
+[
+\mathcal L[S_\lambda U](z,\tau)=\lambda^{\kappa+\beta}(\mathcal L[U])(\lambda z,\lambda^\beta\tau)
+]
+
+[
+\partial_\tau U=\mathcal L[U]\ \Longrightarrow\ \partial_\tau(S_\lambda U)=\mathcal L[S_\lambda U]
+]
+
+[
+U(z,\tau)=r^\kappa \bar V(\theta,\psi,\tau)
+]
+
+[
+\partial_\tau U=r^\kappa\partial_\tau \bar V
+]
+
+[
+\mathcal L[U]=r^\kappa,\overline{\mathcal L}[\bar V]
+]
+
+[
+r^\kappa\partial_\tau \bar V=r^\kappa\overline{\mathcal L}[\bar V]
+]
+
+[
+\boxed{\ \partial_\tau \bar V(\theta,\psi,\tau)=\overline{\mathcal L}[\bar V](\theta,\psi,\tau)\ }
+]
+
+## V
+
+[
+\partial_\tau \eta(U)+\nabla\cdot q(U)=0
+]
+
+[
+\forall \varphi\in C_c^\infty:\quad
+\int!!\int \eta(U),\partial_\tau\varphi+q(U)\cdot\nabla\varphi\ dx,d\tau=0
+]
+
+[
+U\ \text{rough}\ \Longrightarrow\
+\exists \mu\in\mathcal D' :\quad
+\int!!\int \eta(U),\partial_\tau\varphi+q(U)\cdot\nabla\varphi\ dx,d\tau
+========================================================================
+
+\langle \mu,\varphi\rangle
+]
+
+[
+G\in C_c^\infty(\mathbb R^d),\ \int G=1,\quad G_\ell(y)=\ell^{-d}G(y/\ell)
+]
+
+[
+U_\ell=G_\ell*U
+]
+
+[
+\partial_\tau \eta(U_\ell)+\nabla\cdot q(U_\ell)=\nabla\cdot\mathcal C_\ell(U)
+]
+
+[
+\mu=\lim_{\ell\downarrow0}\nabla\cdot\mathcal C_\ell(U)\quad\text{in }\mathcal D'
+]
+
+[
+\boxed{\ \mu=\text{(local commutator limit)}\ }
+]
+([Leroy][5])
+
+## VI
+
+[
+u:\mathbb R^d\times(0,T)\to\mathbb R^d,\qquad \nabla\cdot u=0
+]
+
+[
+\partial_\tau u+\nabla\cdot(u\otimes u)+\nabla p=0\quad\text{in }\mathcal D'
+]
+
+[
+\eta(u)=\frac12|u|^2,\qquad q(u)=u\Big(\frac12|u|^2+p\Big)
+]
+
+[
+\partial_\tau\Big(\frac12|u|^2\Big)+\nabla\cdot\Big(u\Big(\frac12|u|^2+p\Big)\Big)+\mathcal D(u)=0
+]
+
+[
+\Pi_\ell^G(u)=-\nabla u_\ell:\tau_\ell(u,u)
+]
+
+[
+\mathcal D(u)=\lim_{\ell\downarrow0}\Pi_\ell^G(u)\quad\text{in }\mathcal D'
+]
+
+[
+\boxed{\ \Pi_\ell^G(u)\to\mathcal D(u)\ \text{and }\mathcal D(u)\ \text{independent of }G\ }
+]
+([Leroy][5])
+
+[
+u(\Lambda x,\tau)=\Lambda^\kappa u(x,\tau)
+]
+
+[
+\nabla u_\ell(\Lambda x)=\Lambda^{\kappa-1}\nabla u_{\ell/\Lambda}(x),\qquad
+\tau_\ell(u,u)(\Lambda x)=\Lambda^{2\kappa}\tau_{\ell/\Lambda}(u,u)(x)
+]
+
+[
+\Pi_\ell(\Lambda x)=\Lambda^{\kappa-1}\Lambda^{2\kappa}\Pi_{\ell/\Lambda}(x)=\Lambda^{3\kappa-1}\Pi_{\ell/\Lambda}(x)
+]
+
+[
+\ell=\Lambda^n\ell_0\ \Longrightarrow\ \Pi_{\Lambda^n\ell_0}(\Lambda^n x)=\Lambda^{n(3\kappa-1)}\Pi_{\ell_0}(x)
+]
+
+[
+\ell\downarrow0\ (n\to-\infty)\ \Longrightarrow\ \mathcal D(u)(\Lambda x)=\Lambda^{3\kappa-1}\mathcal D(u)(x)
+]
+
+[
+3\kappa-1=0\ \Longrightarrow\ \kappa=\frac13\ \Longrightarrow\ \mathcal D(u)(\Lambda x)=\mathcal D(u)(x)
+]
+
+[
+\boxed{\ \kappa=\frac13\ \Longrightarrow\ \mathcal D(u)\ \text{is scale-invariant}\ }
+]
+([Leroy][5])
+
+## VII
+
+[
+\mathcal D(u)(re^{i\theta},\tau)=:\widetilde D(\theta,s,\tau)
+]
+
+[
+\mathcal D(u)(\Lambda re^{i\theta},\tau)=\mathcal D(u)(re^{i\theta},\tau)
+\ \Longleftrightarrow
+\widetilde D(\theta,s+\ln\Lambda,\tau)=\widetilde D(\theta,s,\tau)
+]
+
+[
+\widetilde D(\theta,s,\tau)=:\widehat D(\theta,\psi,\tau)
+]
+
+[
+\boxed{\ \mathcal D(u)(z,\tau)=C_\Lambda^*\widehat D(\theta,\psi,\tau),\qquad \widehat D\in\mathcal D'(\mathbb T^2\times(0,T))\ }
+]
+
+## VIII
+
+[
+F^4=\alpha_1\ \text{ on }\mathbb C^*\qquad\Longrightarrow\qquad T^4=\mathrm{id}\ \text{ on }\mathbb T^2
+]
+
+[
+\widehat D\circ T=\widehat D
+\ \Longleftrightarrow
+\widehat D\Big(\theta+\frac\pi2,\psi+\frac\pi2,\tau\Big)=\widehat D(\theta,\psi,\tau)
+]
+
+[
+\chi=\theta-\psi\in\mathbb R/2\pi\mathbb Z,\qquad
+\zeta=\theta+\psi\in\mathbb R/2\pi\mathbb Z
+]
+
+[
+T:(\chi,\zeta)\mapsto(\chi,\zeta+\pi)
+]
+
+[
+\widehat D\circ T=\widehat D\ \Longleftrightarrow\ \widehat D(\chi,\zeta+\pi,\tau)=\widehat D(\chi,\zeta,\tau)
+]
+
+[
+\boxed{\ \widehat D=\widehat D(\chi,\zeta,\tau)\ \text{with }\pi\text{-periodicity in }\zeta\ \Longleftrightarrow\ \text{discrete-step closure}\ }
+]
+
+## IX
+
+[
+\Pi_\ell^G(u)(x,\tau)=\frac14\int (\nabla G_\ell)(r)\cdot\delta u(x,r,\tau),|\delta u(x,r,\tau)|^2,dr
+]
+
+[
+\delta u(x,r,\tau)=u(x+r,\tau)-u(x,\tau)
+]
+
+[
+\Pi_\ell^G(u)(x,\tau)=\frac{1}{4\ell}\int (\nabla G)(\rho)\cdot\delta u(x,\ell\rho,\tau),|\delta u(x,\ell\rho,\tau)|^2,d\rho
+]
+
+[
+\delta u(x,\ell\rho,\tau)=\ell^{1/3}a(x,\rho,\tau)+o(\ell^{1/3})
+]
+
+[
+\delta u,|\delta u|^2=\ell^{1/3}\ell^{2/3},a|a|^2+o(\ell)=\ell,a|a|^2+o(\ell)
+]
+
+[
+\Pi_\ell^G(u)(x,\tau)=\frac14\int (\nabla G)(\rho)\cdot a(x,\rho,\tau)|a(x,\rho,\tau)|^2,d\rho+o(1)
+]
+
+[
+\mathcal D(u)(x,\tau)=\frac14\int (\nabla G)(\rho)\cdot J(x,\rho,\tau),d\rho,\qquad J=|a|^2a
+]
+
+[
+G,H\ \text{admissible},\quad K=G-H,\quad \int K=0,\quad K(\rho)=K(-\rho)
+]
+
+[
+0=\mathcal D-\mathcal D=\frac14\int (\nabla K)(\rho)\cdot J,d\rho
+]
+
+[
+\int (\nabla K)\cdot J=-\int K,(\nabla_\rho\cdot J)
+]
+
+[
+\forall K\in C_c^\infty,\ \int K=0\ \Longrightarrow\ \nabla_\rho\cdot J=c(x,\tau)\ \text{(constant in }\rho\text{)}
+]
+
+[
+\mathcal D(u)=\frac14\int (\nabla G)\cdot J
+=-\frac14\int G,(\nabla_\rho\cdot J)
+=-\frac14,c(x,\tau)\int G
+=-\frac14,c(x,\tau)
+]
+
+[
+\boxed{\ \nabla_\rho\cdot\big(|a|^2a\big)=-4,\mathcal D(u)\ }
+]
+
+[
+\boxed{\ \mathcal D(u)\ \text{mollifier-independent}\ \Longleftrightarrow\ \text{the only surviving scalar is the }\rho\text{-divergence constant}\ }
+]
+([Leroy][5])
+
+## X
+
+[
+\text{(smooth)}\quad d\mathcal J=0\quad\Longrightarrow\quad \int_{\partial\Omega}\mathcal J=\int_\Omega d\mathcal J=0
+]
+
+[
+\text{(rough)}\quad d\mathcal J=\mu\quad\Longrightarrow\quad \int_{\partial\Omega}\mathcal J=\int_\Omega \mu
+]
+([Wikipedia][6])
+
+[
+d^2=0\ \Longrightarrow\ d\mu=d(d\mathcal J)=0
+]
+
+[
+\boxed{\ \mu\ \text{is a closed current (obstruction)}\ }
+]
+([Department of Mathematics][7])
+
+[
+S_\Lambda(x)=\Lambda x,\qquad S_\Lambda^*\mu=\mu
+]
+
+[
+\mu(re^{i\theta},\tau)=:\widetilde\mu(\theta,s,\tau),\qquad
+\widetilde\mu(\theta,s+\ln\Lambda,\tau)=\widetilde\mu(\theta,s,\tau)
+]
+
+[
+\widetilde\mu(\theta,s,\tau)=:\widehat\mu(\theta,\psi,\tau)
+]
+
+[
+\boxed{\ \mu=C_\Lambda^*\widehat\mu(\theta,\psi,\tau)\ ,\quad \widehat\mu\in\mathcal D'(\mathbb T^2\times(0,T))\ }
+]
+
+## XI
+
+[
+\widehat\mu(\theta,\psi,\tau)=\sum_{m,n\in\mathbb Z}\widehat\mu_{m,n}(\tau),e^{im\theta}e^{in\psi}
+]
+
+[
+T:(\theta,\psi)\mapsto(\theta+\tfrac\pi2,\psi+\tfrac\pi2)
+]
+
+[
+\widehat\mu\circ T=\widehat\mu
+\ \Longleftrightarrow
+\forall m,n:\ e^{i(m+n)\pi/2}\widehat\mu_{m,n}=\widehat\mu_{m,n}
+]
+
+[
+\boxed{\ \widehat\mu_{m,n}\neq0\ \Longrightarrow\ m+n\equiv0\ (\mathrm{mod}\ 4)\ }
+]
+
+[
+\boxed{\ \text{discrete-step selection rule on defect Fourier modes}\ }
+]
+
+## XII
+
+[
+A\ \text{unital ring/algebra (any “number system”)}\quad\Longrightarrow\quad
+\Omega^1_A\ \text{K"ahler differentials},\ d:A\to\Omega^1_A
+]
+
+[
+d(ab)=a,db+b,da,\qquad d(a+b)=da+db
+]
+
+[
+\boxed{\ \forall\ (M,\delta)\ \text{derivation }A\to M\ \exists!\ \Omega^1_A\to M:\ \delta=\Phi\circ d\ }
+]
+([The Stacks Project][8])
+
+[
+\sigma:A\to A\ \text{endomorphism},\qquad \delta_\sigma:A\to M
+]
+
+[
+\boxed{\ \delta_\sigma(ab)=\sigma(a)\delta_\sigma(b)+\delta_\sigma(a)b\ }
+]
+([math.unl.edu][9])
+
+[
+\text{time-scales: }\sigma(t)=\text{forward jump},\quad \Delta=\text{delta derivative}
+]
+
+[
+\boxed{\ (fg)^\Delta(t)=f^\Delta(t),g(t)+f^\sigma(t),g^\Delta(t)\ }
+]
+([Karlin MFF][10])
+
+[
+p\ \text{prime},\qquad \delta:A\to A
+]
+
+[
+\boxed{\ \delta(ab)=a^p\delta(b)+b^p\delta(a)+p,\delta(a)\delta(b)\ }
+]
+
+[
+\varphi(a)=a^p+p,\delta(a)\quad\Rightarrow\quad \varphi(ab)=\varphi(a)\varphi(b)
+]
+([ResearchGate][11])
+
+## XIII
+
+[
+M=\mathbb T^2,\qquad G=\langle T\rangle\cong C_4
+]
+
+[
+C^{p,q}=\Omega^p(M)\otimes C^q(G)
+]
+
+[
+(d_{\mathrm{dR}}\omega)=d\omega,\qquad (\delta_G f)(g_1,\dots,g_{q+1})
+======================================================================
+
+g_1\cdot f(g_2,\dots,g_{q+1})
++\sum_{i=1}^{q}(-1)^i f(\dots,g_i g_{i+1},\dots)
++(-1)^{q+1}f(g_1,\dots,g_q)
+]
+
+[
+D=d_{\mathrm{dR}}+(-1)^p\delta_G
+]
+
+[
+D^2=d_{\mathrm{dR}}^2+(-1)^p(d_{\mathrm{dR}}\delta_G+\delta_G d_{\mathrm{dR}})+(-1)^{2p}\delta_G^2
+]
+
+[
+d_{\mathrm{dR}}^2=0,\qquad \delta_G^2=0,\qquad d_{\mathrm{dR}}\delta_G=\delta_G d_{\mathrm{dR}}
+]
+
+[
+\boxed{\ D^2=0\ }
+]
+([Purdue Math Department][12])
+
+[
+\mathcal J\in C^{d,0}\ \ (\text{flux form}),\qquad \mathcal S\in C^{d-1,1}\ \ (\text{discrete-step correction})
+]
+
+[
+\boxed{\ D(\mathcal J+\mathcal S)=0\quad\text{(perfect bulk–boundary–step closure)}\ }
+]
+
+[
+\boxed{\ D(\mathcal J+\mathcal S)=\mathcal M,\quad D\mathcal M=0\quad\text{(rough/critical regime)}\ }
+]
+
+[
+\boxed{\ [\mathcal M]\in H^{d}\big(\mathrm{Tot}(C^{\bullet,\bullet}),D\big)\ \text{is the mollifier-independent defect class} }
+]
+
+## XIV
+
+[
+\boxed{
+\textbf{Newton/Gauss/Green/Stokes-level master equation:}\quad
+D(\mathcal J+\mathcal S)=\mathcal M,\ \ D\mathcal M=0,\ 
+\mathcal M=C_\Lambda^*\widehat{\mathcal M}}
+]
+
+[
+\widehat{\mathcal M}=\widehat{\mathcal M}(\theta,\psi,\tau)\in\mathcal D'(\mathbb T^2\times(0,T))
+]
+
+[
+\widehat{\mathcal M}\circ T=\widehat{\mathcal M}
+\ \Longleftrightarrow
+(m+n)\equiv0\ (\mathrm{mod}\ 4)\ \text{on Fourier support}
+]
+
+[
+\boxed{
+\text{continuous PDE flow }\ +\ \text{discrete update }T\ +\ \text{number-system derivations }(d,\delta_\sigma,\delta_p)
+\ \subset\
+D\text{-calculus, with defect }[\mathcal M]\text{ the unique obstruction.}
+]
+

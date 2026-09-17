@@ -1,0 +1,151 @@
+﻿
+    [EigenvalueEq|d_dr] (-Γûí+gauss2)(id) = 0.27008527┬╖id (eigenvalue)  
+(residual=2.47e-07, pts=8)
+    [EigenvalueEq|d_dr] (-Γûí+gauss2)(L1) = 0.27008527┬╖L1 (eigenvalue)  
+(residual=9.45e-08, pts=8)
+    [EigenvalueEq|d_dr] (-Γûí+gauss2)(half_x) = 0.27008527┬╖half_x 
+(eigenvalue)  (residual=1.24e-07, pts=8)
+    [EigenvalueEq|d_dr] (-Γûí+gauss2)(step) = 0.27008527┬╖step (eigenvalue)  
+(residual=1.53e-07, pts=8)
+    [EigenvalueEq|d_dr] (-Γûí+gauss2)(abs) = 0.27008527┬╖abs (eigenvalue)  
+(residual=2.47e-07, pts=8)
+    [EigenvalueEq|D_phi] (-Γûí+gauss2)(clip_para) = -0.72991458┬╖clip_para 
+(eigenvalue)  (residual=0.00e+00, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(gauss) = 0.2589398┬╖gauss 
+(eigenvalue)  (residual=9.97e-55, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(gauss_x) = 0.2589398┬╖gauss_x 
+(eigenvalue)  (residual=3.47e-18, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(gauss4) = 0.2589398┬╖gauss4 
+(eigenvalue)  (residual=3.24e-15, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(airy) = 0.2589398┬╖airy (eigenvalue) 
+ (residual=8.12e-13, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(exp_neg_a) = 0.25894078┬╖exp_neg_a 
+(eigenvalue)  (residual=3.96e-06, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(exp_inv_a) = 0.25893995┬╖exp_inv_a 
+(eigenvalue)  (residual=3.57e-07, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(sech2) = 0.2589398┬╖sech2 
+(eigenvalue)  (residual=4.83e-10, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+id)(gauss2) = 1.6068884┬╖gauss2 (eigenvalue) 
+ (residual=1.86e-26, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sq)(gauss2) = 2.6068884┬╖gauss2 (eigenvalue) 
+ (residual=2.36e-25, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+cube)(gauss2) = 4.2249224┬╖gauss2 
+(eigenvalue)  (residual=2.22e-16, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+x4)(gauss2) = 6.8429563┬╖gauss2 (eigenvalue) 
+ (residual=2.22e-16, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+x5)(gauss2) = 11.079024┬╖gauss2 (eigenvalue) 
+ (residual=3.29e-22, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+inv)(gauss2) = 0.60688837┬╖gauss2 
+(eigenvalue)  (residual=1.01e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+inv_sq)(gauss2) = 0.37082039┬╖gauss2 
+(eigenvalue)  (residual=7.12e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sqrt_a)(gauss2) = 1.260874┬╖gauss2 
+(eigenvalue)  (residual=4.06e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+log)(gauss2) = 0.47006621┬╖gauss2 
+(eigenvalue)  (residual=3.80e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sin)(gauss2) = 0.98773889┬╖gauss2 
+(eigenvalue)  (residual=3.89e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+cos)(gauss2) = -0.058365714┬╖gauss2 
+(eigenvalue)  (residual=2.99e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+tan)(gauss2) = -21.164946┬╖gauss2 
+(eigenvalue)  (residual=2.08e-26, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+tanh)(gauss2) = 0.91319287┬╖gauss2 
+(eigenvalue)  (residual=2.78e-17, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+atan)(gauss2) = 1.0060763┬╖gauss2 
+(eigenvalue)  (residual=9.31e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss)(gauss2) = 0.061800517┬╖gauss2 
+(eigenvalue)  (residual=3.47e-18, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss_x)(gauss2) = 0.10688371┬╖gauss2 
+(eigenvalue)  (residual=3.47e-18, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sigmoid)(gauss2) = 0.8233782┬╖gauss2 
+(eigenvalue)  (residual=3.46e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+lgamma)(gauss2) = -0.12132534┬╖gauss2 
+(eigenvalue)  (residual=3.03e-26, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sincos)(gauss2) = -0.058313041┬╖gauss2 
+(eigenvalue)  (residual=3.47e-18, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+half_sq)(gauss2) = 1.2978714┬╖gauss2 
+(eigenvalue)  (residual=1.18e-25, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+qtr_x4)(gauss2) = 1.7023799┬╖gauss2 
+(eigenvalue)  (residual=7.42e-24, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+neg_inv_a)(gauss2) = -0.62917961┬╖gauss2 
+(eigenvalue)  (residual=1.06e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss4)(gauss2) = 0.13545832┬╖gauss2 
+(eigenvalue)  (residual=2.66e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sin_shift)(gauss2) = -0.10548046┬╖gauss2 
+(eigenvalue)  (residual=3.91e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+J0)(gauss2) = 0.43396332┬╖gauss2 
+(eigenvalue)  (residual=1.39e-17, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+digamma)(gauss2) = 0.12921871┬╖gauss2 
+(eigenvalue)  (residual=6.94e-18, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+airy)(gauss2) = 0.052277357┬╖gauss2 
+(eigenvalue)  (residual=1.03e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+ellipK)(gauss2) = -0.011145618┬╖gauss2 
+(eigenvalue)  (residual=2.14e-29, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+zeta)(gauss2) = 2.1335233┬╖gauss2 
+(eigenvalue)  (residual=1.11e-16, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+Li2)(gauss2) = -0.011145618┬╖gauss2 
+(eigenvalue)  (residual=2.14e-29, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+theta3)(gauss2) = -0.011145618┬╖gauss2 
+(eigenvalue)  (residual=2.14e-29, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+weier)(gauss2) = 0.0139323┬╖gauss2 
+(eigenvalue)  (residual=1.23e-25, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+eta)(gauss2) = 0.64351472┬╖gauss2 
+(eigenvalue)  (residual=1.16e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sec)(gauss2) = -21.18857┬╖gauss2 
+(eigenvalue)  (residual=6.23e-26, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+csc)(gauss2) = 0.98997112┬╖gauss2 
+(eigenvalue)  (residual=3.91e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+asinh)(gauss2) = 1.2473571┬╖gauss2 
+(eigenvalue)  (residual=3.64e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+atanh)(gauss2) = -0.011145618┬╖gauss2 
+(eigenvalue)  (residual=2.14e-29, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sinc)(gauss2) = 0.60619896┬╖gauss2 
+(eigenvalue)  (residual=2.78e-17, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+J1)(gauss2) = 0.560473┬╖gauss2 (eigenvalue)  
+(residual=1.47e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+H2)(gauss2) = 8.4609903┬╖gauss2 (eigenvalue) 
+ (residual=9.45e-25, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+H3)(gauss2) = 14.46099┬╖gauss2 (eigenvalue)  
+(residual=4.44e-16, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+L1)(gauss2) = -0.62917961┬╖gauss2 
+(eigenvalue)  (residual=1.86e-26, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+L2)(gauss2) = -0.9381966┬╖gauss2 
+(eigenvalue)  (residual=8.09e-26, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+P2)(gauss2) = 3.4159054┬╖gauss2 (eigenvalue) 
+ (residual=3.54e-25, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+P3)(gauss2) = 8.1519733┬╖gauss2 (eigenvalue) 
+ (residual=6.64e-24, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+exp_neg_a)(gauss2) = 0.18714253┬╖gauss2 
+(eigenvalue)  (residual=6.94e-18, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+lin_exp_a)(gauss2) = 0.07389827┬╖gauss2 
+(eigenvalue)  (residual=1.80e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+x_exp_a)(gauss2) = 0.70935776┬╖gauss2 
+(eigenvalue)  (residual=2.78e-17, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+exp_inv_a)(gauss2) = 0.1114032┬╖gauss2 
+(eigenvalue)  (residual=3.47e-18, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+half_x)(gauss2) = 0.79787138┬╖gauss2 
+(eigenvalue)  (residual=9.31e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sech2)(gauss2) = 0.28005109┬╖gauss2 
+(eigenvalue)  (residual=5.50e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(gauss2) = 0.2589398┬╖gauss2 
+(eigenvalue)  (residual=5.08e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+clip_para)(gauss2) = 0.33434588┬╖gauss2 
+(eigenvalue)  (residual=6.56e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+thresh_inv)(gauss2) = -0.011145618┬╖gauss2 
+(eigenvalue)  (residual=1.63e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+step)(gauss2) = 0.98885438┬╖gauss2 
+(eigenvalue)  (residual=2.14e-29, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+abs)(gauss2) = 1.6068884┬╖gauss2 
+(eigenvalue)  (residual=1.86e-26, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+pow_half)(gauss2) = 1.260874┬╖gauss2 
+(eigenvalue)  (residual=4.06e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+gauss2)(clip_para) = 0.2589398┬╖clip_para 
+(eigenvalue)  (residual=0.00e+00, pts=8)
+    [EigenvalueEq|Delta] (-Γûí+gauss2)(clip_para) = -0.72991458┬╖clip_para 
+(eigenvalue)  (residual=0.00e+00, pts=8)
+    [EigenvalueEq|Xi_phi] (-Γûí+gauss2)(clip_para) = -0.10047063┬╖clip_para 
+(eigenvalue)  (residual=6.94e-18, pts=8)
+    [EigenvalueEq|S_quarter] (-Γûí+gauss2)(clip_para) = -0.13519931┬╖clip_para 
+(eigenvalue)  (residual=6.94e-18, pts=8)
+
+

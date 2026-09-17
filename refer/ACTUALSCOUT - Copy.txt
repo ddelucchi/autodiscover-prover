@@ -1,0 +1,3508 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\begin{align}
+u_1&:=t+x,\\
+u_2&:=t-x,\\
+u_3&:=-t-x,\\
+u_4&:=x-t.
+\end{align}
+
+\begin{align}
+u_1+u_2
+&=(t+x)+(t-x)\\
+&=t+x+t-x\\
+&=(t+t)+(x-x)\\
+&=2t,
+\end{align}
+
+\begin{align}
+u_1-u_2
+&=(t+x)-(t-x)\\
+&=t+x-t+x\\
+&=(t-t)+(x+x)\\
+&=2x,
+\end{align}
+
+\begin{align}
+u_4+u_3
+&=(x-t)+(-t-x)\\
+&=x-t-t-x\\
+&=(x-x)+(-t-t)\\
+&=-2t,
+\end{align}
+
+\begin{align}
+u_2-u_4
+&=(t-x)-(x-t)\\
+&=t-x-x+t\\
+&=(t+t)+(-x-x)\\
+&=2t-2x\\
+&=2(t-x)\\
+&=2u_2,
+\end{align}
+
+\begin{align}
+u_1+u_3
+&=(t+x)+(-t-x)\\
+&=t+x-t-x\\
+&=(t-t)+(x-x)\\
+&=0,
+\end{align}
+
+\begin{align}
+u_2+u_4
+&=(t-x)+(x-t)\\
+&=t-x+x-t\\
+&=(t-t)+(-x+x)\\
+&=0,
+\end{align}
+
+\begin{align}
+u_3
+&=-t-x\\
+&=-(t+x)\\
+&=-u_1,
+\end{align}
+\begin{align}
+u_4
+&=x-t\\
+&=-(t-x)\\
+&=-u_2.
+\end{align}
+
+\begin{equation}
+\begin{pmatrix}
+u_1\\
+u_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+1&1\\
+1&-1
+\end{pmatrix}
+\begin{pmatrix}
+t\\
+x
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\begin{pmatrix}
+t\\
+x
+\end{pmatrix}
+=
+\frac12
+\begin{pmatrix}
+1&1\\
+1&-1
+\end{pmatrix}
+\begin{pmatrix}
+u_1\\
+u_2
+\end{pmatrix}
+=
+\frac12
+\begin{pmatrix}
+u_1+u_2\\
+u_1-u_2
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+u_2=0\iff t=x,
+\qquad
+u_1=0\iff t=-x
+\end{equation}
+
+\begin{equation}
+t,x\in\mathbb{R}\ \Longrightarrow\ tx=xt\ \Longrightarrow\ tx-xt=0.
+\end{equation}
+
+\begin{align}
+u_1u_2
+&=(t+x)(t-x)\\
+&=t(t-x)+x(t-x)\\
+&=(tt-tx)+(xt-xx)\\
+&=t^2-tx+xt-x^2\\
+&=t^2-x^2-(tx-xt)\\
+&=t^2-x^2-0\\
+&=t^2-x^2,
+\end{align}
+
+\begin{align}
+u_2u_1
+&=(t-x)(t+x)\\
+&=t(t+x)-x(t+x)\\
+&=(tt+tx)-(xt+xx)\\
+&=t^2+tx-xt-x^2\\
+&=t^2-x^2+(tx-xt)\\
+&=t^2-x^2+0\\
+&=t^2-x^2,
+\end{align}
+
+\begin{align}
+u_3u_4
+&=(-t-x)(x-t)\\
+&=-(t+x)(x-t)\\
+&=-\Bigl(tx-t^2+x^2-xt\Bigr)\\
+&=-\Bigl(-(t^2-x^2)+(tx-xt)\Bigr)\\
+&=(t^2-x^2)-(tx-xt)\\
+&=(t^2-x^2)-0\\
+&=t^2-x^2,
+\end{align}
+
+\begin{align}
+u_4u_3
+&=(x-t)(-t-x)\\
+&=-(x-t)(t+x)\\
+&=-\Bigl(xt+x^2-t^2-tx\Bigr)\\
+&=-\Bigl(-(t^2-x^2)-(tx-xt)\Bigr)\\
+&=(t^2-x^2)+(tx-xt)\\
+&=(t^2-x^2)+0\\
+&=t^2-x^2.
+\end{align}
+
+\begin{equation}
+u_1u_2=u_2u_1=u_3u_4=u_4u_3=t^2-x^2.
+\end{equation}
+
+\begin{equation}
+\varphi:=\frac{1+\sqrt{5}}{2}
+\end{equation}
+
+\begin{equation}
+\varphi^2=\left(\frac{1+\sqrt{5}}{2}\right)^{\!2}
+\end{equation}
+
+\begin{equation}
+\left(\frac{1+\sqrt{5}}{2}\right)^{\!2}=\frac{(1+\sqrt{5})^2}{4}
+\end{equation}
+
+\begin{equation}
+(1+\sqrt{5})^2=1+2\sqrt{5}+5
+\end{equation}
+
+\begin{equation}
+(1+\sqrt{5})^2=6+2\sqrt{5}
+\end{equation}
+
+\begin{equation}
+\varphi^2=\frac{6+2\sqrt{5}}{4}
+\end{equation}
+
+\begin{equation}
+\varphi^2=\frac{3+\sqrt{5}}{2}
+\end{equation}
+
+\begin{equation}
+\varphi+1=\frac{1+\sqrt{5}}{2}+1
+\end{equation}
+
+\begin{equation}
+\varphi+1=\frac{1+\sqrt{5}}{2}+\frac{2}{2}
+\end{equation}
+
+\begin{equation}
+\varphi+1=\frac{3+\sqrt{5}}{2}
+\end{equation}
+
+\begin{equation}
+\varphi^2=\varphi+1
+\end{equation}
+
+\begin{equation}
+\varphi^2-\varphi-1=0
+\end{equation}
+
+\begin{equation}
+\varphi(\varphi-1)=1
+\end{equation}
+
+\begin{equation}
+\varphi^{-1}=\varphi-1
+\end{equation}
+
+\begin{equation}
+\widehat{\mathbb{R}}:=\mathbb{R}\sqcup\{\infty\}
+\end{equation}
+
+\begin{equation}
+\mathsf{A}:=\begin{pmatrix}1&1\\[2pt]0&1\end{pmatrix},
+\qquad
+\mathsf{S}:=\begin{pmatrix}0&1\\[2pt]1&0\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{F}:=\mathsf{A}\mathsf{S}
+=\begin{pmatrix}1&1\\[2pt]1&0\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\forall(a,b)\in\mathbb{R}^2:\qquad
+\mathsf{A}\begin{pmatrix}a\\[2pt]b\end{pmatrix}
+=
+\begin{pmatrix}a+b\\[2pt]b\end{pmatrix},
+\qquad
+\mathsf{S}\begin{pmatrix}a\\[2pt]b\end{pmatrix}
+=
+\begin{pmatrix}b\\[2pt]a\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\forall(a,b)\in\mathbb{R}^2:\qquad
+\mathsf{F}\begin{pmatrix}a\\[2pt]b\end{pmatrix}
+=
+\mathsf{A}\mathsf{S}\begin{pmatrix}a\\[2pt]b\end{pmatrix}
+=
+\mathsf{A}\begin{pmatrix}b\\[2pt]a\end{pmatrix}
+=
+\begin{pmatrix}a+b\\[2pt]a\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\forall n\in\mathbb{N}:\qquad
+\begin{pmatrix}a_{n+1}\\[2pt]b_{n+1}\end{pmatrix}
+=
+\mathsf{F}\begin{pmatrix}a_n\\[2pt]b_n\end{pmatrix}
+\Longleftrightarrow
+\begin{cases}
+a_{n+1}=a_n+b_n,\\[2pt]
+b_{n+1}=a_n,
+\end{cases}
+\end{equation}
+
+\begin{equation}
+\forall n\in\mathbb{N}:\qquad
+b_{n+1}=a_n
+\ \Longrightarrow\
+b_{n+2}=a_{n+1}=a_n+b_n=b_{n+1}+b_n
+\end{equation}
+
+\begin{equation}
+v_0:=\begin{pmatrix}u_1\\[2pt]u_2\end{pmatrix},
+\qquad
+\forall n\in\mathbb{N}:\ v_{n+1}:=\mathsf{F}v_n
+\end{equation}
+
+\begin{equation}
+v_{n+1}
+=\mathsf{F}\,v_n
+=\begin{pmatrix}1&1\\[2pt]1&0\end{pmatrix}
+\begin{pmatrix}u_{1,n}\\[2pt]u_{2,n}\end{pmatrix}
+=\begin{pmatrix}u_{1,n}+u_{2,n}\\[2pt]u_{1,n}\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+u_{1,n+1}=u_{1,n}+u_{2,n}
+\end{equation}
+
+\begin{equation}
+u_{2,n+1}=u_{1,n}
+\end{equation}
+
+\begin{equation}
+r_n:=
+\begin{cases}
+\dfrac{u_{1,n}}{u_{2,n}},& u_{2,n}\neq 0\\[6pt]
+\infty,& u_{2,n}=0
+\end{cases}
+\ \in\widehat{\mathbb{R}}
+\end{equation}
+
+\begin{equation}
+(u_{2,n}\neq 0)\Longrightarrow
+r_{n+1}
+=\frac{u_{1,n+1}}{u_{2,n+1}}
+=\frac{u_{1,n}+u_{2,n}}{u_{1,n}}
+=1+\frac{u_{2,n}}{u_{1,n}}
+=1+\frac{1}{r_n}
+\end{equation}
+
+\begin{equation}
+r_n=\infty
+\Longrightarrow
+(u_{2,n}=0,\ u_{1,n}\neq 0)
+\Longrightarrow
+r_{n+1}=\frac{u_{1,n}+0}{u_{1,n}}=1
+\end{equation}
+
+\begin{equation}
+r_n=0
+\Longrightarrow
+(u_{1,n}=0,\ u_{2,n}\neq 0)
+\Longrightarrow
+r_{n+1}=\frac{u_{2,n}}{0}=\infty
+\end{equation}
+
+\begin{equation}
+r=1+\frac{1}{r}
+\Longleftrightarrow
+r^2=r+1
+\Longleftrightarrow
+r^2-r-1=0
+\end{equation}
+
+\begin{align}
+\det(\mathsf{F}-\lambda\mathsf{I})
+&=
+\det\!\begin{pmatrix}
+1-\lambda & 1\\
+1 & -\lambda
+\end{pmatrix}\\
+&=(1-\lambda)(-\lambda)-1\cdot 1\\
+&=-\lambda+\lambda^2-1\\
+&=\lambda^2-\lambda-1.
+\end{align}
+
+\begin{align}
+\det(\mathsf{F}-\lambda\mathsf{I})=0
+&\Longleftrightarrow \lambda^2-\lambda-1=0\\
+&\Longleftrightarrow 
+\lambda=\frac{1\pm\sqrt{1+4}}{2}\\
+&\Longleftrightarrow 
+\lambda=\frac{1\pm\sqrt{5}}{2}.
+\end{align}
+
+\begin{equation}
+\lambda_+=\varphi:=\frac{1+\sqrt5}{2},\qquad
+\lambda_-=\frac{1-\sqrt5}{2}=1-\varphi=-\frac{1}{\varphi}.
+\end{equation}
+
+\begin{equation}
+r>0\Longrightarrow r=\varphi
+\end{equation}
+
+\begin{equation}
+\mathsf{F}\,v_0=\varphi\,v_0
+\Longleftrightarrow
+\begin{pmatrix}u_1+u_2\\[2pt]u_1\end{pmatrix}
+=
+\begin{pmatrix}\varphi u_1\\[2pt]\varphi u_2\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+u_1+u_2=\varphi u_1
+\Longleftrightarrow
+u_2=(\varphi-1)u_1
+\Longleftrightarrow
+u_1=\frac{1}{\varphi-1}u_2
+\end{equation}
+
+\begin{equation}
+\frac{1}{\varphi-1}=\varphi
+\Longleftrightarrow
+\varphi(\varphi-1)=1
+\Longleftrightarrow
+\varphi^2-\varphi-1=0
+\end{equation}
+
+\begin{equation}
+F_0:=0,\qquad F_1:=1,\qquad F_{n+1}:=F_n+F_{n-1}\quad (n\ge 1)
+\end{equation}
+
+\begin{equation}
+\mathsf{F}^n=
+\begin{pmatrix}
+F_{n+1}&F_n\\
+F_n&F_{n-1}
+\end{pmatrix}
+\qquad (n\ge 1)
+\end{equation}
+
+\begin{align}
+\mathsf{F}^1
+&=
+\begin{pmatrix}
+1&1\\
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+F_2&F_1\\
+F_1&F_0
+\end{pmatrix}
+\\[4pt]
+\mathsf{F}^{n+1}
+&=
+\mathsf{F}^n\mathsf{F}
+=
+\begin{pmatrix}
+F_{n+1}&F_n\\
+F_n&F_{n-1}
+\end{pmatrix}
+\begin{pmatrix}
+1&1\\
+1&0
+\end{pmatrix}
+=
+\begin{pmatrix}
+F_{n+1}+F_n&F_{n+1}\\
+F_n+F_{n-1}&F_n
+\end{pmatrix}
+=
+\begin{pmatrix}
+F_{n+2}&F_{n+1}\\
+F_{n+1}&F_n
+\end{pmatrix}
+\end{align}
+
+\begin{equation}
+\frac{F_{n+1}}{F_n}
+=
+\frac{F_n+F_{n-1}}{F_n}
+=
+1+\frac{F_{n-1}}{F_n}
+=
+1+\left(\frac{F_n}{F_{n-1}}\right)^{-1}
+\end{equation}
+
+\begin{equation}
+\boxed{
+u_1=\varphi\,u_2
+}
+\end{equation}
+
+\begin{equation}
+t+x=\varphi(t-x)
+\end{equation}
+
+\begin{equation}
+t+x=\varphi\,t-\varphi\,x
+\end{equation}
+
+\begin{equation}
+t-\varphi\,t+x+\varphi\,x=0
+\end{equation}
+
+\begin{equation}
+(1-\varphi)t+(1+\varphi)x=0
+\end{equation}
+
+\begin{equation}
+(1+\varphi)x=(\varphi-1)t
+\end{equation}
+
+\begin{equation}
+\varphi^2=\varphi+1
+\end{equation}
+
+\begin{equation}
+\varphi^2-\varphi=1
+\end{equation}
+
+\begin{equation}
+\varphi(\varphi-1)=1
+\end{equation}
+
+\begin{equation}
+\varphi=0\ \Longrightarrow\ 0=1\ \Longrightarrow\ \bot
+\end{equation}
+
+\begin{equation}
+\varphi\neq 0
+\end{equation}
+
+\begin{equation}
+\varphi-1=\frac{1}{\varphi}=\varphi^{-1}
+\end{equation}
+
+\begin{equation}
+(1+\varphi)x=(\varphi-1)t=\varphi^{-1}t
+\end{equation}
+
+\begin{equation}
+1+\varphi=\frac{3+\sqrt{5}}{2}
+\end{equation}
+
+\begin{equation}
+3+\sqrt{5}>0
+\end{equation}
+
+\begin{equation}
+1+\varphi>0
+\end{equation}
+
+\begin{equation}
+(t,x)\neq(0,0)
+\end{equation}
+
+\begin{equation}
+u_1=t+x,\qquad u_2=t-x
+\end{equation}
+
+\begin{equation}
+u_1=\varphi u_2
+\end{equation}
+
+\begin{equation}
+(t=0)\Longrightarrow (u_1,u_2)=(x,-x)
+\end{equation}
+
+\begin{equation}
+(t=0)\wedge(u_1=\varphi u_2)\Longrightarrow x=\varphi(-x)
+\end{equation}
+
+\begin{equation}
+x=\varphi(-x)\Longrightarrow (1+\varphi)x=0
+\end{equation}
+
+\begin{equation}
+(1+\varphi)\neq 0
+\end{equation}
+
+\begin{equation}
+(1+\varphi)x=0\Longrightarrow x=0
+\end{equation}
+
+\begin{equation}
+(t=0)\wedge(u_1=\varphi u_2)\Longrightarrow (t,x)=(0,0)
+\end{equation}
+
+\begin{equation}
+(t,x)\neq(0,0)\Longrightarrow (u_1=\varphi u_2)\Longrightarrow t\neq 0
+\end{equation}
+
+\begin{equation}
+(x=0)\Longrightarrow (u_1,u_2)=(t,t)
+\end{equation}
+
+\begin{equation}
+(x=0)\wedge(u_1=\varphi u_2)\Longrightarrow t=\varphi t
+\end{equation}
+
+\begin{equation}
+t=\varphi t\Longrightarrow (1-\varphi)t=0
+\end{equation}
+
+\begin{equation}
+(1-\varphi)\neq 0
+\end{equation}
+
+\begin{equation}
+(1-\varphi)t=0\Longrightarrow t=0
+\end{equation}
+
+\begin{equation}
+(x=0)\wedge(u_1=\varphi u_2)\Longrightarrow (t,x)=(0,0)
+\end{equation}
+
+\begin{equation}
+(t,x)\neq(0,0)\Longrightarrow (u_1=\varphi u_2)\Longrightarrow x\neq 0
+\end{equation}
+
+\begin{equation}
+(u_2=0)\wedge(u_1=\varphi u_2)\Longrightarrow u_1=\varphi\cdot 0=0
+\end{equation}
+
+\begin{equation}
+(u_1=0)\wedge(u_2=0)\Longrightarrow (t+x=0)\wedge(t-x=0)
+\end{equation}
+
+\begin{equation}
+(t+x=0)\wedge(t-x=0)\Longrightarrow t=0\wedge x=0
+\end{equation}
+
+\begin{equation}
+(t,x)\neq(0,0)\Longrightarrow (u_1=\varphi u_2)\Longrightarrow u_2\neq 0
+\end{equation}
+
+\begin{equation}
+(u_1=\varphi u_2)\wedge(u_1=0)\Longrightarrow u_2=\frac{u_1}{\varphi}=0
+\end{equation}
+
+\begin{equation}
+(u_1=0)\wedge(u_2=0)\Longrightarrow (t,x)=(0,0)
+\end{equation}
+
+\begin{equation}
+(t,x)\neq(0,0)\Longrightarrow (u_1=\varphi u_2)\Longrightarrow u_1\neq 0
+\end{equation}
+
+\begin{equation}
+(u_1=\varphi u_2)\wedge(u_2\neq 0)\Longrightarrow \frac{u_1}{u_2}=\varphi
+\end{equation}
+
+\begin{equation}
+\mathsf{H}:=\begin{pmatrix}1&1\\[2pt]1&-1\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\begin{pmatrix}u_1\\[2pt]u_2\end{pmatrix}=\mathsf{H}\begin{pmatrix}t\\[2pt]x\end{pmatrix}
+\end{equation}
+
+\begin{align}
+\mathsf{H}^2
+&=
+\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}
+\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}\\
+&=
+\begin{pmatrix}
+1\cdot 1 + 1\cdot 1 & 1\cdot 1 + 1\cdot (-1)\\
+1\cdot 1 + (-1)\cdot 1 & 1\cdot 1 + (-1)\cdot(-1)
+\end{pmatrix}\\
+&=
+\begin{pmatrix}
+2 & 0\\
+0 & 2
+\end{pmatrix}\\
+&=2\mathsf{I}.
+\end{align}
+
+\begin{align}
+\mathsf{H}\Bigl(\tfrac12\mathsf{H}\Bigr)
+&=\tfrac12(\mathsf{H}^2)\\
+&=\tfrac12(2\mathsf{I})\\
+&=\mathsf{I},
+\end{align}
+
+\begin{align}
+\Bigl(\tfrac12\mathsf{H}\Bigr)\mathsf{H}
+&=\tfrac12(\mathsf{H}^2)\\
+&=\mathsf{I}.
+\end{align}
+
+\begin{equation}
+\mathsf{H}^{-1}=\tfrac12\mathsf{H}.
+\end{equation}
+
+\begin{equation}
+\begin{pmatrix}t\\[2pt]x\end{pmatrix}=\tfrac{1}{2}\mathsf{H}\begin{pmatrix}u_1\\[2pt]u_2\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{S}:=\begin{pmatrix}0&1\\[2pt]1&0\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{S}^2=\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathsf{S}\begin{pmatrix}t\\[2pt]x\end{pmatrix}=\begin{pmatrix}x\\[2pt]t\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{P}:=\begin{pmatrix}1&0\\[2pt]0&-1\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{P}^2=\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathsf{P}\begin{pmatrix}t\\[2pt]x\end{pmatrix}=\begin{pmatrix}t\\[2pt]-x\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}:=\mathsf{S}\mathsf{P}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}=\begin{pmatrix}0&1\\[2pt]1&0\end{pmatrix}\begin{pmatrix}1&0\\[2pt]0&-1\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}=\begin{pmatrix}0\cdot1+1\cdot0&0\cdot0+1\cdot(-1)\\[2pt]1\cdot1+0\cdot0&1\cdot0+0\cdot(-1)\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}=\begin{pmatrix}0&-1\\[2pt]1&0\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}\begin{pmatrix}t\\[2pt]x\end{pmatrix}=\begin{pmatrix}-x\\[2pt]t\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^2=\begin{pmatrix}0&-1\\[2pt]1&0\end{pmatrix}\begin{pmatrix}0&-1\\[2pt]1&0\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^2=\begin{pmatrix}0\cdot0+(-1)\cdot1&0\cdot(-1)+(-1)\cdot0\\[2pt]1\cdot0+0\cdot1&1\cdot(-1)+0\cdot0\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^2=\begin{pmatrix}-1&0\\[2pt]0&-1\end{pmatrix}=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathbb{C}_{\mathsf{J}}:=\bigl\{\,t\mathsf{I}+x\mathsf{J}:\ t,x\in\mathbb{R}\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\forall a\in\mathbb{R}:\quad a:=a\,\mathsf{I}\in\mathbb{C}_{\mathsf{J}}
+\end{equation}
+
+\begin{equation}
+1=\mathsf{I},\qquad -1=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})+(s\mathsf{I}+y\mathsf{J})=(t+s)\mathsf{I}+(x+y)\mathsf{J}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})(s\mathsf{I}+y\mathsf{J})=ts\,\mathsf{I}+ty\,\mathsf{J}+xs\,\mathsf{J}+xy\,\mathsf{J}^2
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^2=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})(s\mathsf{I}+y\mathsf{J})=(ts-xy)\mathsf{I}+(ty+xs)\mathsf{J}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})^{*}:=t\mathsf{I}-x\mathsf{J}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})(t\mathsf{I}-x\mathsf{J})=t^2\mathsf{I}-tx\,\mathsf{J}+xt\,\mathsf{J}-x^2\mathsf{J}^2
+\end{equation}
+
+\begin{equation}
+-tx\,\mathsf{J}+xt\,\mathsf{J}=0
+\end{equation}
+
+\begin{equation}
+-x^2\mathsf{J}^2=-x^2(-\mathsf{I})=x^2\mathsf{I}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})(t\mathsf{I}-x\mathsf{J})=(t^2+x^2)\mathsf{I}
+\end{equation}
+
+\begin{align}
+u_1^2+u_2^2
+&=(t+x)^2+(t-x)^2\\
+&=(t+x)(t+x)+(t-x)(t-x)\\
+&=(tt+tx+xt+xx)+(tt-tx-xt+xx)\\
+&=(t^2+tx+xt+x^2)+(t^2-tx-xt+x^2)\\
+&=(t^2+t^2)+(tx-tx)+(xt-xt)+(x^2+x^2)\\
+&=2t^2+2x^2\\
+&=2(t^2+x^2),
+\end{align}
+\begin{equation}
+t^2+x^2=\tfrac12(u_1^2+u_2^2).
+\end{equation}
+
+\begin{equation}
+u_1\neq 0\ \wedge\ u_2\neq 0\Rightarrow u_1^2>0\ \wedge\ u_2^2>0
+\end{equation}
+
+\begin{equation}
+u_1^2+u_2^2>0
+\end{equation}
+
+\begin{equation}
+t^2+x^2=\tfrac{1}{2}(u_1^2+u_2^2)>0
+\end{equation}
+
+\begin{equation}
+(t^2+x^2)\mathsf{I}\neq 0
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}-x\mathsf{J})^{-1}:=\frac{t\mathsf{I}+x\mathsf{J}}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+(t^2+x^2)\neq 0
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}-x\mathsf{J})\frac{t\mathsf{I}+x\mathsf{J}}{t^2+x^2}=\frac{(t\mathsf{I}-x\mathsf{J})(t\mathsf{I}+x\mathsf{J})}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}-x\mathsf{J})(t\mathsf{I}+x\mathsf{J})=(t^2+x^2)\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\frac{(t^2+x^2)\mathsf{I}}{t^2+x^2}=\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\frac{(t^2+x^2)\mathsf{I}}{t^2+x^2}=\left(\frac{t^2+x^2}{t^2+x^2}\right)\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\frac{t^2+x^2}{t^2+x^2}=1
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}-x\mathsf{J})\frac{t\mathsf{I}+x\mathsf{J}}{t^2+x^2}=\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\frac{t\mathsf{I}+x\mathsf{J}}{t^2+x^2}(t\mathsf{I}-x\mathsf{J})=\mathsf{I}
+\end{equation}
+
+\begin{equation}
+W(t,x):=(t\mathsf{I}+x\mathsf{J})(t\mathsf{I}-x\mathsf{J})^{-1}
+\end{equation}
+
+\begin{equation}
+W(t,x)=(t\mathsf{I}+x\mathsf{J})\frac{t\mathsf{I}+x\mathsf{J}}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+W(t,x)=\frac{(t\mathsf{I}+x\mathsf{J})^2}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})^2=t^2\mathsf{I}+tx\,\mathsf{J}+xt\,\mathsf{J}+x^2\mathsf{J}^2
+\end{equation}
+
+\begin{equation}
+tx\,\mathsf{J}+xt\,\mathsf{J}=(tx+xt)\mathsf{J}=2tx\,\mathsf{J}
+\end{equation}
+
+\begin{equation}
+x^2\mathsf{J}^2=x^2(-\mathsf{I})=-x^2\mathsf{I}
+\end{equation}
+
+\begin{equation}
+(t\mathsf{I}+x\mathsf{J})^2=(t^2-x^2)\mathsf{I}+2tx\,\mathsf{J}
+\end{equation}
+
+\begin{equation}
+W(t,x)=\frac{t^2-x^2}{t^2+x^2}\,\mathsf{I}+\frac{2tx}{t^2+x^2}\,\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\lambda\in\mathbb{R}\setminus\{0\}
+\end{equation}
+
+\begin{equation}
+W(\lambda t,\lambda x)=(\lambda t\,\mathsf{I}+\lambda x\,\mathsf{J})(\lambda t\,\mathsf{I}-\lambda x\,\mathsf{J})^{-1}
+\end{equation}
+
+\begin{equation}
+(\lambda t\,\mathsf{I}-\lambda x\,\mathsf{J})^{-1}=\frac{\lambda t\,\mathsf{I}+\lambda x\,\mathsf{J}}{(\lambda t)^2+(\lambda x)^2}
+\end{equation}
+
+\begin{equation}
+(\lambda t)^2+(\lambda x)^2=\lambda^2(t^2+x^2)
+\end{equation}
+
+\begin{equation}
+(\lambda t\,\mathsf{I}-\lambda x\,\mathsf{J})^{-1}=\frac{\lambda(t\mathsf{I}+x\mathsf{J})}{\lambda^2(t^2+x^2)}=\frac{t\mathsf{I}+x\mathsf{J}}{\lambda(t^2+x^2)}
+\end{equation}
+
+\begin{equation}
+W(\lambda t,\lambda x)=\lambda(t\mathsf{I}+x\mathsf{J})\cdot\frac{t\mathsf{I}+x\mathsf{J}}{\lambda(t^2+x^2)}=\frac{(t\mathsf{I}+x\mathsf{J})^2}{t^2+x^2}=W(t,x)
+\end{equation}
+
+\begin{equation}
+\mathcal{C}_R:=\bigl\{\,(t,x)\in\mathbb{R}^2:\ t^2+x^2=R^2\,\bigr\},\quad R>0
+\end{equation}
+
+\begin{equation}
+\mathcal{R}_{(t,x)}:=\bigl\{\,(\lambda t,\lambda x):\lambda>0\,\bigr\}
+\end{equation}
+
+\begin{equation}
+(\lambda t)^2+(\lambda x)^2=\lambda^2(t^2+x^2)
+\end{equation}
+
+\begin{equation}
+t^2+x^2=R^2\Rightarrow (\lambda t)^2+(\lambda x)^2=(\lambda R)^2
+\end{equation}
+
+\begin{equation}
+\forall R>0:\quad \exists\,\lambda>0:\ \mathcal{R}_{(t,x)}\cap \mathcal{C}_R\neq\varnothing
+\end{equation}
+
+\begin{equation}
+\forall R>0:\quad \mathcal{R}_{(t,x)}\cap \mathcal{C}_R=\{(R\cos\theta,R\sin\theta)\}
+\end{equation}
+
+\begin{equation}
+(t,x)=(\rho\cos\theta,\rho\sin\theta),\ \rho>0
+\end{equation}
+
+\begin{equation}
+\mathcal{R}_{(t,x)}=\{(R\cos\theta,R\sin\theta):R>0\}
+\end{equation}
+
+\begin{equation}
+(t,x)\sim(t',x')
+\iff
+\exists\,\lambda>0:\ (t',x')=(\lambda t,\lambda x)
+\end{equation}
+
+\begin{equation}
+[(t,x)]:=\{(\lambda t,\lambda x):\lambda>0\}
+\end{equation}
+
+\begin{equation}
+\partial:=\bigl(\mathbb{R}^2\setminus\{(0,0)\}\bigr)\big/{\sim}
+\end{equation}
+
+\begin{equation}
+(t,x)=(\rho\cos\theta,\rho\sin\theta)\Rightarrow [(t,x)]=[(\cos\theta,\sin\theta)]
+\end{equation}
+
+\begin{equation}
+\partial\cong S^1
+\end{equation}
+
+\begin{equation}
+\theta\mapsto -\theta
+\end{equation}
+
+\begin{equation}
+(\cos(-\theta),\sin(-\theta))=(\cos\theta,-\sin\theta)
+\end{equation}
+
+\begin{equation}
+\theta\mapsto \theta+\pi
+\end{equation}
+
+\begin{equation}
+(\cos(\theta+\pi),\sin(\theta+\pi))=(-\cos\theta,-\sin\theta)
+\end{equation}
+
+\begin{equation}
+(t,x)\mapsto(-t,-x)
+\end{equation}
+
+\begin{equation}
+(t,x)\mapsto(x,t)
+\end{equation}
+
+\begin{equation}
+(t,x)\mapsto(-x,t)
+\end{equation}
+
+\begin{equation}
+(-x,t)=\mathsf{J}(t,x)
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^2(t,x)=(-t,-x)
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\theta):=\sum_{n=0}^{\infty}\frac{(\mathsf{J}\theta)^n}{n!}
+\end{equation}
+
+\begin{equation}
+(\mathsf{J}\theta)^{2n}=\mathsf{J}^{2n}\theta^{2n}=(-1)^n\theta^{2n}
+\end{equation}
+
+\begin{equation}
+(\mathsf{J}\theta)^{2n+1}=\mathsf{J}^{2n+1}\theta^{2n+1}=(-1)^n\mathsf{J}\,\theta^{2n+1}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\theta)=\sum_{n=0}^{\infty}\frac{(-1)^n\theta^{2n}}{(2n)!}+\mathsf{J}\sum_{n=0}^{\infty}\frac{(-1)^n\theta^{2n+1}}{(2n+1)!}
+\end{equation}
+
+\begin{equation}
+\cos\theta:=\sum_{n=0}^{\infty}\frac{(-1)^n\theta^{2n}}{(2n)!}
+\end{equation}
+
+\begin{equation}
+\sin\theta:=\sum_{n=0}^{\infty}\frac{(-1)^n\theta^{2n+1}}{(2n+1)!}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\theta)=\cos\theta+\mathsf{J}\sin\theta
+\end{equation}
+
+\begin{equation}
+\exp\bigl(\mathsf{J}(\theta+2\pi)\bigr)=\cos(\theta+2\pi)+\mathsf{J}\sin(\theta+2\pi)
+\end{equation}
+
+\begin{equation}
+\cos(\theta+2\pi)=\cos\theta
+\end{equation}
+
+\begin{equation}
+\sin(\theta+2\pi)=\sin\theta
+\end{equation}
+
+\begin{equation}
+\exp\bigl(\mathsf{J}(\theta+2\pi)\bigr)=\exp(\mathsf{J}\theta)
+\end{equation}
+
+\begin{equation}
+\forall k\in\mathbb{Z}:\ \exp\bigl(\mathsf{J}(\theta+2\pi k)\bigr)=\exp(\mathsf{J}\theta)
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi)=\cos\pi+\mathsf{J}\sin\pi
+\end{equation}
+
+\begin{equation}
+\cos\pi=-1
+\end{equation}
+
+\begin{equation}
+\sin\pi=0
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi)=-1
+\end{equation}
+
+\begin{equation}
+\forall k\in\mathbb{Z}:\ \exp\bigl(\mathsf{J}(\pi+2\pi k)\bigr)=-1
+\end{equation}
+
+\begin{equation}
+\log(-1)=\bigl\{\ \mathsf{J}(\pi+2\pi k)\ :\ k\in\mathbb{Z}\ \bigr\}
+\end{equation}
+
+\begin{equation}
+[u_1:u_2]\in\mathbb{RP}^1,
+\qquad
+(u_1,u_2)\neq(0,0),
+\qquad
+[u_1:u_2]=[\lambda u_1:\lambda u_2]\ \ (\lambda\in\mathbb{R}^{\times})
+\end{equation}
+
+\begin{equation}
+r([u_1:u_2]):=
+\begin{cases}
+\dfrac{u_1}{u_2},&u_2\neq 0,\\[6pt]
+\infty,&u_2=0,
+\end{cases}
+\qquad
+r^{-1}([u_1:u_2]):=
+\begin{cases}
+\dfrac{u_2}{u_1},&u_1\neq 0,\\[6pt]
+\infty,&u_1=0.
+\end{cases}
+\end{equation}
+
+\begin{equation}
+\mathsf{F}[u_1:u_2]:=[u_1+u_2:u_1]
+\end{equation}
+
+\begin{equation}
+u_1\neq 0
+\Longrightarrow
+r(\mathsf{F}[u_1:u_2])
+=
+\frac{u_1+u_2}{u_1}
+=
+1+\frac{u_2}{u_1}
+=
+1+r^{-1}([u_1:u_2])
+\end{equation}
+
+\begin{equation}
+\mathsf{F}[u_1:u_2]=[u_1:u_2]
+\Longrightarrow
+r=r(\mathsf{F}[u_1:u_2])=1+\frac{1}{r}
+\Longleftrightarrow
+r^2=r+1
+\Longleftrightarrow
+r^2-r-1=0
+\end{equation}
+
+\begin{equation}
+r>0\Longrightarrow r=\varphi
+\end{equation}
+
+\begin{equation}
+\varphi=1+\varphi^{-1}
+\end{equation}
+
+\begin{equation}
+\varphi^{-1}=\varphi-1
+\end{equation}
+
+\begin{equation}
+\varphi^{-2}=(\varphi^{-1})^2=(\varphi-1)^2=\varphi^2-2\varphi+1
+\end{equation}
+
+\begin{equation}
+\varphi^2=\varphi+1
+\end{equation}
+
+\begin{equation}
+\varphi^2-2\varphi+1=(\varphi+1)-2\varphi+1=2-\varphi
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r):=(\mathsf{I}+\mathsf{J}r)(\mathsf{I}-\mathsf{J}r)^{-1}
+\end{equation}
+
+\begin{equation}
+(\mathsf{I}-\mathsf{J}r)^{-1}=(\mathsf{I}-\mathsf{J}r)^{-1}\frac{\mathsf{I}+\mathsf{J}r}{\mathsf{I}+\mathsf{J}r}
+=\frac{\mathsf{I}+\mathsf{J}r}{(\mathsf{I}-\mathsf{J}r)(\mathsf{I}+\mathsf{J}r)}
+\end{equation}
+
+\begin{equation}
+(\mathsf{I}-\mathsf{J}r)(\mathsf{I}+\mathsf{J}r)
+=\mathsf{I}+(\mathsf{J}r)-(\mathsf{J}r)-(\mathsf{J}r)^2
+=\mathsf{I}-(\mathsf{J}r)^2
+\end{equation}
+
+\begin{equation}
+(\mathsf{J}r)^2=(\mathsf{J}^2)r^2=(-1)r^2=-r^2
+\end{equation}
+
+\begin{equation}
+\mathsf{I}-(\mathsf{J}r)^2=\mathsf{I}-(-r^2)=\mathsf{I}+r^2
+\end{equation}
+
+\begin{equation}
+\mathsf{I}+r^2=(1+r^2)\mathsf{I}
+\end{equation}
+
+\begin{equation}
+(\mathsf{I}+r^2)^{-1}=\frac{1}{1+r^2}\mathsf{I}
+\end{equation}
+
+\begin{equation}
+(\mathsf{I}-\mathsf{J}r)^{-1}=(\mathsf{I}+r^2)^{-1}(\mathsf{I}+\mathsf{J}r)=\frac{\mathsf{I}+\mathsf{J}r}{1+r^2}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)
+=(\mathsf{I}+\mathsf{J}r)(\mathsf{I}-\mathsf{J}r)^{-1}
+=(\mathsf{I}+\mathsf{J}r)\frac{\mathsf{I}+\mathsf{J}r}{1+r^2}
+=\frac{(\mathsf{I}+\mathsf{J}r)^2}{1+r^2}
+\end{equation}
+
+\begin{equation}
+(\mathsf{I}+\mathsf{J}r)^2
+=\mathsf{I}+(\mathsf{J}r)+(\mathsf{J}r)+(\mathsf{J}r)^2
+=\mathsf{I}+2\mathsf{J}r-r^2
+\end{equation}
+
+\begin{equation}
+\mathsf{I}-r^2=(1-r^2)\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)
+=\frac{(1-r^2)\mathsf{I}+2r\,\mathsf{J}}{1+r^2}
+=\frac{1-r^2}{1+r^2}\mathsf{I}+\frac{2r}{1+r^2}\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\lim_{r\to\infty}\frac{1-r^2}{1+r^2}
+=\lim_{r\to\infty}\frac{-r^2(1-1/r^2)}{r^2(1+1/r^2)}
+=-\frac{1-0}{1+0}
+=-1
+\end{equation}
+
+\begin{equation}
+\lim_{r\to\infty}\frac{2r}{1+r^2}
+=\lim_{r\to\infty}\frac{2/r}{1+1/r^2}
+=0
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(\infty):=\lim_{r\to\infty}\mathsf{C}_{\mathsf{J}}(r)=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r^{-1})=\frac{1-r^{-2}}{1+r^{-2}}\,\mathsf{I}+\frac{2r^{-1}}{1+r^{-2}}\,\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\frac{1-r^{-2}}{1+r^{-2}}=\frac{r^2-1}{r^2+1}=-\frac{1-r^2}{1+r^2}
+\end{equation}
+
+\begin{equation}
+\frac{2r^{-1}}{1+r^{-2}}=\frac{2r}{1+r^2}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r^{-1})=-\frac{1-r^2}{1+r^2}\,\mathsf{I}+\frac{2r}{1+r^2}\,\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)\cdot\mathsf{C}_{\mathsf{J}}(r^{-1})
+=
+\left(\frac{1-r^2}{1+r^2}\,\mathsf{I}+\frac{2r}{1+r^2}\,\mathsf{J}\right)
+\left(-\frac{1-r^2}{1+r^2}\,\mathsf{I}+\frac{2r}{1+r^2}\,\mathsf{J}\right)
+\end{equation}
+
+\begin{equation}
+\begin{split}
+={}&
+-\left(\frac{1-r^2}{1+r^2}\right)^{\!2}\mathsf{I}
++\left(\frac{1-r^2}{1+r^2}\right)\!\left(\frac{2r}{1+r^2}\right)\mathsf{I}\mathsf{J}\\
+&-\left(\frac{2r}{1+r^2}\right)\!\left(\frac{1-r^2}{1+r^2}\right)\mathsf{J}\mathsf{I}
++\left(\frac{2r}{1+r^2}\right)^{\!2}\mathsf{J}^2
+\end{split}
+\end{equation}
+
+\begin{equation}
+\mathsf{I}\mathsf{J}=\mathsf{J}\mathsf{I}=\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\left(\frac{1-r^2}{1+r^2}\right)\!\left(\frac{2r}{1+r^2}\right)\mathsf{J}
+-\left(\frac{2r}{1+r^2}\right)\!\left(\frac{1-r^2}{1+r^2}\right)\mathsf{J}=0
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^2=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)\cdot\mathsf{C}_{\mathsf{J}}(r^{-1})
+=
+-\left(\frac{1-r^2}{1+r^2}\right)^{\!2}\mathsf{I}
++\left(\frac{2r}{1+r^2}\right)^{\!2}(-\mathsf{I})
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)\cdot\mathsf{C}_{\mathsf{J}}(r^{-1})
+=
+-\left[\left(\frac{1-r^2}{1+r^2}\right)^{\!2}+\left(\frac{2r}{1+r^2}\right)^{\!2}\right]\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\left(\frac{1-r^2}{1+r^2}\right)^{\!2}+\left(\frac{2r}{1+r^2}\right)^{\!2}
+=\frac{(1-r^2)^2+(2r)^2}{(1+r^2)^2}
+\end{equation}
+
+\begin{equation}
+(1-r^2)^2+(2r)^2=1-2r^2+r^4+4r^2
+\end{equation}
+
+\begin{equation}
+1-2r^2+r^4+4r^2=1+2r^2+r^4
+\end{equation}
+
+\begin{equation}
+1+2r^2+r^4=(1+r^2)^2
+\end{equation}
+
+\begin{equation}
+\frac{(1-r^2)^2+(2r)^2}{(1+r^2)^2}=1
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)\cdot\mathsf{C}_{\mathsf{J}}(r^{-1})=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(\varphi)\cdot\mathsf{C}_{\mathsf{J}}(\varphi^{-1})=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\theta)
+=\sum_{n=0}^{\infty}\frac{(\mathsf{J}\theta)^n}{n!}
+\end{equation}
+
+\begin{equation}
+(\mathsf{J}\theta)^{2k}=\mathsf{J}^{2k}\theta^{2k}=(-1)^k\mathsf{I}\,\theta^{2k}
+\end{equation}
+
+\begin{equation}
+(\mathsf{J}\theta)^{2k+1}=\mathsf{J}^{2k+1}\theta^{2k+1}=(-1)^k\mathsf{J}\,\theta^{2k+1}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\theta)
+=\sum_{k=0}^{\infty}\frac{(-1)^k\theta^{2k}}{(2k)!}\mathsf{I}
++\sum_{k=0}^{\infty}\frac{(-1)^k\theta^{2k+1}}{(2k+1)!}\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\theta)
+=\cos(\theta)\mathsf{I}+\sin(\theta)\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi)=\cos(\pi)\mathsf{I}+\sin(\pi)\mathsf{J}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi)=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(\varphi)\cdot\mathsf{C}_{\mathsf{J}}(\varphi^{-1})=\exp(\mathsf{J}\pi)
+\end{equation}
+
+\begin{equation}
+\log\!\bigl(\mathsf{C}_{\mathsf{J}}(\varphi)\cdot\mathsf{C}_{\mathsf{J}}(\varphi^{-1})\bigr)=\log(-1)=\bigl\{\mathsf{J}(\pi+2\pi k)\bigr\}_{k\in\mathbb{Z}}
+\end{equation}
+
+\begin{equation}
+\mathcal{S}:=\bigl\{\,\lambda(u_1,u_2):\lambda>0\,\bigr\}
+\end{equation}
+
+\begin{equation}
+r(\lambda):=\frac{\lambda u_1}{\lambda u_2}
+\end{equation}
+
+\begin{equation}
+u_2\neq 0\Rightarrow \lambda u_2\neq 0\quad(\lambda>0)
+\end{equation}
+
+\begin{equation}
+r(\lambda)=\frac{\lambda u_1}{\lambda u_2}=\frac{u_1}{u_2}=r
+\end{equation}
+
+\begin{equation}
+r=\varphi
+\end{equation}
+
+\begin{equation}
+\forall\,\lambda>0:\ \mathsf{C}_{\mathsf{J}}\!\left(\frac{\lambda u_1}{\lambda u_2}\right)=\mathsf{C}_{\mathsf{J}}\!\left(\frac{u_1}{u_2}\right)=\mathsf{C}_{\mathsf{J}}(\varphi)
+\end{equation}
+
+\begin{equation}
+\forall R>0:\ \exists\,\lambda>0:\ (\lambda t,\lambda x)\in\mathcal{C}_R
+\end{equation}
+
+\begin{equation}
+W(\lambda t,\lambda x)=W(t,x)
+\end{equation}
+
+\begin{equation}
+[(t,x)]=\{(\lambda t,\lambda x):\lambda>0\}
+\end{equation}
+
+\begin{equation}
+[(t,x)]\cap\mathcal{C}_R\neq\varnothing\quad(\forall R>0)
+\end{equation}
+
+\begin{equation}
+\pi^{-1}\bigl(\exp(\mathsf{J}\theta)\bigr)=\{\theta+2\pi k:k\in\mathbb{Z}\}
+\end{equation}
+
+\begin{equation}
+\forall\,\theta\in\mathbb{R}:\ \#\pi^{-1}\bigl(\exp(\mathsf{J}\theta)\bigr)=\infty
+\end{equation}
+
+\begin{equation}
+\forall\,\theta\in\mathbb{R}:\ \{-\exp(\mathsf{J}\theta)\}=\{\exp\bigl(\mathsf{J}(\theta+\pi)\bigr)\}
+\end{equation}
+
+\begin{equation}
+\exp(-\mathsf{J}\theta)=\big(\exp(\mathsf{J}\theta)\big)^{-1}
+\end{equation}
+
+\begin{equation}
+\exp(-\mathsf{J}\theta)=\big(\exp(\mathsf{J}\theta)\big)^{*}
+\end{equation}
+
+\begin{equation}
+-\exp(\mathsf{J}\theta)=\exp(\mathsf{J}(\theta+\pi))
+\end{equation}
+
+\begin{equation}
+-\exp(-\mathsf{J}\theta)=\exp(\mathsf{J}(-\theta+\pi))
+\end{equation}
+
+\begin{equation}
+\mathcal{O}_{\theta}:=
+\{\theta+2\pi k,\ -\theta+2\pi k,\ \theta+\pi+2\pi k,\ -\theta+\pi+2\pi k:\ k\in\mathbb{Z}\}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\mathcal{O}_{\theta})
+=
+\{\exp(\mathsf{J}\theta),\exp(-\mathsf{J}\theta),-\exp(\mathsf{J}\theta),-\exp(-\mathsf{J}\theta)\}
+\end{equation}
+
+\begin{equation}
+\theta\sim\theta'
+\Longleftrightarrow
+\theta'\in\mathcal{O}_{\theta}
+\end{equation}
+
+\begin{equation}
+\forall\,\lambda>0:\ [\lambda\exp(\mathsf{J}\theta)]=[\exp(\mathsf{J}\theta)]
+\end{equation}
+
+\begin{equation}
+\bigcup_{R>0}\bigl\{R\exp(\mathsf{J}\theta):\theta\in\mathbb{R}\bigr\}\Big/\mathbb{R}_{>0}
+=\bigl\{\exp(\mathsf{J}\theta):\theta\in\mathbb{R}\bigr\}
+\end{equation}
+
+\begin{equation}
+\forall R_1>0,\,\forall R_2>0:\ \{R_1\exp(\mathsf{J}\theta):\theta\in\mathbb{R}\}\sim\{R_2\exp(\mathsf{J}\theta):\theta\in\mathbb{R}\}
+\end{equation}
+
+\begin{equation}
+\forall R>0:\ \mathcal{C}_R/{\sim}\ \cong\ S^1_{\mathsf{J}}
+\end{equation}
+
+\begin{equation}
+\forall R>0:\ \forall k\in\mathbb{Z}:\ \exp\bigl(\mathsf{J}(\theta+2\pi k)\bigr)\in S^1_{\mathsf{J}}
+\end{equation}
+
+\begin{equation}
+-1=\exp(\mathsf{J}\pi)=\mathsf{C}_{\mathsf{J}}(\varphi)\cdot\mathsf{C}_{\mathsf{J}}(\varphi^{-1})
+\end{equation}
+
+\begin{equation}
+\log(-1)=\bigl\{\mathsf{J}(\pi+2\pi k)\bigr\}_{k\in\mathbb{Z}}
+\end{equation}
+
+\begin{equation}
+\log(-1)=\bigl\{\,\mathsf{J}(\pi+2\pi k)\,:\,k\in\mathbb{Z}\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\forall k\in\mathbb{Z}:\quad \exp\!\big(\mathsf{J}(\pi+2\pi k)\big)=-1
+\end{equation}
+
+\begin{equation}
+\Sigma=\bigsqcup_{i\in I}\Sigma_i
+\end{equation}
+
+\begin{equation}
+\theta:\Sigma_i\to \mathbb{R}/2\pi\mathbb{Z}\cong S^1
+\ \Longrightarrow\
+[\theta]\in [\Sigma_i,S^1]
+\ \Longrightarrow\
+\deg(\theta)=k_i\in\mathbb{Z}.
+\end{equation}
+
+\begin{equation}
+p:\mathbb{R}\to S^1,\qquad p(\alpha):=\exp(\mathsf{J}\alpha)
+\end{equation}
+
+\begin{equation}
+\widetilde{\theta}_i:\Sigma_i\to\mathbb{R},\qquad
+p\circ\widetilde{\theta}_i=\theta\big|_{\Sigma_i}
+\end{equation}
+
+\begin{equation}
+d\theta=d\widetilde{\theta}_i\qquad\text{on }\Sigma_i
+\end{equation}
+
+\begin{equation}
+\Sigma_i\simeq S^1
+\Longrightarrow
+\exists\,\gamma_i:[0,1]\to \Sigma_i:\ \gamma_i(0)=\gamma_i(1)
+\end{equation}
+
+\begin{equation}
+\widetilde{\theta}_i\circ\gamma_i:[0,1]\to\mathbb{R}
+\end{equation}
+
+\begin{equation}
+\int_{\Sigma_i}d\theta
+=\int_0^1\gamma_i^*(d\theta)
+=\int_0^1 d(\theta\circ\gamma_i)
+=\int_0^1 d(\widetilde{\theta}_i\circ\gamma_i)
+\end{equation}
+
+\begin{equation}
+\int_0^1 d(\widetilde{\theta}_i\circ\gamma_i)
+=(\widetilde{\theta}_i\circ\gamma_i)(1)-(\widetilde{\theta}_i\circ\gamma_i)(0)
+\end{equation}
+
+\begin{equation}
+\gamma_i(0)=\gamma_i(1)
+\Longrightarrow
+(\widetilde{\theta}_i\circ\gamma_i)(1)-(\widetilde{\theta}_i\circ\gamma_i)(0)\in 2\pi\mathbb{Z}
+\end{equation}
+
+\begin{equation}
+\exists\,k_i\in\mathbb{Z}:\ 
+(\widetilde{\theta}_i\circ\gamma_i)(1)-(\widetilde{\theta}_i\circ\gamma_i)(0)=2\pi k_i
+\end{equation}
+
+\begin{equation}
+\boxed{
+\int_{\Sigma_i}d\widetilde{\theta}_i=2\pi k_i
+}
+\end{equation}
+
+\begin{equation}
+\forall i\in I:\quad \int_{\Sigma_i} d\theta = 2\pi k_i,\qquad k_i\in\mathbb{Z}
+\end{equation}
+
+\begin{equation}
+K:=\sum_{i\in I}k_i
+\end{equation}
+
+\begin{equation}
+\exp\!\Big(\mathsf{J}\pi\sum_{i\in I}k_i\Big)=\exp(\mathsf{J}\pi K)
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi K)=\exp\!\Big(\mathsf{J}\sum_{i\in I}\pi k_i\Big)=\prod_{i\in I}\exp(\mathsf{J}\pi k_i)
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi k_i)=\big(\exp(\mathsf{J}\pi)\big)^{k_i}=(-1)^{k_i}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi K)=(-1)^K
+\end{equation}
+
+\begin{equation}
+n\in\mathbb{N},\quad n\ge 2,\quad \Omega\subset\mathbb{R}^n
+\end{equation}
+
+\begin{equation}
+\mu:\mathcal{B}(\Omega)\to[0,\infty),\qquad \mu(\Omega)<\infty
+\end{equation}
+
+\begin{equation}
+N\in\mathbb{N},\qquad P_N:=\{p_1,\dots,p_N\}\subset\Omega
+\end{equation}
+
+\begin{equation}
+\pi:\{1,\dots,N\}\to P_N,\qquad \pi(j)=p_j
+\end{equation}
+
+\begin{equation}
+\Omega=\bigsqcup_{j=1}^N C_j
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N\}:\quad \mu(C_j)>0
+\end{equation}
+
+\begin{equation}
+w_j:=\mu(C_j)
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N w_j=\sum_{j=1}^N \mu(C_j)=\mu\!\left(\bigsqcup_{j=1}^N C_j\right)=\mu(\Omega)
+\end{equation}
+
+\begin{equation}
+f:\Omega\to\mathbb{R}
+\end{equation}
+
+\begin{equation}
+I_{\pi,N}[f]:=\sum_{j=1}^N w_j\,f(p_j)
+\end{equation}
+
+\begin{equation}
+E:\Omega\to A_m
+\end{equation}
+
+\begin{equation}
+E=0
+\Longleftrightarrow
+\forall p\in\Omega:\ E(p)=0
+\end{equation}
+
+\begin{align}
+E(p)=0
+&\Longrightarrow E(p)E(p)^*=0\cdot E(p)^*=0\\
+&\Longrightarrow \operatorname{Scal}\bigl(E(p)E(p)^*\bigr)=\operatorname{Scal}(0)=0.
+\end{align}
+
+\begin{align}
+\operatorname{Scal}\bigl(E(p)E(p)^*\bigr)=0
+&\Longrightarrow N(E(p))=E(p)E(p)^*=0\\
+&\Longrightarrow E(p)=0\qquad(\text{assume }m\le3).
+\end{align}
+
+\begin{equation}
+m\le3\ \Longrightarrow\ \bigl(N(q)=0\iff q=0\bigr)\ \Longrightarrow\
+\Bigl(E(p)=0\iff \operatorname{Scal}\bigl(E(p)E(p)^*\bigr)=0\Bigr).
+\end{equation}
+
+\begin{equation}
+f_E:\Omega\to\mathbb{R}_{\ge 0},\qquad
+f_E(p):=\operatorname{Scal}\!\big(E(p)E(p)^{*}\big)=|E(p)|^{2}
+\end{equation}
+
+\begin{equation}
+\mathsf{SCOUT}_{\pi,N}[E]
+:=
+I_{\pi,N}[f_E]
+=
+\sum_{j=1}^{N} w_j\,\operatorname{Scal}\!\big(E(p_j)E(p_j)^{*}\big)
+\end{equation}
+
+\begin{equation}
+(L=R)
+\Longrightarrow
+E:=L-R
+\Longrightarrow
+\mathsf{SCOUT}_{\pi,N}[L=R]
+:=
+\sum_{j=1}^{N} w_j\,\operatorname{Scal}\!\big((L(p_j)-R(p_j))(L(p_j)-R(p_j))^{*}\big)
+\end{equation}
+
+\begin{equation}
+\max_{1\le j\le N}\operatorname{diam}(C_j)\to 0
+\end{equation}
+
+\begin{equation}
+\int_{\Omega} f\,d\mu = L
+\Longleftrightarrow
+\forall\varepsilon>0\ \exists\delta>0\ \forall(\pi,p):
+\Big(\max_j\operatorname{diam}(C_j)<\delta\Big)
+\Longrightarrow
+\left|
+\sum_{j=1}^{N}\mu(C_j)\,f(p_j)-L
+\right|<\varepsilon
+\end{equation}
+
+\begin{equation}
+A_0:=\mathbb{R},\qquad
+\forall a\in A_0:\ a^{*}:=a,\qquad
+1_{A_0}:=1
+\end{equation}
+
+\begin{equation}
+\forall m\ge 0:\qquad
+A_{m+1}:=A_m\oplus A_m
+\end{equation}
+
+\begin{equation}
+\forall m\ge 0:\qquad
+\forall(a,b)\in A_{m+1}:\ (a,b)^{*}:=(a^{*},-b)
+\end{equation}
+
+\begin{equation}
+\forall m\ge 0:\qquad
+\forall(a,b),(c,d)\in A_{m+1}:\ 
+(a,b)\cdot(c,d):=\bigl(ac-d^{*}b,\ da+bc^{*}\bigr)
+\end{equation}
+
+\begin{equation}
+\forall m\ge 0:\qquad
+1_{A_{m+1}}:=(1_{A_m},0)
+\end{equation}
+
+\begin{equation}
+(\cdot)^{*}:A_m\to A_m\quad\text{is an involutive anti-automorphism:}\quad
+(q^{*})^{*}=q,\qquad (ab)^{*}=b^{*}a^{*}.
+\end{equation}
+
+\begin{equation}
+\mathbb{R}\subset A_m\ \text{is the fixed subalgebra:}\qquad
+r^{*}=r\ \Longleftrightarrow\ r\in\mathbb{R}.
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}(q):=\frac12(q+q^{*})\in\mathbb{R},\qquad
+\operatorname{Scal}(q)^{*}=\operatorname{Scal}(q),\qquad
+\operatorname{Scal}(q)=\operatorname{Scal}(q^{*}).
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}(a+b)=\operatorname{Scal}(a)+\operatorname{Scal}(b),\qquad
+\operatorname{Scal}(ra)=r\,\operatorname{Scal}(a)\quad(\forall r\in\mathbb{R}).
+\end{equation}
+
+\begin{equation}
+qq^{*}=q^{*}q=:N(q)\in\mathbb{R}
+\end{equation}
+
+\begin{equation}
+m\le 3\ \Longrightarrow\ N(q)=\sum_{i=1}^{2^m} q_i^{\,2}\ \in\ \mathbb{R}_{\ge0}
+\end{equation}
+
+\begin{equation}
+\mathsf{J}\in A_m
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^2=-1
+\end{equation}
+
+\begin{equation}
+\mathsf{J}^{*}=-\mathsf{J}
+\end{equation}
+
+\begin{equation}
+(t,x)\in\mathbb{R}^2,\qquad t^2+x^2\ne 0
+\end{equation}
+
+\begin{equation}
+A_{\mathsf{J}}:=\operatorname{span}_{\mathbb{R}}\{1,\mathsf{J}\}\subset A_m,\qquad
+\mathsf{J}^{2}=-1
+\end{equation}
+
+\begin{equation}
+\forall a,b\in\mathbb{R}:\quad z:=a+b\mathsf{J}\in A_{\mathsf{J}}
+\end{equation}
+
+\begin{equation}
+\forall a,b,c,d\in\mathbb{R}:\quad
+(a+b\mathsf{J})(c+d\mathsf{J})
+=ac+ad\mathsf{J}+bc\mathsf{J}+bd\,\mathsf{J}^2
+\end{equation}
+
+\begin{equation}
+ac+ad\mathsf{J}+bc\mathsf{J}+bd\,\mathsf{J}^2
+=ac+ad\mathsf{J}+bc\mathsf{J}-bd
+\end{equation}
+
+\begin{equation}
+ac+ad\mathsf{J}+bc\mathsf{J}-bd
+=(ac-bd)+(ad+bc)\mathsf{J}
+\end{equation}
+
+\begin{equation}
+(ac-bd)+(ad+bc)\mathsf{J}
+=(ca-db)+(da+cb)\mathsf{J}
+\end{equation}
+
+\begin{equation}
+(ca-db)+(da+cb)\mathsf{J}
+=(c+d\mathsf{J})(a+b\mathsf{J})
+\end{equation}
+
+\begin{equation}
+\forall z_1,z_2\in A_{\mathsf{J}}:\quad z_1 z_2=z_2 z_1
+\end{equation}
+
+\begin{equation}
+\iota:A_{\mathsf{J}}\to M_2(\mathbb{R}),\qquad
+\iota(a+b\mathsf{J})=\begin{pmatrix}a&-b\\ b&a\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\forall z_1,z_2\in A_{\mathsf{J}}:\quad \iota(z_1 z_2)=\iota(z_1)\iota(z_2)
+\end{equation}
+
+\begin{equation}
+\forall z_1,z_2,z_3\in A_{\mathsf{J}}:\quad
+\iota((z_1 z_2)z_3)=\iota(z_1)\iota(z_2)\iota(z_3)=\iota(z_1(z_2 z_3))
+\end{equation}
+
+\begin{equation}
+\forall z_1,z_2,z_3\in A_{\mathsf{J}}:\quad (z_1 z_2)z_3=z_1(z_2 z_3)
+\end{equation}
+
+\begin{equation}
+t,x\in\mathbb{R}\ \Longrightarrow\ t+\mathsf{J}x\in A_{\mathsf{J}},\quad
+(t+\mathsf{J}x)(t-\mathsf{J}x)=t^{2}+x^{2}\in\mathbb{R}.
+\end{equation}
+
+\begin{equation}
+(t,x)\neq(0,0)\ \Longrightarrow\ t^{2}+x^{2}\neq0\ \Longrightarrow\ (t-\mathsf{J}x)\ \text{is invertible in }A_{\mathsf{J}}.
+\end{equation}
+
+\begin{equation}
+U(t,x):=(t+\mathsf{J}x)(t-\mathsf{J}x)^{-1}
+\end{equation}
+
+\begin{equation}
+(t-\mathsf{J}x)^{*}=(t^{*}+(\mathsf{J}x)^{*})=t-(\mathsf{J}^{*})x=t+\mathsf{J}x
+\end{equation}
+
+\begin{equation}
+(t+\mathsf{J}x)^{*}=(t^{*}+(\mathsf{J}x)^{*})=t+(\mathsf{J}^{*})x=t-\mathsf{J}x
+\end{equation}
+
+\begin{equation}
+(t+\mathsf{J}x)(t+\mathsf{J}x)^{*}=(t+\mathsf{J}x)(t-\mathsf{J}x)
+\end{equation}
+
+\begin{equation}
+(t+\mathsf{J}x)(t-\mathsf{J}x)=t^2-t\mathsf{J}x+\mathsf{J}xt-(\mathsf{J}x)(\mathsf{J}x)
+\end{equation}
+
+\begin{equation}
+t\mathsf{J}x=\mathsf{J}tx
+\end{equation}
+
+\begin{equation}
+\mathsf{J}xt=\mathsf{J}tx
+\end{equation}
+
+\begin{equation}
+-t\mathsf{J}x+\mathsf{J}xt=0
+\end{equation}
+
+\begin{equation}
+(\mathsf{J}x)(\mathsf{J}x)=\mathsf{J}^2x^2=-x^2
+\end{equation}
+
+\begin{equation}
+-(\mathsf{J}x)(\mathsf{J}x)=x^2
+\end{equation}
+
+\begin{equation}
+(t+\mathsf{J}x)(t-\mathsf{J}x)=t^2+x^2
+\end{equation}
+
+\begin{equation}
+(t-\mathsf{J}x)(t+\mathsf{J}x)=t^2+x^2
+\end{equation}
+
+\begin{equation}
+(t-\mathsf{J}x)\left(\frac{t+\mathsf{J}x}{t^{2}+x^{2}}\right)
+=\frac{(t-\mathsf{J}x)(t+\mathsf{J}x)}{t^{2}+x^{2}}
+=\frac{t^{2}+x^{2}}{t^{2}+x^{2}}
+=1.
+\end{equation}
+
+\begin{equation}
+\left(\frac{t+\mathsf{J}x}{t^{2}+x^{2}}\right)(t-\mathsf{J}x)
+=\frac{(t+\mathsf{J}x)(t-\mathsf{J}x)}{t^{2}+x^{2}}
+=\frac{t^{2}+x^{2}}{t^{2}+x^{2}}
+=1.
+\end{equation}
+
+\begin{equation}
+\Longrightarrow\qquad
+(t-\mathsf{J}x)^{-1}=\frac{t+\mathsf{J}x}{t^{2}+x^{2}}.
+\end{equation}
+
+\begin{equation}
+U(t,x)=(t+\mathsf{J}x)\frac{t+\mathsf{J}x}{t^2+x^2}=\frac{(t+\mathsf{J}x)^2}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+U(t,x)^{*}=\left((t+\mathsf{J}x)(t-\mathsf{J}x)^{-1}\right)^{*}=\left((t-\mathsf{J}x)^{-1}\right)^{*}(t+\mathsf{J}x)^{*}
+\end{equation}
+
+\begin{equation}
+\left((t-\mathsf{J}x)^{-1}\right)^{*}=\left(\frac{t+\mathsf{J}x}{t^2+x^2}\right)^{*}=\frac{t-\mathsf{J}x}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+U(t,x)^{*}=\frac{t-\mathsf{J}x}{t^2+x^2}(t-\mathsf{J}x)=\frac{(t-\mathsf{J}x)^2}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+U(t,x)U(t,x)^{*}=(t+\mathsf{J}x)(t-\mathsf{J}x)^{-1}\cdot\left((t-\mathsf{J}x)^{-1}\right)^{*}(t+\mathsf{J}x)^{*}
+\end{equation}
+
+\begin{equation}
+(t-\mathsf{J}x)^{-1}\cdot\left((t-\mathsf{J}x)^{-1}\right)^{*}=\frac{1}{|t-\mathsf{J}x|^2}=\frac{1}{t^2+x^2}
+\end{equation}
+
+\begin{equation}
+U(t,x)U(t,x)^{*}=(t+\mathsf{J}x)\frac{1}{t^2+x^2}(t+\mathsf{J}x)^{*}
+\end{equation}
+
+\begin{equation}
+(t+\mathsf{J}x)^{*}=t-\mathsf{J}x
+\end{equation}
+
+\begin{equation}
+U(t,x)U(t,x)^{*}=\frac{(t+\mathsf{J}x)(t-\mathsf{J}x)}{t^2+x^2}=\frac{t^2+x^2}{t^2+x^2}=1
+\end{equation}
+
+\begin{equation}
+t\ne 0,\qquad r:=\frac{x}{t}
+\end{equation}
+
+\begin{equation}
+U(t,x)=(t+\mathsf{J}x)(t-\mathsf{J}x)^{-1}=t(1+\mathsf{J}r)\cdot\bigl(t(1-\mathsf{J}r)\bigr)^{-1}
+\end{equation}
+
+\begin{equation}
+\bigl(t(1-\mathsf{J}r)\bigr)^{-1}=(1-\mathsf{J}r)^{-1}\,t^{-1}
+\end{equation}
+
+\begin{equation}
+U(t,x)=t(1+\mathsf{J}r)(1-\mathsf{J}r)^{-1}t^{-1}=(1+\mathsf{J}r)(1-\mathsf{J}r)^{-1}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r):=(1+\mathsf{J}r)(1-\mathsf{J}r)^{-1}\in A_{\mathsf{J}},\qquad r\in\mathbb{R}.
+\end{equation}
+
+\begin{equation}
+(1-\mathsf{J}r)(1+\mathsf{J}r)=1-\mathsf{J}^2 r^2=1+r^2\qquad(\mathsf{J}^2=-1)
+\end{equation}
+
+\begin{equation}
+\forall\,r\in\mathbb{R}:\ 1+r^2\geq 1>0
+\end{equation}
+
+\begin{equation}
+(1-\mathsf{J}r)^{-1}=\frac{1+\mathsf{J}r}{1+r^2}
+\end{equation}
+
+\begin{equation}
+U(t,x)=\mathsf{C}_{\mathsf{J}}(r)
+\end{equation}
+
+\begin{equation}
+r^{-1}:=
+\begin{cases}
+\dfrac{t}{x},& x\ne 0\\[6pt]
+\infty,& x=0
+\end{cases}
+\ \in\widehat{\mathbb{R}}
+\end{equation}
+
+% --- Cayley-product identity (self-contained in A_J) ---
+% A_J is commutative (span_R{1,J} ≅ C), so all factors below commute.
+% (Already derived above: (1-Jr)(1+Jr)=1+r², inverse formula.)
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)
+=(1+\mathsf{J}r)(1-\mathsf{J}r)^{-1}
+=\frac{(1+\mathsf{J}r)^2}{1+r^2}
+\end{equation}
+
+\begin{equation}
+(1-\mathsf{J}r^{-1})(1+\mathsf{J}r^{-1})
+=1-\mathsf{J}^2 r^{-2}
+=1+r^{-2}
+\end{equation}
+
+\begin{equation}
+(1-\mathsf{J}r^{-1})^{-1}=\frac{1+\mathsf{J}r^{-1}}{1+r^{-2}}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r^{-1})
+=(1+\mathsf{J}r^{-1})(1-\mathsf{J}r^{-1})^{-1}
+=\frac{(1+\mathsf{J}r^{-1})^2}{1+r^{-2}}
+\end{equation}
+
+% Numerator of the product:
+\begin{equation}
+(1+\mathsf{J}r)(1+\mathsf{J}r^{-1})
+=1+\mathsf{J}r^{-1}+\mathsf{J}r+\mathsf{J}^2
+=\mathsf{J}(r+r^{-1})
+\end{equation}
+
+% Denominator factor:
+\begin{equation}
+(1-\mathsf{J}r)(1-\mathsf{J}r^{-1})
+=1-\mathsf{J}r^{-1}-\mathsf{J}r+\mathsf{J}^2
+=-\mathsf{J}(r+r^{-1})
+\end{equation}
+
+% Product (using commutativity of A_J):
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(r)\,\mathsf{C}_{\mathsf{J}}(r^{-1})
+=\frac{(1+\mathsf{J}r)(1+\mathsf{J}r^{-1})}{(1-\mathsf{J}r)(1-\mathsf{J}r^{-1})}
+=\frac{\mathsf{J}(r+r^{-1})}{-\mathsf{J}(r+r^{-1})}
+=-1
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathsf{C}_{\mathsf{J}}(r)\,\mathsf{C}_{\mathsf{J}}(r^{-1})=-1
+=\exp(\mathsf{J}\pi).
+}
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(\infty)
+:=\lim_{s\to\infty}\mathsf{C}_{\mathsf{J}}(s)
+=\lim_{s\to\infty}\frac{(1+\mathsf{J}s)^2}{1+s^2}
+=\lim_{s\to\infty}\frac{-s^2+2\mathsf{J}s+1}{s^2+1}
+=-1
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(0)
+=(1+\mathsf{J}\cdot 0)(1-\mathsf{J}\cdot 0)^{-1}
+=1
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(0)\,\mathsf{C}_{\mathsf{J}}(\infty)
+=1\cdot(-1)
+=-1
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}:\widehat{\mathbb{R}}\to S^1_{\mathsf{J}}
+\quad\text{is a linear-fractional map, with}\quad
+\mathsf{C}_{\mathsf{J}}(\infty)=-\mathsf{I}
+\end{equation}
+
+\begin{equation}
+q\in A_m
+\end{equation}
+
+\begin{equation}
+\operatorname{Align}_U(q):=\operatorname{Scal}(U^{*}q)
+\end{equation}
+
+\begin{equation}
+\operatorname{Align}_U(q)\in\mathbb{R}
+\end{equation}
+
+\begin{equation}
+a\in A_m
+\end{equation}
+
+\begin{equation}
+\operatorname{Align}_U(Ua)=\operatorname{Scal}(U^{*}Ua)=\operatorname{Scal}(a)
+\end{equation}
+
+\begin{equation}
+(p_1,\dots,p_N)=(\pi(1),\dots,\pi(N))
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N\}:\quad r_j\in\widehat{\mathbb{R}},\quad
+U_j:=\mathsf{C}_{\mathsf{J}}(r_j)\in A_{\mathsf{J}}\subset A_m
+\end{equation}
+
+\begin{equation}
+\forall j:\quad U_j U_j^{*}=1
+\end{equation}
+
+\begin{equation}
+\forall j:\quad U_j^{-1}=U_j^{*}
+\end{equation}
+
+\begin{equation}
+\forall j,k:\quad U_j U_k=U_k U_j
+\end{equation}
+
+\begin{equation}
+\Phi_1:=1\in A_{\mathsf{J}}
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N-1\}:\quad \Phi_{j+1}:=\Phi_j U_j
+\end{equation}
+
+\begin{equation}
+\forall j:\quad \Phi_j\in A_{\mathsf{J}}
+\end{equation}
+
+\begin{equation}
+\forall j,k:\quad \Phi_j\Phi_k=\Phi_k\Phi_j,\qquad
+\forall j,k:\quad \Phi_j^{*}\Phi_k=\Phi_k\Phi_j^{*}
+\end{equation}
+
+\begin{equation}
+\Phi_2=\Phi_1 U_1=U_1
+\end{equation}
+
+\begin{equation}
+\Phi_3=\Phi_2 U_2=(U_1)U_2
+\end{equation}
+
+\begin{equation}
+\Phi_N=\prod_{j=1}^{N-1}U_j
+\end{equation}
+
+\begin{equation}
+\Phi_1\Phi_1^{*}=1
+\end{equation}
+
+\begin{equation}
+\forall j:\quad U_j U_j^{*}=1
+\end{equation}
+
+\begin{equation}
+\Phi_{j+1}\Phi_{j+1}^{*}=(\Phi_j U_j)(\Phi_j U_j)^{*}=(\Phi_j U_j)(U_j^{*}\Phi_j^{*})=\Phi_j(U_j U_j^{*})\Phi_j^{*}=\Phi_j\Phi_j^{*}
+\end{equation}
+
+\begin{equation}
+\Phi_1\Phi_1^{*}=1\ \Longrightarrow\ \forall j:\ \Phi_j\Phi_j^{*}=1
+\end{equation}
+
+\begin{equation}
+Q:\Omega\to A_m
+\end{equation}
+
+\begin{equation}
+Q_j:=Q(p_j)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]:=\sum_{j=1}^N w_j\,\operatorname{Align}_{\Phi_j}(Q_j)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\sum_{j=1}^N w_j\,\operatorname{Scal}(\Phi_j^{*}Q_j)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]\in\mathbb{R}
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}(\Phi_j^{*}Q_j)=\tfrac{1}{2}\big(\Phi_j^{*}Q_j+(\Phi_j^{*}Q_j)^{*}\big)
+\end{equation}
+
+\begin{equation}
+(\Phi_j^{*}Q_j)^{*}=Q_j^{*}(\Phi_j^{*})^{*}=Q_j^{*}\Phi_j
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\tfrac{1}{2}\sum_{j=1}^N w_j\big(\Phi_j^{*}Q_j+Q_j^{*}\Phi_j\big)
+\end{equation}
+
+\begin{equation}
+\max_{1\le j\le N}\operatorname{diam}(C_j)\to 0
+\end{equation}
+
+\begin{equation}
+\lim_{N\to\infty} S_{\pi,N}[Q]=:S_\Omega[Q]
+\end{equation}
+
+\begin{equation}
+u:\Omega\to\mathbb{R}^d
+\end{equation}
+
+\begin{equation}
+F:\Omega\times\mathbb{R}^d\times(\mathbb{R}^d)^n\to\mathbb{R}^n
+\end{equation}
+
+\begin{equation}
+S:\Omega\times\mathbb{R}^d\times(\mathbb{R}^d)^n\to\mathbb{R}
+\end{equation}
+
+\begin{equation}
+\nabla\cdot F(x,u(x),\nabla u(x))=S(x,u(x),\nabla u(x))
+\end{equation}
+
+\begin{equation}
+\Omega=\bigsqcup_{j=1}^N C_j
+\end{equation}
+
+\begin{equation}
+\int_{C_j}\nabla\cdot F\,dV=\int_{C_j}S\,dV
+\end{equation}
+
+\begin{equation}
+\int_{C_j}\nabla\cdot F\,dV=\int_{\partial C_j}F\cdot n_{C_j}\,dS
+\end{equation}
+
+\begin{equation}
+\int_{\partial C_j}F\cdot n_{C_j}\,dS-\int_{C_j}S\,dV=0
+\end{equation}
+
+\begin{equation}
+R_j:=\int_{\partial C_j}F\cdot n_{C_j}\,dS-\int_{C_j}S\,dV
+\end{equation}
+
+\begin{equation}
+\forall j:\quad R_j=0
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N R_j=\sum_{j=1}^N\int_{\partial C_j}F\cdot n_{C_j}\,dS-\sum_{j=1}^N\int_{C_j}S\,dV
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N\int_{C_j}S\,dV=\int_{\bigsqcup_{j=1}^N C_j}S\,dV=\int_\Omega S\,dV
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N\int_{\partial C_j}F\cdot n_{C_j}\,dS=\sum_{f\ \mathrm{interior}}\left(\int_f F\cdot n_+\,dS+\int_f F\cdot n_-\,dS\right)+\int_{\partial\Omega}F\cdot n_\Omega\,dS
+\end{equation}
+
+\begin{equation}
+n_-=-n_+
+\end{equation}
+
+\begin{equation}
+\int_f F\cdot n_+\,dS+\int_f F\cdot n_-\,dS=\int_f F\cdot n_+\,dS+\int_f F\cdot(-n_+)\,dS=0
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N\int_{\partial C_j}F\cdot n_{C_j}\,dS=\int_{\partial\Omega}F\cdot n_\Omega\,dS
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N R_j=\int_{\partial\Omega}F\cdot n_\Omega\,dS-\int_\Omega S\,dV
+\end{equation}
+
+\begin{equation}
+\forall N:\quad \sum_{j=1}^N R_j=0
+\end{equation}
+
+\begin{equation}
+\int_{\partial\Omega}F\cdot n_\Omega\,dS=\int_\Omega S\,dV
+\end{equation}
+
+\begin{equation}
+Q_j:=R_j
+\end{equation}
+
+\begin{equation}
+\Phi_j\in A_m,\qquad \Phi_j\Phi_j^{*}=1
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[R]=\sum_{j=1}^N w_j\,\operatorname{Scal}(\Phi_j^{*}R_j)
+\end{equation}
+
+\begin{equation}
+R_j=0\ \Longrightarrow\ \Phi_j^{*}R_j=0\ \Longrightarrow\ \operatorname{Scal}(\Phi_j^{*}R_j)=0
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[R]=0
+\end{equation}
+
+\begin{equation}
+\lambda\in\mathbb{R}\setminus\{0\}
+\end{equation}
+
+\begin{equation}
+U(\lambda t,\lambda x)=(\lambda t+\mathsf{J}\lambda x)(\lambda t-\mathsf{J}\lambda x)^{-1}
+\end{equation}
+
+\begin{equation}
+(\lambda t-\mathsf{J}\lambda x)^{-1}=\frac{\lambda t+\mathsf{J}\lambda x}{(\lambda t)^2+(\lambda x)^2}=\frac{\lambda(t+\mathsf{J}x)}{\lambda^2(t^2+x^2)}=\frac{t+\mathsf{J}x}{\lambda(t^2+x^2)}
+\end{equation}
+
+\begin{equation}
+U(\lambda t,\lambda x)=\lambda(t+\mathsf{J}x)\cdot\frac{t+\mathsf{J}x}{\lambda(t^2+x^2)}=\frac{(t+\mathsf{J}x)^2}{t^2+x^2}=U(t,x)
+\end{equation}
+
+\begin{equation}
+\rho>0,\qquad (t,x)=(\rho\cos\alpha,\rho\sin\alpha)
+\end{equation}
+
+\begin{equation}
+t+\mathsf{J}x=\rho(\cos\alpha+\mathsf{J}\sin\alpha)
+\end{equation}
+
+% --- Euler identity via power-series separation ---
+% (cf.\ Baez, arXiv:math/0105155, §\,Cayley–Dickson construction)
+
+\begin{equation}
+\exp(\mathsf{J}\alpha)
+:=\sum_{n=0}^{\infty}\frac{(\mathsf{J}\alpha)^n}{n!}
+\end{equation}
+
+\begin{equation}
+(\mathsf{J}\alpha)^{2k}=\mathsf{J}^{2k}\alpha^{2k}=(-1)^k\alpha^{2k},
+\qquad
+(\mathsf{J}\alpha)^{2k+1}=\mathsf{J}^{2k+1}\alpha^{2k+1}=(-1)^k\mathsf{J}\,\alpha^{2k+1}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\alpha)
+=\sum_{k=0}^{\infty}\frac{(-1)^k\alpha^{2k}}{(2k)!}
++\mathsf{J}\sum_{k=0}^{\infty}\frac{(-1)^k\alpha^{2k+1}}{(2k+1)!}
+\end{equation}
+
+\begin{equation}
+\cos\alpha:=\sum_{k=0}^{\infty}\frac{(-1)^k\alpha^{2k}}{(2k)!},
+\qquad
+\sin\alpha:=\sum_{k=0}^{\infty}\frac{(-1)^k\alpha^{2k+1}}{(2k+1)!}
+\end{equation}
+
+\begin{equation}
+\boxed{
+\cos\alpha+\mathsf{J}\sin\alpha=\exp(\mathsf{J}\alpha)
+}
+\end{equation}
+
+\begin{equation}
+t+\mathsf{J}x=\rho\exp(\mathsf{J}\alpha)
+\end{equation}
+
+\begin{equation}
+t-\mathsf{J}x=\rho\exp(-\mathsf{J}\alpha)
+\end{equation}
+
+\begin{equation}
+U(t,x)=(t+\mathsf{J}x)(t-\mathsf{J}x)^{-1}=\rho\,e^{\mathsf{J}\alpha}\cdot(\rho\,e^{-\mathsf{J}\alpha})^{-1}=e^{\mathsf{J}\alpha}\cdot e^{\mathsf{J}\alpha}=e^{\mathsf{J}2\alpha}
+\end{equation}
+
+\begin{equation}
+U(t,x)=\exp(\mathsf{J}\theta),\qquad \theta:=2\alpha
+\end{equation}
+
+\begin{equation}
+\exp\!\big(\mathsf{J}(\theta+2\pi k)\big)=\exp(\mathsf{J}\theta)\qquad(\forall k\in\mathbb{Z})
+\end{equation}
+
+\begin{equation}
+\pi^{-1}\bigl(\exp(\mathsf{J}\theta)\bigr)=\bigl\{\theta+2\pi k:k\in\mathbb{Z}\bigr\}
+\end{equation}
+
+\begin{equation}
+R_m:=R_0\varphi^m,\qquad m\in\mathbb{Z},\qquad R_0>0
+\end{equation}
+
+\begin{equation}
+(t_m,x_m):=(R_m\cos\alpha,R_m\sin\alpha)
+\end{equation}
+
+\begin{equation}
+U(t_m,x_m)=U(R_m\cos\alpha,R_m\sin\alpha)=\exp(\mathsf{J}2\alpha)
+\end{equation}
+
+\begin{equation}
+\forall m\in\mathbb{Z}:\quad U(t_m,x_m)=\exp(\mathsf{J}\theta)
+\end{equation}
+
+\begin{equation}
+\bigl\{(t_m,x_m):m\in\mathbb{Z}\bigr\}\subset \bigcup_{R>0}\bigl\{(R\cos\alpha,R\sin\alpha)\bigr\}
+\end{equation}
+
+\begin{equation}
+\forall M\in\mathbb{N}:\quad \frac{1}{M}\sum_{m=1}^M U(t_m,x_m)=\frac{1}{M}\sum_{m=1}^M \exp(\mathsf{J}\theta)=\exp(\mathsf{J}\theta)
+\end{equation}
+
+\begin{equation}
+\forall M\in\mathbb{N}:\quad \frac{1}{M}\sum_{m=1}^M \operatorname{Scal}\!\big(U(t_m,x_m)\big)=\operatorname{Scal}\!\big(\exp(\mathsf{J}\theta)\big)=\cos\theta
+\end{equation}
+
+\begin{equation}
+\forall m\in\mathbb{Z}:\quad (t_m^2+x_m^2)=R_m^2=R_0^2\varphi^{2m}
+\end{equation}
+
+\begin{equation}
+\forall m\in\mathbb{Z}:\quad \frac{(t_m+\mathsf{J}x_m)^2}{t_m^2+x_m^2}=\frac{R_m^2\,e^{\mathsf{J}2\alpha}}{R_m^2}=e^{\mathsf{J}2\alpha}
+\end{equation}
+
+\begin{equation}
+\forall m\in\mathbb{Z}:\quad \frac{(t_m+\mathsf{J}x_m)^2}{t_m^2+x_m^2}=\frac{(t_0+\mathsf{J}x_0)^2}{t_0^2+x_0^2}
+\end{equation}
+
+\begin{equation}
+\forall m\in\mathbb{Z}:\quad U(t_m,x_m)=U(t_0,x_0)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]\ Q_j=Q(p_j),\ \Phi_{j+1}=\Phi_j U_j,\ U_j=\mathsf{C}_{\mathsf{J}}(r_j),\ r_j=\frac{x_j}{t_j}
+\end{equation}
+
+\begin{equation}
+U_j=\mathsf{C}_{\mathsf{J}}(r_j)
+\end{equation}
+
+\begin{equation}
+(t_j,x_j)\mapsto(\lambda t_j,\lambda x_j),\ \lambda\neq 0
+\ \Longrightarrow\ 
+r_j=\frac{x_j}{t_j}\mapsto \frac{\lambda x_j}{\lambda t_j}=r_j
+\ \Longrightarrow\
+U_j\mapsto U_j.
+\end{equation}
+
+\begin{equation}
+\Phi_{1}=1,\quad \Phi_{j+1}=\Phi_{j}U_j
+\ \Longrightarrow\
+\Phi_j\ \text{is scale-invariant whenever each }U_j\text{ is scale-invariant}.
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\sum_{j=1}^N w_j\,\operatorname{Scal}(\Phi_j^{*}Q_j)
+\end{equation}
+
+\begin{equation}
+Q_j:=R_j.
+\end{equation}
+
+\begin{equation}
+R_j=\int_{\partial C_j}F\cdot n_{C_j}\,dS-\int_{C_j}S\,dV
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[R]=\sum_{j=1}^N w_j\,\operatorname{Scal}(\Phi_j^{*}R_j)=0
+\end{equation}
+
+\begin{equation}
+\lim_{N\to\infty} S_{\pi,N}[R]=0
+\end{equation}
+
+\begin{equation}
+S_\Omega[R]=0
+\end{equation}
+
+\begin{equation}
+S_\Omega[R]=\lim_{N\to\infty}\sum_{j=1}^N w_j\,\operatorname{Scal}(\Phi_j^{*}R_j)
+\end{equation}
+
+\begin{equation}
+R_j=\int_{\partial C_j}F\cdot n_{C_j}\,dS-\int_{C_j}S\,dV
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N R_j=\int_{\partial\Omega}F\cdot n_\Omega\,dS-\int_\Omega S\,dV
+\end{equation}
+
+\begin{equation}
+\int_{\partial\Omega}F\cdot n_\Omega\,dS-\int_\Omega S\,dV=0
+\end{equation}
+
+\begin{equation}
+\Phi_j\Phi_j^{*}=1,\qquad \operatorname{Scal}(\Phi_j^{*}R_j)\in\mathbb{R}
+\end{equation}
+
+\begin{equation}
+S_\Omega[R]=0
+\end{equation}
+
+\begin{equation}
+\mathsf{C}_{\mathsf{J}}(\varphi)\cdot\mathsf{C}_{\mathsf{J}}(\varphi^{-1})=-1
+\end{equation}
+
+\begin{equation}
+-1=\exp(\mathsf{J}\pi)
+\end{equation}
+
+\begin{equation}
+\log\!\big(\mathsf{C}_{\mathsf{J}}(\varphi)\cdot\mathsf{C}_{\mathsf{J}}(\varphi^{-1})\big)=\bigl\{\,\mathsf{J}(\pi+2\pi k):k\in\mathbb{Z}\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\forall k\in\mathbb{Z}:\quad \mathsf{J}(\pi+2\pi k)\ ,\qquad \exp\!\big(\mathsf{J}(\pi+2\pi k)\big)=-1
+\end{equation}
+
+\begin{equation}
+\forall m\in\mathbb{Z}:\quad R_m=R_0\varphi^m\ \Longrightarrow\ U(R_m\cos\alpha,R_m\sin\alpha)=\exp(\mathsf{J}2\alpha)
+\end{equation}
+
+\begin{equation}
+\forall m\in\mathbb{Z}:\quad \{R_m\}\ \Longrightarrow\ \{U\}\
+\end{equation}
+
+\begin{equation}
+\forall (t,x)\ne(0,0):\quad \bigl\{(\lambda t,\lambda x):\lambda>0\bigr\}\ \mapsto\ \{U(t,x)\}
+\end{equation}
+
+\begin{equation}
+\bigl(\mathbb{R}^2\setminus\{0\}\bigr)\big/\mathbb{R}_{>0}\ \cong\ \bigl\{\,U(t,x):t^2+x^2\ne 0\,\bigr\}\subset \bigl\{\,q\in A_m:qq^{*}=1\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\bigl\{\,U(t,x)\,\bigr\}=\bigl\{\,\exp(\mathsf{J}\theta):\theta\in\mathbb{R}\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\theta\sim\theta+2\pi k\ \Longrightarrow\ \exp(\mathsf{J}\theta)=\exp\!\big(\mathsf{J}(\theta+2\pi k)\big)
+\end{equation}
+
+\begin{equation}
+S_\Omega[Q]\ :=\ \lim_{N\to\infty}\sum_{j=1}^N \mu(C_j)\,\operatorname{Scal}\!\left(\Phi_j^{*}\,Q(p_j)\right)
+\end{equation}
+
+\begin{equation}
+\Phi_1=1,\qquad \Phi_{j+1}=\Phi_j\,\mathsf{C}_{\mathsf{J}}\!\left(\frac{x(p_j)}{t(p_j)}\right)
+\end{equation}
+
+\begin{equation}
+\Phi_j\Phi_j^{*}=1
+\end{equation}
+
+\begin{equation}
+S_\Omega[Q]\in\mathbb{R}
+\end{equation}
+
+\begin{equation}
+\left(\forall(\pi,N)\right)\left(\forall j\in\{1,\dots,N\}\right):\ 
+\operatorname{Scal}\!\left(\Phi_j^{*}\,Q(p_j)\right)=0
+\ \Longrightarrow\ 
+S_{\pi,N}[Q]=0
+\end{equation}
+
+\begin{equation}
+\left(\forall(\pi,N)\right)\left(\forall j\in\{1,\dots,N\}\right):\ 
+\operatorname{Scal}\!\left(\Phi_j^{*}\,Q(p_j)\right)=0
+\ \Longrightarrow\ 
+S_{\Omega}[Q]=0
+\end{equation}
+
+\begin{equation}
+Q=\big(\nabla\cdot F-S\big)\ \Longrightarrow\ S_\Omega[Q]=0
+\end{equation}
+
+\begin{equation}
+Q=0\ \Longrightarrow\ S_\Omega[Q]=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\ S_\Omega[Q]=\mathcal{B}_\Omega[Q]
+\end{equation}
+
+\begin{equation}
+S_\Omega[Q]\ :=\ \lim_{N\to\infty}S_{\pi,N}[Q]
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]\ :=\ \sum_{j=1}^N w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_j\right)
+\end{equation}
+
+\begin{equation}
+\Omega=\bigsqcup_{j=1}^N C_j
+\end{equation}
+
+\begin{equation}
+w_j:=\mu(C_j)
+\end{equation}
+
+\begin{equation}
+\max_{1\le j\le N}\operatorname{diam}(C_j)\to 0
+\end{equation}
+
+\begin{equation}
+\Phi_1:=1
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N-1\}:\quad \Phi_{j+1}:=\Phi_jU_j
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N\}:\quad \Phi_j\Phi_j^*=1
+\end{equation}
+
+\begin{equation}
+Q:\Omega\to A_m
+\end{equation}
+
+\begin{equation}
+Q_j:=Q(p_j)
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_N\ :=\ \bigl\{\,f:\ f\subset\partial C_j\ j\in\{1,\dots,N\}\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_{j,N}\ :=\ \bigl\{\,f\in\mathcal{F}_N:\ f\subset\partial C_j\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_N^\partial\ :=\ \bigl\{\,f\in\mathcal{F}_N:\ f\subset\partial\Omega\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_N^\circ\ :=\ \mathcal{F}_N\setminus\mathcal{F}_N^\partial
+\end{equation}
+
+\begin{equation}
+\forall f\in\mathcal{F}_N^\partial\ \exists!\ j(f)\in\{1,\dots,N\}:\quad f\subset\partial C_{j(f)}
+\end{equation}
+
+\begin{equation}
+\forall f\in\mathcal{F}_N^\circ\ \exists!\ (j_+(f),j_-(f))\in\{1,\dots,N\}^2,\ j_+(f)\neq j_-(f):\quad f=\partial C_{j_+(f)}\cap\partial C_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N\}:\quad Q_j=\sum_{f\in\mathcal{F}_{j,N}}Q_{j,f}
+\end{equation}
+
+\begin{equation}
+\forall f\in\mathcal{F}_N:\quad a_f:=\mu_{\partial}(f)
+\end{equation}
+
+\begin{equation}
+\forall j,\ \forall f\in\mathcal{F}_{j,N}:\quad w_j\,Q_{j,f}=a_f\,\widehat{Q}_{j,f}
+\end{equation}
+
+\begin{equation}
+\forall j,\ \forall f\in\mathcal{F}_{j,N}:\quad
+A_{j,f}:=w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_{j,f}\right)
+=a_f\,\operatorname{Scal}\!\left(\Phi_j^*\,\widehat{Q}_{j,f}\right)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]
+=\sum_{j=1}^N w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_j\right)
+=\sum_{j=1}^N w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,\sum_{f\in\mathcal{F}_{j,N}}Q_{j,f}\right)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]
+=\sum_{j=1}^N\sum_{f\in\mathcal{F}_{j,N}}w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_{j,f}\right)
+=\sum_{j=1}^N\sum_{f\in\mathcal{F}_{j,N}}A_{j,f}
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N\sum_{f\in\mathcal{F}_{j,N}}A_{j,f}
+=\sum_{f\in\mathcal{F}_N^\partial}A_{j(f),f}
++\sum_{f\in\mathcal{F}_N^\circ}\Big(A_{j_+(f),f}+A_{j_-(f),f}\Big)
+\end{equation}
+
+\begin{equation}
+\forall j,\ \forall f\in\mathcal{F}_{j,N}:\quad \widetilde{Q}_{j,f}:=\Phi_j^*\,\widehat{Q}_{j,f}
+\end{equation}
+
+% --- Outward-normal cancellation forcing IFC ---
+\begin{equation}
+\forall f\in\mathcal{F}_N^\circ:\quad
+\mathbf{n}_{j_+(f),f}=-\mathbf{n}_{j_-(f),f}
+\end{equation}
+
+\begin{equation}
+\widehat{Q}_{j,f}=\int_f Q\,\mathbf{n}_{j,f}\,d\mu_{\partial}
+\end{equation}
+
+\begin{equation}
+\widehat{Q}_{j_+(f),f}+\widehat{Q}_{j_-(f),f}
+=\int_f Q\,\bigl(\mathbf{n}_{j_+(f),f}+\mathbf{n}_{j_-(f),f}\bigr)\,d\mu_{\partial}=0
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}\!\bigl(\Phi_{j_+}^*(\widehat{Q}_{j_+,f}+\widehat{Q}_{j_-,f})\bigr)
+=\operatorname{Scal}\!\bigl(\Phi_{j_+}^*\cdot 0\bigr)=0
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}:=\Phi_{j_-(f)}^{*}\Phi_{j_+(f)}\in A_{\mathsf{J}}
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}U_{j_-(f)\to j_+(f)}^{*}
+=(\Phi_{j_-}^{*}\Phi_{j_+})(\Phi_{j_+}^{*}\Phi_{j_-})
+=\Phi_{j_-}^{*}(\Phi_{j_+}\Phi_{j_+}^{*})\Phi_{j_-}
+=\Phi_{j_-}^{*}\Phi_{j_-}
+=1
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}^{-1}=U_{j_-(f)\to j_+(f)}^{*}
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}\Phi_{j_+(f)}^{*}
+=\Phi_{j_-(f)}^{*}\Phi_{j_+(f)}\Phi_{j_+(f)}^{*}
+=\Phi_{j_-(f)}^{*}
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}^{*}
+=U_{j_-(f)\to j_+(f)}\Phi_{j_+(f)}^{*}
+=\Phi_{j_+(f)}^{*}U_{j_-(f)\to j_+(f)}
+\end{equation}
+
+\begin{equation}
+\widetilde{Q}_{j_-(f),f}
+=\Phi_{j_-(f)}^{*}\widehat{Q}_{j_-(f),f}
+=\Phi_{j_+(f)}^{*}U_{j_-(f)\to j_+(f)}\widehat{Q}_{j_-(f),f}
+\end{equation}
+
+\begin{equation}
+\widetilde{Q}_{j_+(f),f}+\widetilde{Q}_{j_-(f),f}
+=\Phi_{j_+(f)}^{*}\widehat{Q}_{j_+(f),f}
++\Phi_{j_+(f)}^{*}U_{j_-(f)\to j_+(f)}^{*}\widehat{Q}_{j_-(f),f}
+\end{equation}
+
+\begin{equation}
+\widetilde{Q}_{j_+(f),f}+\widetilde{Q}_{j_-(f),f}
+=\Phi_{j_+(f)}^{*}\Big(\widehat{Q}_{j_+(f),f}
++U_{j_-(f)\to j_+(f)}^{*}\widehat{Q}_{j_-(f),f}\Big)
+\end{equation}
+
+\begin{align}
+\widetilde{Q}_{j_+(f),f}
++
+U_{j_-(f)\to j_+(f)}^{*}\,\widetilde{Q}_{j_-(f),f}
+&=
+\Phi_{j_+(f)}^{*}\widehat{Q}_{j_+(f),f}
++
+\Bigl(\Phi_{j_+(f)}^{*}\Phi_{j_-(f)}\Bigr)\,
+\Bigl(\Phi_{j_-(f)}^{*}\widehat{Q}_{j_-(f),f}\Bigr)\\
+&=
+\Phi_{j_+(f)}^{*}\widehat{Q}_{j_+(f),f}
++
+\Phi_{j_+(f)}^{*}\Bigl(\Phi_{j_-(f)}\Phi_{j_-(f)}^{*}\Bigr)\widehat{Q}_{j_-(f),f}\\
+&=
+\Phi_{j_+(f)}^{*}\widehat{Q}_{j_+(f),f}
++
+\Phi_{j_+(f)}^{*}\widehat{Q}_{j_-(f),f}\\
+&=
+\Phi_{j_+(f)}^{*}\Bigl(\widehat{Q}_{j_+(f),f}+\widehat{Q}_{j_-(f),f}\Bigr).
+\end{align}
+
+\begin{align}
+\widehat{Q}_{j_+(f),f}+\widehat{Q}_{j_-(f),f}
+&=
+\int_f Q\,n_{j_+(f),f}\,d\mu
++
+\int_f Q\,n_{j_-(f),f}\,d\mu\\
+&=
+\int_f Q\,(n_{j_+(f),f}+n_{j_-(f),f})\,d\mu\\
+&=
+\int_f Q\,(n_{j_+(f),f}-n_{j_+(f),f})\,d\mu\\
+&=\int_f Q\cdot 0\,d\mu\\
+&=0,
+\end{align}
+
+\begin{align}
+\mathcal{Q}_{\mathrm{ifc}}
+&=
+\operatorname{Scal}\!\left(\Phi_{j_+(f)}^{*}\cdot 0\right)\\
+&=\operatorname{Scal}(0)\\
+&=0.
+\end{align}
+
+\begin{equation}
+\mathcal{Q}_{\mathrm{ifc}}
+:=\left\{
+Q:\ \forall f\in \mathcal{F}_{\mathrm{int}}(\Omega):\ 
+\widehat{Q}_{j_-(f),f}=-U_{j_-(f)\to j_+(f)}^{*}\widehat{Q}_{j_+(f),f}
+\right\}
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\Longrightarrow
+\forall N,\ \forall f\in\mathcal{F}_N^\circ:\ 
+A_{j_+(f),f}+A_{j_-(f),f}
+=a_f\,\operatorname{Scal}\!\left(\widetilde{Q}_{j_+(f),f}+\widetilde{Q}_{j_-(f),f}\right)=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\Longrightarrow
+\forall N,\ \forall f\in\mathcal{F}_N^\circ:\ A_{j_+(f),f}+A_{j_-(f),f}=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\Longrightarrow
+\sum_{f\in\mathcal{F}_N^\circ}\Big(A_{j_+(f),f}+A_{j_-(f),f}\Big)=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\Longrightarrow
+S_{\pi,N}[Q]=\sum_{f\in\mathcal{F}_N^\partial}A_{j(f),f}
+\end{equation}
+
+\begin{equation}
+\mathcal{B}_{\Omega,N}[Q]
+:=\sum_{f\in\mathcal{F}_N^\partial}A_{j(f),f}
+\end{equation}
+
+\begin{equation}
+\mathcal{B}_{\Omega}[Q]
+:=\lim_{N\to\infty}\mathcal{B}_{\Omega,N}[Q]
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\Longrightarrow
+S_{\Omega}[Q]
+=\lim_{N\to\infty}S_{\pi,N}[Q]
+=\lim_{N\to\infty}\mathcal{B}_{\Omega,N}[Q]
+=\mathcal{B}_{\Omega}[Q]
+\end{equation}
+
+\begin{equation}
+\boxed{
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\
+S_\Omega[Q]
+=\lim_{N\to\infty}\sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)
+}
+\end{equation}
+
+\begin{equation}
+\forall N:\quad \Big(\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)\ \Longrightarrow\ \Big(\forall f\in\mathcal{F}_N^\partial:\ A_{j(f),f}=0\Big)
+\end{equation}
+
+\begin{equation}
+\forall N:\quad \Big(\forall f\in\mathcal{F}_N^\partial:\ A_{j(f),f}=0\Big)\ \Longrightarrow\ S_{\pi,N}[Q]=0
+\end{equation}
+
+\begin{equation}
+\Big(\forall N:\ S_{\pi,N}[Q]=0\Big)\ \Longrightarrow\ S_\Omega[Q]=\lim_{N\to\infty}S_{\pi,N}[Q]=0
+\end{equation}
+
+\begin{equation}
+\boxed{
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \wedge\ \Big(\forall N,\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)\ \Longrightarrow\ S_\Omega[Q]=0
+}
+\end{equation}
+
+\begin{equation}
+\Sigma=\bigsqcup_{i\in I}\Sigma_i
+\end{equation}
+
+\begin{equation}
+\forall i\in I:\quad \int_{\Sigma_i}d\theta=2\pi k_i,\quad k_i\in\mathbb{Z}
+\end{equation}
+
+\begin{equation}
+K:=\sum_{i\in I}k_i
+\end{equation}
+
+\begin{equation}
+\int_\Sigma d\theta=2\pi K,\quad K\in\mathbb{Z}
+\end{equation}
+
+\begin{equation}
+\mathcal{H}(\Sigma):=\exp\!\left(\frac{\mathsf{J}}{2}\int_\Sigma d\theta\right)
+\end{equation}
+
+\begin{equation}
+\int_\Sigma d\theta=2\pi K,\quad K\in\mathbb{Z}
+\end{equation}
+
+\begin{equation}
+\mathcal{H}(\Sigma)
+=\exp\!\left(\frac{\mathsf{J}}{2}\cdot 2\pi K\right)
+=\exp(\mathsf{J}\pi K)
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi)=-1
+\end{equation}
+
+\begin{equation}
+\mathcal{H}(\Sigma)
+=\bigl(\exp(\mathsf{J}\pi)\bigr)^K
+=(-1)^K
+\end{equation}
+
+\begin{equation}
+\mathcal{B}_{\Omega}^{(\Sigma)}[Q]
+:=\mathcal{H}(\Sigma)\,\mathcal{B}_{\Omega}[Q]
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\Longrightarrow
+S_{\Omega}[Q]=\mathcal{B}_{\Omega}[Q]
+=\mathcal{H}(\Sigma)^{-1}\,\mathcal{B}_{\Omega}^{(\Sigma)}[Q]
+\end{equation}
+
+\begin{equation}
+n\in\mathbb{N},\quad n\ge 2,\quad \Omega\subset\mathbb{R}^n
+\end{equation}
+
+\begin{equation}
+\mu:\mathcal{B}(\Omega)\to[0,\infty),\qquad \mu(\Omega)<\infty
+\end{equation}
+
+\begin{equation}
+N\in\mathbb{N},\qquad P_N:=\{p_1,\dots,p_N\}\subset\Omega
+\end{equation}
+
+\begin{equation}
+\pi:\{1,\dots,N\}\to P_N,\qquad \pi(j)=p_j
+\end{equation}
+
+\begin{equation}
+\Omega=\bigsqcup_{j=1}^N C_j
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N\}:\quad \mu(C_j)>0
+\end{equation}
+
+\begin{equation}
+w_j:=\mu(C_j)
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N w_j=\sum_{j=1}^N \mu(C_j)=\mu(\Omega)
+\end{equation}
+
+\begin{equation}
+(\cdot)^* :A_m\to A_m
+\end{equation}
+
+\begin{equation}
+\forall q\in A_m:\quad (q^*)^*=q
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}(q):=\frac12(q+q^*)
+\end{equation}
+
+\begin{equation}
+\forall q\in A_m:\quad \operatorname{Scal}(q)\in\mathbb{R}
+\end{equation}
+
+\begin{equation}
+\forall q\in A_m,\qquad qq^*\in \mathbb{R},
+\qquad
+(m\le3)\Longrightarrow qq^*\in \mathbb{R}_{\ge0}.
+\end{equation}
+
+\begin{equation}
+|q|^2:=qq^*
+\end{equation}
+
+\begin{equation}
+\forall q\in A_m:\quad q\neq 0\ \Longrightarrow\ q^{-1}=\frac{q^*}{|q|^2}
+\end{equation}
+
+\begin{equation}
+\Phi_1:=1
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N-1\}:\quad \Phi_{j+1}:=\Phi_jU_j
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N\}:\quad \Phi_j\Phi_j^*=1
+\end{equation}
+
+\begin{equation}
+Q:\Omega\to A_m
+\end{equation}
+
+\begin{equation}
+Q_j:=Q(p_j)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]\ :=\ \sum_{j=1}^N w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_j\right)
+\end{equation}
+
+\begin{equation}
+S_\Omega[Q]\ :=\ \lim_{N\to\infty}S_{\pi,N}[Q]
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_N\ :=\ \bigl\{\,f:\ f\subset\partial C_j\ j\in\{1,\dots,N\}\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_{j,N}\ :=\ \bigl\{\,f\in\mathcal{F}_N:\ f\subset\partial C_j\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_N^\partial\ :=\ \bigl\{\,f\in\mathcal{F}_N:\ f\subset\partial\Omega\,\bigr\}
+\end{equation}
+
+\begin{equation}
+\mathcal{F}_N^\circ\ :=\ \mathcal{F}_N\setminus\mathcal{F}_N^\partial
+\end{equation}
+
+\begin{equation}
+\forall f\in\mathcal{F}_N^\partial\ \exists!\ j(f)\in\{1,\dots,N\}:\quad f\subset\partial C_{j(f)}
+\end{equation}
+
+\begin{equation}
+\forall f\in\mathcal{F}_N^\circ\ \exists!\ (j_+(f),j_-(f))\in\{1,\dots,N\}^2,\ j_+(f)\neq j_-(f):\quad f=\partial C_{j_+(f)}\cap\partial C_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+\forall j\in\{1,\dots,N\}:\quad Q_j=\sum_{f\in\mathcal{F}_{j,N}}Q_{j,f}
+\end{equation}
+
+\begin{equation}
+A_{j,f}\ :=\ w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_{j,f}\right)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\sum_{j=1}^N w_j\,\operatorname{Scal}\!\left(\Phi_j^*\sum_{f\in\mathcal{F}_{j,N}}Q_{j,f}\right)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\sum_{j=1}^N \sum_{f\in\mathcal{F}_{j,N}} w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_{j,f}\right)
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\sum_{j=1}^N \sum_{f\in\mathcal{F}_{j,N}} A_{j,f}
+\end{equation}
+
+\begin{equation}
+\sum_{j=1}^N \sum_{f\in\mathcal{F}_{j,N}} A_{j,f}
+=\sum_{f\in\mathcal{F}_N^\partial}A_{j(f),f}
++\sum_{f\in\mathcal{F}_N^\circ}\Big(A_{j_+(f),f}+A_{j_-(f),f}\Big)
+\end{equation}
+
+\begin{equation}
+\forall f\in\mathcal{F}_N^\circ:\quad f=\partial C_{j_+(f)}\cap\partial C_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+\partial C_{j_+(f)}\supset f
+\end{equation}
+
+\begin{equation}
+\partial C_{j_-(f)}\supset f
+\end{equation}
+
+\begin{equation}
+f\subset\partial C_{j_+(f)}
+\end{equation}
+
+\begin{equation}
+f\subset\partial C_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+f\in\mathcal{F}_{j_+(f),N}
+\end{equation}
+
+\begin{equation}
+f\in\mathcal{F}_{j_-(f),N}
+\end{equation}
+
+\begin{equation}
+Q_{j_+(f),f}\in A_m
+\end{equation}
+
+\begin{equation}
+Q_{j_-(f),f}\in A_m
+\end{equation}
+
+\begin{equation}
+A_{j_+(f),f}=w_{j_+(f)}\,\operatorname{Scal}\!\left(\Phi_{j_+(f)}^*\,Q_{j_+(f),f}\right)
+\end{equation}
+
+\begin{equation}
+A_{j_-(f),f}=w_{j_-(f)}\,\operatorname{Scal}\!\left(\Phi_{j_-(f)}^*\,Q_{j_-(f),f}\right)
+\end{equation}
+
+\begin{equation}
+\Phi_{j_+(f)}\Phi_{j_+(f)}^*=1
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}\Phi_{j_-(f)}^*=1
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}(r)=r\quad (r\in\mathbb{R})
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}(a+b)=\operatorname{Scal}(a)+\operatorname{Scal}(b)
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}(\lambda a)=\lambda\,\operatorname{Scal}(a)\quad (\lambda\in\mathbb{R})
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}\!\left(\Phi_{j_+(f)}^*\,Q_{j_+(f),f}\right)+\operatorname{Scal}\!\left(\Phi_{j_-(f)}^*\,Q_{j_-(f),f}\right)
+=\operatorname{Scal}\!\left(\Phi_{j_+(f)}^*\,Q_{j_+(f),f}+\Phi_{j_-(f)}^*\,Q_{j_-(f),f}\right)
+\end{equation}
+
+\begin{equation}
+A_{j_+(f),f}+A_{j_-(f),f}
+=w_{j_+(f)}\,\operatorname{Scal}\!\left(\Phi_{j_+(f)}^*\,Q_{j_+(f),f}\right)+w_{j_-(f)}\,\operatorname{Scal}\!\left(\Phi_{j_-(f)}^*\,Q_{j_-(f),f}\right)
+\end{equation}
+
+\begin{equation}
+A_{j_+(f),f}+A_{j_-(f),f}=0
+\ \Longleftrightarrow\
+w_{j_{+}(f)}\,\operatorname{Scal}\!\left(\Phi_{j_{+}(f)}^{*}\,Q_{j_{+}(f),f}\right)
++
+w_{j_{-}(f)}\,\operatorname{Scal}\!\left(\Phi_{j_{-}(f)}^{*}\,Q_{j_{-}(f),f}\right)
+=0.
+\end{equation}
+
+\begin{equation}
+\Phi_{j_+(f)}^*\,Q_{j_+(f),f}=-\Phi_{j_-(f)}^*\,Q_{j_-(f),f}
+\end{equation}
+
+\begin{equation}
+Q_{j_-(f),f}=-(\Phi_{j_-(f)}^*)^{-1}\,\Phi_{j_+(f)}^*\,Q_{j_+(f),f}
+\end{equation}
+
+\begin{equation}
+(\Phi_{j_-(f)}^*)^{-1}=(\Phi_{j_-(f)}^{-1})^*
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}^{-1}=\Phi_{j_-(f)}^*
+\end{equation}
+
+\begin{equation}
+(\Phi_{j_-(f)}^{-1})^*=(\Phi_{j_-(f)}^*)^*=\Phi_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+(\Phi_{j_-(f)}^*)^{-1}=\Phi_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+Q_{j_-(f),f}=-\Phi_{j_-(f)}\,\Phi_{j_+(f)}^*\,Q_{j_+(f),f}
+\end{equation}
+
+\begin{equation}
+\Phi_{j_+(f)}=\Phi_{j_-(f)}\,U_{j_-(f)\to j_+(f)}
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}:=\Phi_{j_-(f)}^*\,\Phi_{j_+(f)}
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}^*= \Phi_{j_+(f)}^*\,\Phi_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}\,U_{j_-(f)\to j_+(f)}^*=(\Phi_{j_-(f)}^*\,\Phi_{j_+(f)})(\Phi_{j_+(f)}^*\,\Phi_{j_-(f)})=\Phi_{j_-(f)}^*(\Phi_{j_+(f)}\Phi_{j_+(f)}^*)\Phi_{j_-(f)}=\Phi_{j_-(f)}^*\Phi_{j_-(f)}=1
+\end{equation}
+
+\begin{equation}
+U_{j_-(f)\to j_+(f)}\in\{q\in A_m:qq^*=1\}
+\end{equation}
+
+\begin{equation}
+Q_{j_-(f),f}=-U_{j_-(f)\to j_+(f)}^*\,Q_{j_+(f),f}
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}^*\,Q_{j_-(f),f}=-\Phi_{j_-(f)}^*\,U_{j_-(f)\to j_+(f)}^*\,Q_{j_+(f),f}
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}^*\,U_{j_-(f)\to j_+(f)}^*=\Phi_{j_-(f)}^*(\Phi_{j_+(f)}^*\,\Phi_{j_-(f)})=(\Phi_{j_-(f)}^*\Phi_{j_+(f)}^*)\Phi_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}^*\,U_{j_-(f)\to j_+(f)}^*=(\Phi_{j_+(f)}\,\Phi_{j_-(f)})^*\Phi_{j_-(f)}
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}^*\,U_{j_-(f)\to j_+(f)}^*=\Phi_{j_+(f)}^*
+\end{equation}
+
+\begin{equation}
+\Phi_{j_-(f)}^*\,Q_{j_-(f),f}=-\Phi_{j_+(f)}^*\,Q_{j_+(f),f}
+\end{equation}
+
+\begin{equation}
+\Phi_{j_+(f)}^*\,Q_{j_+(f),f}+\Phi_{j_-(f)}^*\,Q_{j_-(f),f}=0
+\end{equation}
+
+\begin{equation}
+\operatorname{Scal}\!\left(\Phi_{j_+(f)}^*\,Q_{j_+(f),f}+\Phi_{j_-(f)}^*\,Q_{j_-(f),f}\right)=0
+\end{equation}
+
+\begin{equation}
+A_{j_+(f),f}+A_{j_-(f),f}=0
+\end{equation}
+
+\begin{equation}
+\forall N,\ \forall f\in\mathcal{F}_N^\circ:\quad Q_{j_-(f),f}=-U_{j_-(f)\to j_+(f)}^*\,Q_{j_+(f),f}
+\ \Longrightarrow\
+\forall N,\ \forall f\in\mathcal{F}_N^\circ:\quad A_{j_+(f),f}+A_{j_-(f),f}=0
+\end{equation}
+
+\begin{equation}
+\mathcal{Q}_{\mathrm{ov}}\ :=\ \left\{Q:\ \forall N,\ \forall f\in\mathcal{F}_N^\circ,\ Q_{j_-(f),f}=-U_{j_-(f)\to j_+(f)}^*\,Q_{j_+(f),f},\right\}
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ov}}\ \Longrightarrow\ \forall N,\ \forall f\in\mathcal{F}_N^\circ:\ A_{j_+(f),f}+A_{j_-(f),f}=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ov}}\ \Longrightarrow\ \sum_{f\in\mathcal{F}_N^\circ}\Big(A_{j_+(f),f}+A_{j_-(f),f}\Big)=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ov}}\ \Longrightarrow\ S_{\pi,N}[Q]=\sum_{f\in\mathcal{F}_N^\partial}A_{j(f),f}
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ov}}\ \Longrightarrow\ S_{\pi,N}[Q]=\sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ov}}\ \Longrightarrow\ S_\Omega[Q]
+=\lim_{N\to\infty}\sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)
+\end{equation}
+
+\begin{equation}
+\mathcal{B}_\Omega[Q]\ :=\ \lim_{N\to\infty}\sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ov}}\ \Longrightarrow\ S_\Omega[Q]=\mathcal{B}_\Omega[Q]
+\end{equation}
+
+\begin{equation}
+\mathcal{Q}_{\mathrm{ifc}}\ :=\ \mathcal{Q}_{\mathrm{ov}}
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\ S_\Omega[Q]=\mathcal{B}_\Omega[Q]
+\end{equation}
+
+\begin{equation}
+\forall N:\quad \Big(\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)\ \Longrightarrow\ \Big(\forall f\in\mathcal{F}_N^\partial:\ \operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)=0\Big)
+\end{equation}
+
+\begin{equation}
+\forall N:\quad \Big(\forall f\in\mathcal{F}_N^\partial:\ \operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)=0\Big)\ \Longrightarrow\ \sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)=0
+\end{equation}
+
+\begin{equation}
+\Big(\forall N:\ \sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)=0\Big)\ \Longrightarrow\ \lim_{N\to\infty}\sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)=0
+\end{equation}
+
+\begin{equation}
+\Big(\forall N:\ \sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)=0\Big)\ \Longrightarrow\ \mathcal{B}_\Omega[Q]=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \wedge\ \Big(\forall N,\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)\ \Longrightarrow\ S_\Omega[Q]=\mathcal{B}_\Omega[Q]=0
+\end{equation}
+
+\begin{equation}
+H(\Sigma)=(-1)^K
+\end{equation}
+
+\begin{equation}
+\mathcal{G}_{\Omega,\Sigma}[Q]\ :=\ \bigl(H(\Sigma),\,S_\Omega[Q]\bigr)
+\end{equation}
+
+\begin{equation}
+\mathcal{G}_{\Omega,\Sigma}[Q]=\bigl((-1)^K,\,S_\Omega[Q]\bigr)
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\ \mathcal{G}_{\Omega,\Sigma}[Q]=\bigl((-1)^K,\,\mathcal{B}_\Omega[Q]\bigr)
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \wedge\ \Big(\forall N,\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)\ \Longrightarrow\ \mathcal{G}_{\Omega,\Sigma}[Q]=(-1)^K\cdot 0
+\end{equation}
+
+\begin{equation}
+(-1)^K\cdot 0=0
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \wedge\ \Big(\forall N,\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)\ \Longrightarrow\ \mathcal{G}_{\Omega,\Sigma}[Q]=0
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathcal{Q}_{\mathrm{ifc}}
+=\left\{Q:\ \forall N,\ \forall f\in\mathcal{F}_N^\circ,\ Q_{j_-(f),f}=-U_{j_-(f)\to j_+(f)}^*\,Q_{j_+(f),f},\right\}
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\ S_\Omega[Q]=\mathcal{B}_\Omega[Q]
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathcal{B}_\Omega[Q]=\lim_{N\to\infty}\sum_{f\in\mathcal{F}_N^\partial} w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+H(\Sigma)=\exp\!\left(\frac{J}{2}\int_\Sigma d\theta\right)=(-1)^K,\qquad H(\Sigma)^2=1
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathcal{G}_{\Omega,\Sigma}[Q]=\bigl(H(\Sigma),\,S_\Omega[Q]\bigr)=\bigl((-1)^K,\,S_\Omega[Q]\bigr)=\bigl((-1)^K,\,\mathcal{B}_\Omega[Q]\bigr)
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \wedge\ \Big(\forall N,\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)\ \Longrightarrow\ S_\Omega[Q]=0\ \Longrightarrow\ \mathcal{G}_{\Omega,\Sigma}[Q]=0
+}
+\end{equation}
+
+\begin{equation}
+\exp(\mathsf{J}\pi)=-1
+\end{equation}
+
+\begin{equation}
+H(\Sigma)\ :=\ \exp\!\left(\frac{\mathsf{J}}{2}\int_\Sigma d\theta\right)
+\end{equation}
+
+\begin{equation}
+\int_\Sigma d\theta=2\pi K,\quad K\in\mathbb{Z}
+\end{equation}
+
+\begin{equation}
+H(\Sigma)
+=\exp\!\left(\frac{\mathsf{J}}{2}\cdot 2\pi K\right)
+=\exp(\mathsf{J}\pi K)
+\end{equation}
+
+\begin{equation}
+H(\Sigma)
+=\bigl(\exp(\mathsf{J}\pi)\bigr)^K
+=(-1)^K
+\end{equation}
+
+\begin{equation}
+H(\Sigma)^2
+=\exp\!\left(\mathsf{J}\int_\Sigma d\theta\right)
+=\exp(\mathsf{J}2\pi K)
+=1
+\end{equation}
+
+\begin{equation}
+\boxed{H(\Sigma)=(-1)^K,\quad H(\Sigma)^2=1}
+\end{equation}
+
+\begin{equation}
+A_{j,f}:=w_j\,\operatorname{Scal}\!\left(\Phi_j^*\,Q_{j,f}\right),
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\sum_{j=1}^N\sum_{f\in\mathcal{F}_{j,N}}A_{j,f}.
+\end{equation}
+
+\begin{equation}
+\mathcal{E}_N\ :=\ \{(j,f):\ j\in\{1,\dots,N\},\ f\in\mathcal{F}_{j,N}\}.
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]=\sum_{(j,f)\in\mathcal{E}_N}A_{j,f}.
+\end{equation}
+
+\begin{equation}
+f=\partial C_{j_+(f)}\cap\partial C_{j_-(f)},\qquad j_+(f)\neq j_-(f).
+\end{equation}
+
+\begin{equation}
+\iota(j_+(f),f)=(j_-(f),f),\qquad \iota(j_-(f),f)=(j_+(f),f);
+\end{equation}
+
+\begin{equation}
+\iota(\iota(j,f))=(j,f).
+\end{equation}
+
+\begin{equation}
+A_{j_+(f),f}+A_{j_-(f),f}
+\end{equation}
+
+\begin{equation}
+\forall N,\ \forall f\in\mathcal{F}_N^\circ:\quad A_{j_+(f),f}+A_{j_-(f),f}=0.
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathcal{Q}_{\mathrm{ifc}}
+\ :=\ 
+\left\{
+Q:\ \forall N,\ \forall f\in\mathcal{F}_N^\circ,\
+A_{j_+(f),f}+A_{j_-(f),f}=0
+\right\}.
+}
+\end{equation}
+
+\begin{equation}
+S_{\pi,N}[Q]
+=\sum_{f\in\mathcal{F}_N^\partial}A_{j(f),f}
++\sum_{f\in\mathcal{F}_N^\circ}\Big(A_{j_+(f),f}+A_{j_-(f),f}\Big).
+\end{equation}
+
+\begin{equation}
+A_{j_+(f),f}+A_{j_-(f),f}=0,
+\end{equation}
+
+\begin{equation}
+\sum_{f\in\mathcal{F}_N^\circ}\Big(A_{j_+(f),f}+A_{j_-(f),f}\Big)=0,
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\
+S_{\pi,N}[Q]=\sum_{f\in\mathcal{F}_N^\partial}A_{j(f),f}
+=\sum_{f\in\mathcal{F}_N^\partial}w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right).
+\end{equation}
+
+\begin{equation}
+S_\Omega[Q]:=\lim_{N\to\infty}S_{\pi,N}[Q].
+\end{equation}
+
+\begin{equation}
+\mathcal{B}_\Omega[Q]
+:=
+\lim_{N\to\infty}\sum_{f\in\mathcal{F}_N^\partial}w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right).
+\end{equation}
+
+\begin{equation}
+\boxed{
+Q\in\mathcal{Q}_{\mathrm{ifc}}
+\ \Longrightarrow
+S_\Omega[Q]=\mathcal{B}_\Omega[Q].
+}
+\end{equation}
+
+\begin{equation}
+\forall N,\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0
+\ \Longrightarrow
+\forall N,\forall f\in\mathcal{F}_N^\partial:\ A_{j(f),f}=0
+\ \Longrightarrow
+S_{\pi,N}[Q]=0
+\ \Longrightarrow
+S_\Omega[Q]=0.
+\end{equation}
+
+\begin{equation}
+\boxed{
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \wedge
+\Big(\forall N,\forall f\in\mathcal{F}_N^\partial:\ Q_{j(f),f}=0\Big)
+\ \Longrightarrow\
+S_\Omega[Q]=0.
+}
+\end{equation}
+
+\begin{equation}
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\ S_\Omega[Q]=\mathcal{B}_\Omega[Q].
+\end{equation}
+
+\begin{equation}
+H(\Sigma)=(-1)^K,\quad H(\Sigma)^2=1.
+\end{equation}
+
+\begin{equation}
+\mathcal{G}_{\Omega,\Sigma}[Q]\ :=\ \bigl(H(\Sigma),\,S_\Omega[Q]\bigr).
+\end{equation}
+
+\begin{equation}
+\mathcal{G}_{\Omega,\Sigma}[Q]
+=\bigl(H(\Sigma),\,\mathcal{B}_\Omega[Q]\bigr)
+=\bigl((-1)^K,\,\mathcal{B}_\Omega[Q]\bigr).
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathcal{Q}_{\mathrm{ifc}}
+=
+\left\{
+Q:\ \forall N,\forall f\in\mathcal{F}_N^\circ,\ 
+w_{j_+(f)}\,\operatorname{Scal}\!\left(\Phi_{j_+(f)}^*\,Q_{j_+(f),f}\right)
++
+w_{j_-(f)}\,\operatorname{Scal}\!\left(\Phi_{j_-(f)}^*\,Q_{j_-(f),f}\right)
+=0
+\right\}
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+Q\in\mathcal{Q}_{\mathrm{ifc}}\ \Longrightarrow\
+S_\Omega[Q]=\mathcal{B}_\Omega[Q]
+=\lim_{N\to\infty}\sum_{f\in\mathcal{F}_N^\partial}
+w_{j(f)}\,\operatorname{Scal}\!\left(\Phi_{j(f)}^*\,Q_{j(f),f}\right)
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+H(\Sigma)=\exp\!\left(\frac{J}{2}\int_\Sigma d\theta\right)=(-1)^K,\qquad H(\Sigma)^2=1
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathcal{G}_{\Omega,\Sigma}[Q]
+:=\bigl(H(\Sigma),\,S_\Omega[Q]\bigr)
+=\bigl((-1)^K,\,\mathcal{B}_\Omega[Q]\bigr)
+}
+\end{equation}
+
+\begin{equation}
+\boxed{
+\mathcal{G}_{\Omega,\Sigma}[Q]=0
+\quad\Longleftrightarrow\quad
+\mathcal{B}_\Omega[Q]=0
+\quad\Longleftrightarrow\quad
+S_\Omega[Q]=0
+\qquad (H(\Sigma)=\pm1).
+}
+\end{equation}
+
+\end{document}

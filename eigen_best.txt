@@ -1,0 +1,27 @@
+﻿
+    [EigenvalueEq|D_Lambda] (-Γûí+weier)(gauss) = 0.0139323┬╖gauss 
+(eigenvalue)  (residual=2.41e-52, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+inv)(gauss_x) = 0.60688837┬╖gauss_x 
+(eigenvalue)  (residual=2.21e-53, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+cos)(gauss_x) = -0.058365714┬╖gauss_x 
+(eigenvalue)  (residual=6.51e-54, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+J0)(gauss_x) = 0.43396332┬╖gauss_x 
+(eigenvalue)  (residual=2.51e-53, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+eta)(gauss_x) = 0.64351472┬╖gauss_x 
+(eigenvalue)  (residual=2.51e-53, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+asinh)(gauss_x) = 1.2473571┬╖gauss_x 
+(eigenvalue)  (residual=7.91e-53, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+P2)(gauss_x) = 3.4159054┬╖gauss_x 
+(eigenvalue)  (residual=7.71e-51, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+inv)(gauss2) = 0.60688837┬╖gauss2 
+(eigenvalue)  (residual=1.01e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+atan)(gauss2) = 1.0060763┬╖gauss2 
+(eigenvalue)  (residual=9.31e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+sin_shift)(gauss2) = -0.10548046┬╖gauss2 
+(eigenvalue)  (residual=3.91e-28, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+csc)(gauss2) = 0.98997112┬╖gauss2 
+(eigenvalue)  (residual=3.91e-27, pts=8)
+    [EigenvalueEq|D_Lambda] (-Γûí+half_x)(gauss2) = 0.79787138┬╖gauss2 
+(eigenvalue)  (residual=9.31e-27, pts=8)
+
+

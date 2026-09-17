@@ -1,0 +1,7 @@
+﻿  ΓöÇΓöÇ CascadeEq (6) ΓöÇΓöÇ
+    [CascadeEq|Xi_phi] ╬₧┬▓_╧å(log) [Cascade] = Γëê0 (cascade solution)  (residual=3.38e-16, pts=8)
+    [CascadeEq|Xi_phi] ╬₧┬▓_╧å(ellipK) [Cascade] = Γëê0 (cascade solution)  (residual=0.00e+00, pts=8)
+    [CascadeEq|Xi_phi] ╬₧┬▓_╧å(Li2) [Cascade] = Γëê0 (cascade solution)  (residual=0.00e+00, pts=8)
+    [CascadeEq|Xi_phi] ╬₧┬▓_╧å(theta3) [Cascade] = Γëê0 (cascade solution)  (residual=0.00e+00, pts=8)
+    [CascadeEq|Xi_phi] ╬₧┬▓_╧å(atanh) [Cascade] = Γëê0 (cascade solution)  (residual=0.00e+00, pts=8)
+    [CascadeEq|Xi_phi] ╬₧┬▓_╧å(step) [Cascade] = Γëê0 (cascade solution)  (residual=0.00e+00, pts=8)

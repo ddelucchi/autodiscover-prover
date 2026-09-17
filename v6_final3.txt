@@ -1,0 +1,466 @@
+﻿
+================================================================
+    AUTODISCOVERY EQUATIONAL PROVER v1.0
+    with SCOUT Integration
+----------------------------------------------------------------
+    Cayley-Dickson Tower:  R -> C -> H -> O -> S
+    GOD Canonicalizer:     min_{<_Enc}(Orbit(Phi))
+    Golden Ratio:          phi^2 = phi + 1
+    SCOUT:                 Align_U(q) = Scal(U* . q)
+================================================================
+
+=== DISCOVER ALL MODE (v6.0 ΓÇö Analytic Autodiscovery) ===
+
+
+================================================================
+    UNIVERSAL EQUATION DISCOVERY ENGINE v6.0
+    ANALYTIC AUTODISCOVERY ΓÇö CALCULUS, WAVES, FIELDS
+----------------------------------------------------------------
+    Starting from ONLY:
+      phi^2 = phi + 1
+      (a,b)(c,d) = (ac - conj(d)b, da + b*conj(c))
+      conj((a,b)) = (conj(a), -b)
+    V6.0 CAPABILITIES:
+      Power sequences: phi^n discovers Fibonacci/Lucas
+      J^n, i^n discovers PERIOD-4 WAVES (Fourier kernel)
+      Discrete calculus: Delta, Delta^2, wave eigenvalue
+      Leibniz rule: [a,xy] = [a,x]y + x[a,y] (CALCULUS!)
+      Jacobi identity: [a,[b,c]]+cyc = 0 (LIE ALGEBRA!)
+      Cayley-Hamilton: q^2 - 2Scal(q)q + |q|^2 = 0
+      Higher derivatives: D^2 = [a,[a,x]] (LAPLACIAN!)
+      Field decomposition: Scal(q) + Vec(q) = q
+      Inner product: <p,q> = Scal(p*conj(q))
+      Binomial theorem: (p+q)^2 = p^2+pq+qp+q^2
+      Moufang identities: (xy)(zx) = x((yz)x)
+      Power-associativity: x^m*x^n = x^{m+n} in O
+      Complete evaluator: inv, norm, Scal, Vec, sub
+      Octonion basis: 8 elements, 49 products, Fano plane
+    EVERYTHING discovered by evaluation + proving
+================================================================
+
+[UNIVERSAL] Seeded 79 ground-zero ring axioms (DEFINITIONS ONLY)
+[UNIVERSAL]   Cayley-Dickson: levels R,C,H,O
+[UNIVERSAL]   Golden ratio:   phi^2 = phi + 1
+[UNIVERSAL]   SCOUT:          alignment, phase transport
+[UNIVERSAL]   Cayley map:     C_J(r) properties
+[UNIVERSAL]   NO operator axioms. NO wave equations.
+[UNIVERSAL]   NO presets of ANY kind.
+
+[UNIVERSAL] === STEP 1: TERM GENERATION (ground-zero) ===
+[UNIVERSAL]   Level 0 R (Z[phi]): 6557 terms
+[UNIVERSAL]   Level 1 C (Complex): 6631 terms
+[UNIVERSAL]   Level 2 H (Quaternion): 5676 terms
+[UNIVERSAL]   Level 3 O (Octonion): 466 terms
+
+[UNIVERSAL] === STEP 2: LEVEL-BY-LEVEL DISCOVERY ===
+[UNIVERSAL]   (ALL equations found by EVALUATION, not preset)
+
+[UNIVERSAL] Level 0 (Z[phi]) -- EXACT arithmetic
+[UNIVERSAL]   -> 1507 equations DISCOVERED, 0 kernel-proven, 1507 SCOUT-validated
+[UNIVERSAL] Level 1 (C) -- CayleyDickson<1> evaluation
+[UNIVERSAL]   -> 10235 equations DISCOVERED, 45 e-graph proven
+[UNIVERSAL] Level 2 (H) -- CayleyDickson<2> evaluation
+[UNIVERSAL]   -> 3909 equations DISCOVERED, 200 e-graph proven
+[UNIVERSAL] Level 3 (O) -- CayleyDickson<3> evaluation
+[UNIVERSAL]   -> 523 equations DISCOVERED, 1 e-graph proven
+
+[UNIVERSAL] === STEP 3: CROSS-LEVEL IDENTITIES ===
+[UNIVERSAL]   (Detecting scalar-valued higher-level terms)
+[UNIVERSAL]   -> 500 cross-level identities DISCOVERED
+[UNIVERSAL]   (scalar-valued C->R, H->R, O->R projections)
+
+================================================================
+    UNIVERSAL DISCOVERY RESULTS (PURE GROUND-ZERO)
+================================================================
+
+  Level 0 -- R (Real/Z[phi]):
+    Terms generated:  6557
+    Terms evaluated:  5680
+    Buckets:          74
+    Equations FOUND:  1507
+    Kernel-proven:    0
+    SCOUT-validated:  1507
+    E-graph-proven:   0
+
+  Level 1 -- C (Complex):
+    Terms generated:  6631
+    Terms evaluated:  6631
+    Buckets:          556
+    Equations FOUND:  10235
+    Kernel-proven:    0
+    SCOUT-validated:  0
+    E-graph-proven:   45
+
+  Level 2 -- H (Quaternion):
+    Terms generated:  5676
+    Terms evaluated:  5676
+    Buckets:          3099
+    Equations FOUND:  3909
+    Kernel-proven:    0
+    SCOUT-validated:  0
+    E-graph-proven:   200
+
+  Level 3 -- O (Octonion):
+    Terms generated:  466
+    Terms evaluated:  466
+    Buckets:          33
+    Equations FOUND:  523
+    Kernel-proven:    0
+    SCOUT-validated:  0
+    E-graph-proven:   1
+
+  Cross-level:            500
+  ----------------------------------------
+  TOTAL DISCOVERED:       16674
+  GOD normalizations:     4241
+  Gas consumed:           19330
+  Time elapsed:           35.97s
+
+
+================================================================
+    ALL DISCOVERED EQUATIONS (ZERO PRESETS)
+================================================================
+
+---- Scalar Ring Z[phi] (1507 equations) ----
+
+  1. [Scalar Ring Z[phi] L0] ╧å = conj(╧å╠ä)  {ORACLE SCOUT } val=╧å
+  2. [Scalar Ring Z[phi] L0] ╧å = +(╧å, 0)  {ORACLE SCOUT } val=╧å
+  3. [Scalar Ring Z[phi] L0] ╧å = +(0, ╧å)  {ORACLE SCOUT } val=╧å
+  4. [Scalar Ring Z[phi] L0] ╧å = *(╧å, 1)  {ORACLE SCOUT } val=╧å
+  5. [Scalar Ring Z[phi] L0] ╧å = *(1, ╧å)  {ORACLE SCOUT } val=╧å
+  6. [Scalar Ring Z[phi] L0] ╧å = neg(neg(╧å))  {ORACLE SCOUT } val=╧å
+  7. [Scalar Ring Z[phi] L0] ╧å = inv(inv(╧å))  {ORACLE SCOUT } val=╧å
+  8. [Scalar Ring Z[phi] L0] ╧å = conj(conj(╧å))  {ORACLE SCOUT } val=╧å
+  9. [Scalar Ring Z[phi] L0] ╧å = inv(neg(╧å╠ä))  {ORACLE SCOUT } val=╧å
+  10. [Scalar Ring Z[phi] L0] ╧å = neg(inv(╧å╠ä))  {ORACLE SCOUT } val=╧å
+  11. [Scalar Ring Z[phi] L0] ╧å = inv(+(╧å, -1))  {ORACLE SCOUT } val=╧å
+  12. [Scalar Ring Z[phi] L0] ╧å = inv(+(-1, ╧å))  {ORACLE SCOUT } val=╧å
+  13. [Scalar Ring Z[phi] L0] ╧å = neg(*(╧å, -1))  {ORACLE SCOUT } val=╧å
+  14. [Scalar Ring Z[phi] L0] ╧å = neg(*(-1, ╧å))  {ORACLE SCOUT } val=╧å
+  15. [Scalar Ring Z[phi] L0] ╧å = conj(+(╧å╠ä, 0))  {ORACLE SCOUT } val=╧å
+  16. [Scalar Ring Z[phi] L0] ╧å = conj(+(0, ╧å╠ä))  {ORACLE SCOUT } val=╧å
+  17. [Scalar Ring Z[phi] L0] ╧å = conj(*(╧å╠ä, 1))  {ORACLE SCOUT } val=╧å
+  18. [Scalar Ring Z[phi] L0] ╧å = conj(*(1, ╧å╠ä))  {ORACLE SCOUT } val=╧å
+  19. [Scalar Ring Z[phi] L0] ╧å = neg(+(╧å╠ä, -1))  {ORACLE SCOUT } val=╧å
+  20. [Scalar Ring Z[phi] L0] ╧å = neg(+(-1, ╧å╠ä))  {ORACLE SCOUT } val=╧å
+  21. [Scalar Ring Z[phi] L0] ╧å = inv(*(╧å╠ä, -1))  {ORACLE SCOUT } val=╧å
+  22. [Scalar Ring Z[phi] L0] ╧å = inv(*(-1, ╧å╠ä))  {ORACLE SCOUT } val=╧å
+  23. [Scalar Ring Z[phi] L0] ╧å = *(neg(╧å), -1)  {ORACLE SCOUT } val=╧å
+  24. [Scalar Ring Z[phi] L0] ╧å = *(-1, neg(╧å))  {ORACLE SCOUT } val=╧å
+  25. [Scalar Ring Z[phi] L0] ╧å = +(inv(╧å), 1)  {ORACLE SCOUT } val=╧å
+  26. [Scalar Ring Z[phi] L0] ╧å = +(1, inv(╧å))  {ORACLE SCOUT } val=╧å
+  27. [Scalar Ring Z[phi] L0] ╧å = +(neg(╧å╠ä), 1)  {ORACLE SCOUT } val=╧å
+  28. [Scalar Ring Z[phi] L0] ╧å = +(1, neg(╧å╠ä))  {ORACLE SCOUT } val=╧å
+  29. [Scalar Ring Z[phi] L0] ╧å = *(inv(╧å╠ä), -1)  {ORACLE SCOUT } val=╧å
+  30. [Scalar Ring Z[phi] L0] ╧å = *(-1, inv(╧å╠ä))  {ORACLE SCOUT } val=╧å
+  31. [Scalar Ring Z[phi] L0] +(1, 2) = +(2, 1)  {ORACLE SCOUT } val=3
+  32. [Scalar Ring Z[phi] L0] +(1, 2) = conj(+(1, 2))  {ORACLE SCOUT } val=3
+  33. [Scalar Ring Z[phi] L0] +(1, 2) = conj(+(2, 1))  {ORACLE SCOUT } val=3
+  34. [Scalar Ring Z[phi] L0] +(1, 2) = +(inv(1), 2)  {ORACLE SCOUT } val=3
+  35. [Scalar Ring Z[phi] L0] +(1, 2) = +(2, inv(1))  {ORACLE SCOUT } val=3
+  36. [Scalar Ring Z[phi] L0] +(1, 2) = +(conj(1), 2)  {ORACLE SCOUT } val=3
+  37. [Scalar Ring Z[phi] L0] +(1, 2) = +(2, conj(1))  {ORACLE SCOUT } val=3
+  38. [Scalar Ring Z[phi] L0] +(1, 2) = +(neg(-1), 2)  {ORACLE SCOUT } val=3
+  39. [Scalar Ring Z[phi] L0] +(1, 2) = +(2, neg(-1))  {ORACLE SCOUT } val=3
+  40. [Scalar Ring Z[phi] L0] +(1, 2) = +(conj(2), 1)  {ORACLE SCOUT } val=3
+  41. [Scalar Ring Z[phi] L0] +(1, 2) = +(1, conj(2))  {ORACLE SCOUT } val=3
+  42. [Scalar Ring Z[phi] L0] +(1, 2) = +(+(╧å, ╧å╠ä), 2)  {ORACLE SCOUT } val=3
+  43. [Scalar Ring Z[phi] L0] +(1, 2) = +(2, +(╧å, ╧å╠ä))  {ORACLE SCOUT } val=3
+  44. [Scalar Ring Z[phi] L0] +(1, 2) = +(+(╧å╠ä, ╧å), 2)  {ORACLE SCOUT } val=3
+  45. [Scalar Ring Z[phi] L0] +(1, 2) = +(2, +(╧å╠ä, ╧å))  {ORACLE SCOUT } val=3
+  46. [Scalar Ring Z[phi] L0] +(1, 2) = +(+(╧å, 2), ╧å╠ä)  {ORACLE SCOUT } val=3
+  47. [Scalar Ring Z[phi] L0] +(1, 2) = +(╧å╠ä, +(╧å, 2))  {ORACLE SCOUT } val=3
+  48. [Scalar Ring Z[phi] L0] +(1, 2) = +(+(2, ╧å), ╧å╠ä)  {ORACLE SCOUT } val=3
+  49. [Scalar Ring Z[phi] L0] +(1, 2) = +(╧å╠ä, +(2, ╧å))  {ORACLE SCOUT } val=3
+  50. [Scalar Ring Z[phi] L0] +(1, 2) = +(+(╧å╠ä, 2), ╧å)  {ORACLE SCOUT } val=3
+  ... and 1457 more
+
+---- Complex Field C (10235 equations) ----
+
+  1. [Complex Field C L1] J = (0, 1)  {ORACLE EGRAPH } val=(0,1)
+  2. [Complex Field C L1] J = conj((0, -1))  {ORACLE } val=(0,1)
+  3. [Complex Field C L1] J = neg((0, -1))  {ORACLE } val=(0,1)
+  4. [Complex Field C L1] J = +((╧å, ╧å), (neg(╧å), ╧å╠ä))  {ORACLE } val=(0,1)
+  5. [Complex Field C L1] J = +((╧å, ╧å), (neg(╧å), conj(╧å╠ä)))  {ORACLE } val=(0,1)
+  6. [Complex Field C L1] J = +((╧å, ╧å), (inv(╧å╠ä), ╧å╠ä))  {ORACLE } val=(0,1)
+  7. [Complex Field C L1] J = +((╧å, ╧å), (inv(╧å╠ä), conj(╧å╠ä)))  {ORACLE } val=(0,1)
+  8. [Complex Field C L1] J = +((╧å, ╧å╠ä), (neg(╧å), ╧å))  {ORACLE } val=(0,1)
+  9. [Complex Field C L1] J = +((╧å, ╧å╠ä), (neg(╧å), conj(╧å)))  {ORACLE } val=(0,1)
+  10. [Complex Field C L1] J = +((╧å, ╧å╠ä), (inv(╧å╠ä), ╧å))  {ORACLE } val=(0,1)
+  11. [Complex Field C L1] J = +((╧å, ╧å╠ä), (inv(╧å╠ä), conj(╧å)))  {ORACLE } val=(0,1)
+  12. [Complex Field C L1] J = *((╧å, 0), (0, inv(╧å)))  {ORACLE } val=(0,1)
+  13. [Complex Field C L1] J = *((0, inv(╧å)), (╧å, 0))  {ORACLE } val=(0,1)
+  14. [Complex Field C L1] J = *((╧å, 0), (0, neg(╧å╠ä)))  {ORACLE } val=(0,1)
+  15. [Complex Field C L1] J = *((0, neg(╧å╠ä)), (╧å, 0))  {ORACLE } val=(0,1)
+  16. [Complex Field C L1] J = +((╧å, 0), (neg(╧å), 1))  {ORACLE } val=(0,1)
+  17. [Complex Field C L1] J = +((╧å, 0), (inv(╧å╠ä), 1))  {ORACLE } val=(0,1)
+  18. [Complex Field C L1] J = +((╧å, 1), (neg(╧å), 0))  {ORACLE } val=(0,1)
+  19. [Complex Field C L1] J = +((╧å, 1), (inv(╧å╠ä), 0))  {ORACLE } val=(0,1)
+  20. [Complex Field C L1] J = +((╧å, -1), (neg(╧å), 2))  {ORACLE } val=(0,1)
+  21. [Complex Field C L1] J = +((╧å, -1), (inv(╧å╠ä), 2))  {ORACLE } val=(0,1)
+  22. [Complex Field C L1] J = +((╧å, 2), (neg(╧å), -1))  {ORACLE } val=(0,1)
+  23. [Complex Field C L1] J = +((╧å, 2), (inv(╧å╠ä), -1))  {ORACLE } val=(0,1)
+  24. [Complex Field C L1] J = +((╧å, conj(╧å)), (neg(╧å), ╧å╠ä))  {ORACLE } val=(0,1)
+  25. [Complex Field C L1] J = +((╧å, conj(╧å)), (neg(╧å), conj(╧å╠ä)))  {ORACLE } val=(0,1)
+  26. [Complex Field C L1] J = +((╧å, conj(╧å)), (inv(╧å╠ä), ╧å╠ä))  {ORACLE } val=(0,1)
+  27. [Complex Field C L1] J = +((╧å, conj(╧å)), (inv(╧å╠ä), conj(╧å╠ä)))  {ORACLE } val=(0,1)
+  28. [Complex Field C L1] J = +((╧å, conj(╧å╠ä)), (neg(╧å), ╧å))  {ORACLE } val=(0,1)
+  29. [Complex Field C L1] J = +((╧å, conj(╧å╠ä)), (neg(╧å), conj(╧å)))  {ORACLE } val=(0,1)
+  30. [Complex Field C L1] J = +((╧å, conj(╧å╠ä)), (inv(╧å╠ä), ╧å))  {ORACLE } val=(0,1)
+  31. [Complex Field C L1] (neg(╧å), inv(╧å)) = (neg(╧å), neg(╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  32. [Complex Field C L1] (neg(╧å), inv(╧å)) = (inv(╧å╠ä), inv(╧å))  {ORACLE } val=(-1.618,0.618)
+  33. [Complex Field C L1] (neg(╧å), inv(╧å)) = (inv(╧å╠ä), neg(╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  34. [Complex Field C L1] (neg(╧å), inv(╧å)) = neg((╧å, ╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  35. [Complex Field C L1] (neg(╧å), inv(╧å)) = neg((╧å, conj(╧å╠ä)))  {ORACLE } val=(-1.618,0.618)
+  36. [Complex Field C L1] (neg(╧å), inv(╧å)) = conj((neg(╧å), ╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  37. [Complex Field C L1] (neg(╧å), inv(╧å)) = conj((neg(╧å), conj(╧å╠ä)))  {ORACLE } val=(-1.618,0.618)
+  38. [Complex Field C L1] (neg(╧å), inv(╧å)) = neg((conj(╧å), ╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  39. [Complex Field C L1] (neg(╧å), inv(╧å)) = neg((conj(╧å), conj(╧å╠ä)))  {ORACLE } val=(-1.618,0.618)
+  40. [Complex Field C L1] (neg(╧å), inv(╧å)) = conj((inv(╧å╠ä), ╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  41. [Complex Field C L1] (neg(╧å), inv(╧å)) = conj((inv(╧å╠ä), conj(╧å╠ä)))  {ORACLE } val=(-1.618,0.618)
+  42. [Complex Field C L1] (neg(╧å), inv(╧å)) = *((╧å, ╧å╠ä), (-1, 0))  {ORACLE } val=(-1.618,0.618)
+  43. [Complex Field C L1] (neg(╧å), inv(╧å)) = *((-1, 0), (╧å, ╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  44. [Complex Field C L1] (neg(╧å), inv(╧å)) = *((╧å, conj(╧å╠ä)), (-1, 0))  {ORACLE } val=(-1.618,0.618)
+  45. [Complex Field C L1] (neg(╧å), inv(╧å)) = *((-1, 0), (╧å, conj(╧å╠ä)))  {ORACLE } val=(-1.618,0.618)
+  46. [Complex Field C L1] (neg(╧å), inv(╧å)) = +((╧å╠ä, ╧å), (-1, -1))  {ORACLE } val=(-1.618,0.618)
+  47. [Complex Field C L1] (neg(╧å), inv(╧å)) = +((╧å╠ä, 0), (-1, inv(╧å)))  {ORACLE } val=(-1.618,0.618)
+  48. [Complex Field C L1] (neg(╧å), inv(╧å)) = +((╧å╠ä, 0), (-1, neg(╧å╠ä)))  {ORACLE } val=(-1.618,0.618)
+  49. [Complex Field C L1] (neg(╧å), neg(╧å╠ä)) = (inv(╧å╠ä), inv(╧å))  {ORACLE } val=(-1.618,0.618)
+  50. [Complex Field C L1] (neg(╧å), neg(╧å╠ä)) = (inv(╧å╠ä), neg(╧å╠ä))  {ORACLE } val=(-1.618,0.618)
+  ... and 10185 more
+
+---- Quaternion Ring H (3909 equations) ----
+
+  1. [Quaternion Ring H L2] +(((╧å, ╧å), (╧å, ╧å╠ä)), ((╧å, ╧å), (╧å, 1))) = +(((╧å, ╧å), (╧å, 2)), ((╧å, ╧å), (╧å, neg(╧å))))  {ORACLE } val=(3.236,3.236,3.236,0.382)
+  2. [Quaternion Ring H L2] neg(+(((╧å, inv(╧å)), (╧å, ╧å)), ((╧å, inv(╧å)), (╧å, ╧å)))) = +(neg(((╧å, inv(╧å)), (╧å, ╧å))), neg(((╧å, inv(╧å)), (╧å, ╧å))))  {ORACLE } val=(-3.236,-1.236,-3.236,-3.236)
+  3. [Quaternion Ring H L2] neg(+(((╧å, ╧å╠ä), (╧å, ╧å╠ä)), ((╧å, ╧å╠ä), (╧å, -1)))) = neg(+(((╧å, ╧å╠ä), (╧å, 0)), ((╧å, ╧å╠ä), (╧å, neg(╧å)))))  {ORACLE } val=(-3.236,1.236,-3.236,1.618)
+  4. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(*(((0, 1), (0, 0)), ((0, 0), (0, 1))), ((0, 0), (1, 0)))  {ORACLE } val=(1,0,0,0)
+  5. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(*(((0, 0), (1, 0)), ((0, 1), (0, 0))), ((0, 0), (0, 1)))  {ORACLE } val=(1,0,0,0)
+  6. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(*(((0, 0), (0, 1)), ((0, 0), (1, 0))), ((0, 1), (0, 0)))  {ORACLE } val=(1,0,0,0)
+  7. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(((-1, 0), (0, 0)))  {ORACLE } val=(1,0,0,0)
+  8. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(*(((0, 1), (0, 0)), ((0, 1), (0, 0))))  {ORACLE } val=(1,0,0,0)
+  9. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(*(((0, 0), (1, 0)), ((0, 0), (1, 0))))  {ORACLE } val=(1,0,0,0)
+  10. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(*(((0, 0), (0, 1)), ((0, 0), (0, 1))))  {ORACLE } val=(1,0,0,0)
+  11. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(*(*(((0, 1), (0, 0)), ((0, 0), (1, 0))), ((0, 0), (0, 1))))  {ORACLE } val=(1,0,0,0)
+  12. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(*(*(((0, 0), (1, 0)), ((0, 0), (0, 1))), ((0, 1), (0, 0))))  {ORACLE } val=(1,0,0,0)
+  13. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(*(*(((0, 0), (0, 1)), ((0, 1), (0, 0))), ((0, 0), (1, 0))))  {ORACLE } val=(1,0,0,0)
+  14. [Quaternion Ring H L2] ((1, 0), (0, 0)) = conj(((1, 0), (0, 0)))  {ORACLE } val=(1,0,0,0)
+  15. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((1, 0), (0, 0)), conj(((1, 0), (0, 0))))  {ORACLE } val=(1,0,0,0)
+  16. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((-1, 0), (0, 0)), conj(((-1, 0), (0, 0))))  {ORACLE } val=(1,0,0,0)
+  17. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 1), (0, 0)), conj(((0, 1), (0, 0))))  {ORACLE } val=(1,0,0,0)
+  18. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 0), (1, 0)), conj(((0, 0), (1, 0))))  {ORACLE } val=(1,0,0,0)
+  19. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 0), (0, 1)), conj(((0, 0), (0, 1))))  {ORACLE } val=(1,0,0,0)
+  20. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, -1), (0, 0)), conj(((0, -1), (0, 0))))  {ORACLE } val=(1,0,0,0)
+  21. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 0), (-1, 0)), conj(((0, 0), (-1, 0))))  {ORACLE } val=(1,0,0,0)
+  22. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 0), (0, -1)), conj(((0, 0), (0, -1))))  {ORACLE } val=(1,0,0,0)
+  23. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((1, 0), (0, 0)), ((1, 0), (0, 0)))  {ORACLE } val=(1,0,0,0)
+  24. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((-1, 0), (0, 0)), ((-1, 0), (0, 0)))  {ORACLE } val=(1,0,0,0)
+  25. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 1), (0, 0)), ((0, -1), (0, 0)))  {ORACLE } val=(1,0,0,0)
+  26. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 0), (1, 0)), ((0, 0), (-1, 0)))  {ORACLE } val=(1,0,0,0)
+  27. [Quaternion Ring H L2] ((1, 0), (0, 0)) = *(((0, 0), (0, 1)), ((0, 0), (0, -1)))  {ORACLE } val=(1,0,0,0)
+  28. [Quaternion Ring H L2] ((1, 0), (0, 0)) = conj(conj(((1, 0), (0, 0))))  {ORACLE EGRAPH } val=(1,0,0,0)
+  29. [Quaternion Ring H L2] ((1, 0), (0, 0)) = neg(conj(((-1, 0), (0, 0))))  {ORACLE } val=(1,0,0,0)
+  30. [Quaternion Ring H L2] ((1, 0), (0, 0)) = conj(*(((1, 0), (0, 0)), conj(((1, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0)
+  31. [Quaternion Ring H L2] ((1, 0), (0, 0)) = conj(*(((-1, 0), (0, 0)), conj(((-1, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0)
+  32. [Quaternion Ring H L2] ((1, 0), (0, 0)) = conj(*(((0, 1), (0, 0)), conj(((0, 1), (0, 0)))))  {ORACLE } val=(1,0,0,0)
+  33. [Quaternion Ring H L2] ((1, 0), (0, 0)) = conj(*(((0, 0), (1, 0)), conj(((0, 0), (1, 0)))))  {ORACLE } val=(1,0,0,0)
+  34. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(((0, 0), (0, 1)), ((0, 0), (1, 0)))  {ORACLE } val=(0,-1,0,0)
+  35. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(*(((0, 1), (0, 0)), ((0, 1), (0, 0))), ((0, 1), (0, 0)))  {ORACLE } val=(0,-1,0,0)
+  36. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(*(((0, 1), (0, 0)), ((0, 0), (1, 0))), ((0, 0), (1, 0)))  {ORACLE } val=(0,-1,0,0)
+  37. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(*(((0, 1), (0, 0)), ((0, 0), (0, 1))), ((0, 0), (0, 1)))  {ORACLE } val=(0,-1,0,0)
+  38. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(*(((0, 0), (1, 0)), ((0, 0), (1, 0))), ((0, 1), (0, 0)))  {ORACLE } val=(0,-1,0,0)
+  39. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(*(((0, 0), (0, 1)), ((0, 0), (0, 1))), ((0, 1), (0, 0)))  {ORACLE } val=(0,-1,0,0)
+  40. [Quaternion Ring H L2] ((0, -1), (0, 0)) = neg(((0, 1), (0, 0)))  {ORACLE } val=(0,-1,0,0)
+  41. [Quaternion Ring H L2] ((0, -1), (0, 0)) = neg(*(((0, 0), (1, 0)), ((0, 0), (0, 1))))  {ORACLE } val=(0,-1,0,0)
+  42. [Quaternion Ring H L2] ((0, -1), (0, 0)) = neg(*(*(((0, 0), (1, 0)), ((0, 1), (0, 0))), ((0, 0), (1, 0))))  {ORACLE } val=(0,-1,0,0)
+  43. [Quaternion Ring H L2] ((0, -1), (0, 0)) = neg(*(*(((0, 0), (0, 1)), ((0, 1), (0, 0))), ((0, 0), (0, 1))))  {ORACLE } val=(0,-1,0,0)
+  44. [Quaternion Ring H L2] ((0, -1), (0, 0)) = conj(((0, 1), (0, 0)))  {ORACLE } val=(0,-1,0,0)
+  45. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(((-1, 0), (0, 0)), ((0, 1), (0, 0)))  {ORACLE } val=(0,-1,0,0)
+  46. [Quaternion Ring H L2] ((0, -1), (0, 0)) = *(((0, 0), (1, 0)), ((0, 0), (0, -1)))  {ORACLE } val=(0,-1,0,0)
+  47. [Quaternion Ring H L2] ((0, -1), (0, 0)) = conj(conj(((0, -1), (0, 0))))  {ORACLE EGRAPH } val=(0,-1,0,0)
+  48. [Quaternion Ring H L2] ((0, -1), (0, 0)) = neg(conj(((0, -1), (0, 0))))  {ORACLE } val=(0,-1,0,0)
+  49. [Quaternion Ring H L2] ((0, -1), (0, 0)) = conj(*(((1, 0), (0, 0)), ((0, 1), (0, 0))))  {ORACLE } val=(0,-1,0,0)
+  50. [Quaternion Ring H L2] ((0, -1), (0, 0)) = neg(*(((1, 0), (0, 0)), ((0, 1), (0, 0))))  {ORACLE } val=(0,-1,0,0)
+  ... and 3859 more
+
+---- Octonion Algebra O (523 equations) ----
+
+  1. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = neg(*((((0, 1), (0, 0)), ((0, 0), (0, 0))), (((0, 1), (0, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  2. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = neg(*((((0, 0), (1, 0)), ((0, 0), (0, 0))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  3. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = neg(*((((0, 0), (0, 1)), ((0, 0), (0, 0))), (((0, 0), (0, 1)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  4. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = neg(*((((0, 0), (0, 0)), ((1, 0), (0, 0))), (((0, 0), (0, 0)), ((1, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  5. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = neg(*((((0, 0), (0, 0)), ((0, 1), (0, 0))), (((0, 0), (0, 0)), ((0, 1), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  6. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = neg(*((((0, 0), (0, 0)), ((0, 0), (1, 0))), (((0, 0), (0, 0)), ((0, 0), (1, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  7. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = neg(*((((0, 0), (0, 0)), ((0, 0), (0, 1))), (((0, 0), (0, 0)), ((0, 0), (0, 1)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  8. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((1, 0), (0, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  9. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((0, 1), (0, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  10. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((0, 0), (1, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  11. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((0, 0), (0, 1)), ((0, 0), (0, 0))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  12. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((0, 0), (0, 0)), ((1, 0), (0, 0))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  13. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((0, 0), (0, 0)), ((0, 1), (0, 0))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  14. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((0, 0), (0, 0)), ((0, 0), (1, 0))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  15. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm((((0, 0), (0, 0)), ((0, 0), (0, 1))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  16. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = Scal((((1, 0), (0, 0)), ((0, 0), (0, 0))))  {ORACLE EGRAPH } val=(1,0,0,0,0,0,0,0)
+  17. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm(*((((0, 1), (0, 0)), ((0, 0), (0, 0))), (((0, 1), (0, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  18. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = *(norm((((0, 1), (0, 0)), ((0, 0), (0, 0)))), norm((((0, 1), (0, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  19. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm(*((((0, 1), (0, 0)), ((0, 0), (0, 0))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  20. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = *(norm((((0, 1), (0, 0)), ((0, 0), (0, 0)))), norm((((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  21. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm(*((((0, 1), (0, 0)), ((0, 0), (0, 0))), (((0, 0), (0, 1)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  22. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = *(norm((((0, 1), (0, 0)), ((0, 0), (0, 0)))), norm((((0, 0), (0, 1)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  23. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm(*((((0, 1), (0, 0)), ((0, 0), (0, 0))), (((0, 0), (0, 0)), ((1, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  24. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = *(norm((((0, 1), (0, 0)), ((0, 0), (0, 0)))), norm((((0, 0), (0, 0)), ((1, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  25. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm(*((((0, 0), (1, 0)), ((0, 0), (0, 0))), (((0, 1), (0, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  26. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = *(norm((((0, 0), (1, 0)), ((0, 0), (0, 0)))), norm((((0, 1), (0, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  27. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm(*((((0, 0), (1, 0)), ((0, 0), (0, 0))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  28. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = *(norm((((0, 0), (1, 0)), ((0, 0), (0, 0)))), norm((((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  29. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = norm(*((((0, 0), (1, 0)), ((0, 0), (0, 0))), (((0, 0), (0, 1)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  30. [Octonion Algebra O L3] (((1, 0), (0, 0)), ((0, 0), (0, 0))) = *(norm((((0, 0), (1, 0)), ((0, 0), (0, 0)))), norm((((0, 0), (0, 1)), ((0, 0), (0, 0)))))  {ORACLE } val=(1,0,0,0,0,0,0,0)
+  31. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 1), (0, 0)), ((0, 0), (0, 0))), (((0, 0), (0, 1)), ((0, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  32. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 0)), ((0, 0), (1, 0))), (((0, 0), (0, 0)), ((1, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  33. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 0)), ((0, 0), (0, 1))), (((0, 0), (0, 0)), ((0, 1), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  34. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = neg(*((((0, 0), (0, 1)), ((0, 0), (0, 0))), (((0, 1), (0, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  35. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = neg(*((((0, 0), (0, 0)), ((1, 0), (0, 0))), (((0, 0), (0, 0)), ((0, 0), (1, 0)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  36. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = neg(*((((0, 0), (0, 0)), ((0, 1), (0, 0))), (((0, 0), (0, 0)), ((0, 0), (0, 1)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  37. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = inv((((0, 0), (1, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  38. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 1), (0, 0)), ((0, 0), (0, 0))), *((((0, 0), (0, 0)), ((1, 0), (0, 0))), (((0, 0), (0, 0)), ((0, 0), (0, 1)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  39. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *(*((((0, 1), (0, 0)), ((0, 0), (0, 0))), (((0, 0), (0, 0)), ((0, 1), (0, 0)))), (((0, 0), (0, 0)), ((0, 0), (1, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  40. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 1)), ((0, 0), (0, 0))), *((((0, 0), (0, 0)), ((0, 0), (1, 0))), (((0, 0), (0, 0)), ((0, 0), (0, 1)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  41. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 1)), ((0, 0), (0, 0))), *((((0, 0), (0, 1)), ((0, 0), (0, 0))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  42. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *(*((((0, 0), (0, 1)), ((0, 0), (0, 0))), (((0, 0), (0, 1)), ((0, 0), (0, 0)))), (((0, 0), (1, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  43. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 0)), ((1, 0), (0, 0))), *((((0, 0), (0, 0)), ((1, 0), (0, 0))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  44. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *(*((((0, 0), (0, 0)), ((1, 0), (0, 0))), (((0, 0), (0, 0)), ((1, 0), (0, 0)))), (((0, 0), (1, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  45. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 0)), ((0, 1), (0, 0))), *((((0, 0), (0, 0)), ((0, 1), (0, 0))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  46. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *(*((((0, 0), (0, 0)), ((0, 1), (0, 0))), (((0, 0), (0, 0)), ((0, 1), (0, 0)))), (((0, 0), (1, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  47. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 0)), ((0, 0), (1, 0))), *((((0, 0), (0, 0)), ((0, 0), (1, 0))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  48. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *(*((((0, 0), (0, 0)), ((0, 0), (1, 0))), (((0, 0), (0, 0)), ((0, 0), (1, 0)))), (((0, 0), (1, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  49. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *((((0, 0), (0, 0)), ((0, 0), (0, 1))), *((((0, 0), (0, 0)), ((0, 0), (0, 1))), (((0, 0), (1, 0)), ((0, 0), (0, 0)))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  50. [Octonion Algebra O L3] neg((((0, 0), (1, 0)), ((0, 0), (0, 0)))) = *(*((((0, 0), (0, 0)), ((0, 0), (0, 1))), (((0, 0), (0, 0)), ((0, 0), (0, 1)))), (((0, 0), (1, 0)), ((0, 0), (0, 0))))  {ORACLE } val=(-0,-0,-1,-0,-0,-0,-0,-0)
+  ... and 473 more
+
+---- Cross-Level (500 equations) ----
+
+  1. [Cross-Level L1] (╧å, 0) = ╧å  {ORACLE } val=1.61803
+  2. [Cross-Level L1] (╧å, 0) = conj(╧å╠ä)  {ORACLE } val=1.61803
+  3. [Cross-Level L1] (╧å, 0) = +(╧å, 0)  {ORACLE } val=1.61803
+  4. [Cross-Level L1] (╧å╠ä, 0) = ╧å╠ä  {ORACLE } val=-0.618034
+  5. [Cross-Level L1] (╧å╠ä, 0) = conj(╧å)  {ORACLE } val=-0.618034
+  6. [Cross-Level L1] (╧å╠ä, 0) = +(╧å╠ä, 0)  {ORACLE } val=-0.618034
+  7. [Cross-Level L1] (0, 0) = 0  {ORACLE } val=0
+  8. [Cross-Level L1] (0, 0) = neg(0)  {ORACLE } val=0
+  9. [Cross-Level L1] (0, 0) = conj(0)  {ORACLE } val=0
+  10. [Cross-Level L1] (1, 0) = 1  {ORACLE } val=1
+  11. [Cross-Level L1] (1, 0) = inv(1)  {ORACLE } val=1
+  12. [Cross-Level L1] (1, 0) = conj(1)  {ORACLE } val=1
+  13. [Cross-Level L1] (-1, 0) = -1  {ORACLE } val=-1
+  14. [Cross-Level L1] (-1, 0) = neg(1)  {ORACLE } val=-1
+  15. [Cross-Level L1] (-1, 0) = inv(-1)  {ORACLE } val=-1
+  16. [Cross-Level L1] (2, 0) = 2  {ORACLE } val=2
+  17. [Cross-Level L1] (2, 0) = conj(2)  {ORACLE } val=2
+  18. [Cross-Level L1] (2, 0) = +(0, 2)  {ORACLE } val=2
+  19. [Cross-Level L1] (neg(╧å), 0) = neg(╧å)  {ORACLE } val=-1.61803
+  20. [Cross-Level L1] (neg(╧å), 0) = inv(╧å╠ä)  {ORACLE } val=-1.61803
+  21. [Cross-Level L1] (neg(╧å), 0) = *(╧å, -1)  {ORACLE } val=-1.61803
+  22. [Cross-Level L1] (inv(╧å), 0) = inv(╧å)  {ORACLE } val=0.618034
+  23. [Cross-Level L1] (inv(╧å), 0) = neg(╧å╠ä)  {ORACLE } val=0.618034
+  24. [Cross-Level L1] (inv(╧å), 0) = +(╧å, -1)  {ORACLE } val=0.618034
+  25. [Cross-Level L1] (conj(╧å), 0) = ╧å  {ORACLE } val=1.61803
+  26. [Cross-Level L1] (conj(╧å), 0) = conj(╧å╠ä)  {ORACLE } val=1.61803
+  27. [Cross-Level L1] (conj(╧å), 0) = +(╧å, 0)  {ORACLE } val=1.61803
+  28. [Cross-Level L1] (neg(╧å╠ä), 0) = inv(╧å)  {ORACLE } val=0.618034
+  29. [Cross-Level L1] (neg(╧å╠ä), 0) = neg(╧å╠ä)  {ORACLE } val=0.618034
+  30. [Cross-Level L1] (neg(╧å╠ä), 0) = +(╧å, -1)  {ORACLE } val=0.618034
+  31. [Cross-Level L1] (inv(╧å╠ä), 0) = neg(╧å)  {ORACLE } val=-1.61803
+  32. [Cross-Level L1] (inv(╧å╠ä), 0) = inv(╧å╠ä)  {ORACLE } val=-1.61803
+  33. [Cross-Level L1] (inv(╧å╠ä), 0) = *(╧å, -1)  {ORACLE } val=-1.61803
+  34. [Cross-Level L1] (conj(╧å╠ä), 0) = ╧å╠ä  {ORACLE } val=-0.618034
+  35. [Cross-Level L1] (conj(╧å╠ä), 0) = conj(╧å)  {ORACLE } val=-0.618034
+  36. [Cross-Level L1] (conj(╧å╠ä), 0) = +(╧å╠ä, 0)  {ORACLE } val=-0.618034
+  37. [Cross-Level L1] *(J, J) = -1  {ORACLE } val=-1
+  38. [Cross-Level L1] *(J, J) = neg(1)  {ORACLE } val=-1
+  39. [Cross-Level L1] *(J, J) = inv(-1)  {ORACLE } val=-1
+  40. [Cross-Level L1] conj((╧å, 0)) = ╧å  {ORACLE } val=1.61803
+  41. [Cross-Level L1] conj((╧å, 0)) = conj(╧å╠ä)  {ORACLE } val=1.61803
+  42. [Cross-Level L1] conj((╧å, 0)) = +(╧å, 0)  {ORACLE } val=1.61803
+  43. [Cross-Level L1] neg((╧å, 0)) = neg(╧å)  {ORACLE } val=-1.61803
+  44. [Cross-Level L1] neg((╧å, 0)) = inv(╧å╠ä)  {ORACLE } val=-1.61803
+  45. [Cross-Level L1] neg((╧å, 0)) = *(╧å, -1)  {ORACLE } val=-1.61803
+  46. [Cross-Level L1] conj((╧å╠ä, 0)) = ╧å╠ä  {ORACLE } val=-0.618034
+  47. [Cross-Level L1] conj((╧å╠ä, 0)) = conj(╧å)  {ORACLE } val=-0.618034
+  48. [Cross-Level L1] conj((╧å╠ä, 0)) = +(╧å╠ä, 0)  {ORACLE } val=-0.618034
+  49. [Cross-Level L1] neg((╧å╠ä, 0)) = inv(╧å)  {ORACLE } val=0.618034
+  50. [Cross-Level L1] neg((╧å╠ä, 0)) = neg(╧å╠ä)  {ORACLE } val=0.618034
+  ... and 450 more
+
+
+================================================================
+    STRUCTURAL HIGHLIGHTS (algebraic building blocks)
+================================================================
+
+  These algebraic structures were DISCOVERED from ground zero.
+  V6.0 ANALYTIC AUTODISCOVERY discovers:
+  === DISCRETE CALCULUS ===========
+    - Fibonacci recurrence: phi^n = F_n*phi + F_{n-1}
+    - Lucas numbers: phi^n + phibar^n Γêê Z (always integer!)
+    - Galois norm: phi^n * phibar^n = (-1)^n
+    - Discrete derivative: Delta(phi^n) eigenfunction
+    - Discrete Laplacian: Delta^2(phi^n) = (2-phi)*phi^n
+  === WAVE EQUATIONS ==============
+    - Complex wave: J^4 = 1 (period-4 Fourier kernel)
+    - Quaternion waves: i^4 = j^4 = k^4 = 1
+  === ALGEBRAIC CALCULUS ===========
+    - Leibniz rule: [a,xy] = [a,x]y + x[a,y]
+    - Derivation: commutator IS d/dx!
+    - Higher-order D^2_a(x) = [a,[a,x]] (Laplacian!)
+    - Jacobi identity: [a,[b,c]]+[b,[c,a]]+[c,[a,b]]=0 at H
+    - Jacobi FAILURE at O (non-associative => no Lie algebra!)
+  === SPECTRAL THEORY =============
+    - Cayley-Hamilton: q^2 - 2*Scal(q)*q + |q|^2 = 0
+    - Minimal polynomial from pure evaluation!
+  === FIELD THEORY ================
+    - Scalar field: Scal(pq) = Scal(qp) (trace symmetry)
+    - Vector field: Vec(pq) = -Vec(qp) (anti-symmetry)
+    - Field decomposition: Scal(q) + Vec(q) = q
+    - Inner product: <p,q> = Scal(p*conj(q))
+    - Orthonormality: <e_i,e_j> = delta_ij
+  === POLYNOMIAL ALGEBRA ==========
+    - Binomial: (p+q)^2 = p^2+pq+qp+q^2
+    - Discrete product rule: Delta(u^2-h) = uh+hu+h^2
+  === NON-ASSOCIATIVE ALGEBRA (OCTONIONS) ===
+    - Moufang identity: (xy)(zx) = x((yz)x)
+    - Moufang identity: ((xy)z)y = x(y(zy))
+    - Power-associativity: x^m*x^n = x^{m+n} even in O!
+    - Alternative law: a(ab) = (aa)b
+    - Flexible law: a(ba) = (ab)a
+  === STRUCTURAL ==================
+    - Norm multiplicativity: |pq|^2 = |p|^2|q|^2
+    - Commutator: [i,j] = 2k (Lie algebra su(2))
+    - Associativity at H: (ij)k = i(jk)
+    - Non-associativity at O: (ab)c != a(bc)
+    - Division algebra: z*inv(z) = 1
+    - Full Fano plane from 49 octonion products
+
+  Verification summary:
+    Oracle-confirmed: 16674
+    Kernel-proven:    0
+    SCOUT-validated:  1507
+    E-graph-proven:   246
+
+  By algebra level:
+    Scalar Ring Z[phi]: 1507
+    Complex Field C: 10235
+    Quaternion Ring H: 3909
+    Octonion Algebra O: 523
+    Cross-Level: 500
+
+  ALL equations above were GENUINELY DISCOVERED
+  from evaluation -> bucketing -> proving.
+  ZERO presets. ZERO hardcoded equations.
+================================================================
+
+
+=== UNIVERSAL DISCOVERY COMPLETE ===
+Total equations:   16674
+Kernel-proven:     0/16674
+SCOUT-validated:   1507/16674
+E-graph-proven:    246/16674
+Done.
