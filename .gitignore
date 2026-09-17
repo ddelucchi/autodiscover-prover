@@ -1,7 +1,6 @@
 /build/
 /out/
 /Testing/
-/AutoDiscoverProver/Testing/
 CMakeUserPresets.json
 *.log
 stdout.txt
