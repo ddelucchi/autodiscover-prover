@@ -1,0 +1,1 @@
+# Autodiscoverer\n\nImported from the local VS Code workspace `C:/Users/deluc/Desktop/Autodiscoverer/attempt2.1`.\n\nThis repository contains the source, tests, configuration, and documentation snapshot. Generated build/evidence output and external dependencies are intentionally omitted.
