@@ -76,7 +76,7 @@ void printBanner() {
         "                           + evaluation bucketing + proof\n"
         "                           + ORBIT structural matching (NEW)\n"
         "    Bootstrap:             Proven terms -> new atoms -> repeat\n"
-        "    Bias:                  NONE. Pure combinatorial exploration.\n"
+        "    Search regime:         Explicit grammar + bounded combinatorial exploration.\n"
         "================================================================\n"
         << std::endl;
 }
