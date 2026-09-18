@@ -17,6 +17,7 @@
 #include "../src/egraph/EGraph.hpp"
 #include "../src/egraph/RuleMiner.hpp"
 #include "../src/proof/CertificateKernel.hpp"
+#include "../src/proof/ProofChecker.hpp"
 #include "../src/domain/MultiRingEval.hpp"
 #include "../src/fingerprint/DeltaEngine.hpp"
 #include "../src/fingerprint/Fingerprinter.hpp"
@@ -178,6 +179,52 @@ void test_proof_kernel() {
     assert(!r6.success && "Invalid axiom index should fail");
     
     std::cout << "PASSED (theorems=" << kernel.totalTheorems() << ")\n";
+}
+
+
+
+// =========================================================================
+// 3b. PROOF CHECKER AXIOM TRUST BOUNDARY
+// =========================================================================
+
+void test_proof_checker_axiom_trust() {
+    std::cout << "  [3b] Proof checker explicit axiom trust... ";
+
+    ad::core::TermFactory factory;
+    auto a = factory.variable("a");
+    auto b = factory.variable("b");
+    auto c = factory.variable("c");
+
+    ad::logic::Equation trusted(a, b, ad::logic::EquationSource::Axiom);
+    ad::logic::Equation untrusted(a, c, ad::logic::EquationSource::Axiom);
+
+    ad::proof::ProofChecker checker(factory);
+
+    ad::proof::Proof trusted_proof;
+    trusted_proof.addAxiom(&trusted, "trusted");
+
+    auto rejected_before_registration = checker.verify(trusted_proof);
+    assert(!rejected_before_registration.valid
+           && "Axiom labels alone must not establish trust");
+
+    checker.addTrustedAxiom(trusted);
+    auto accepted_after_registration = checker.verify(trusted_proof);
+    assert(accepted_after_registration.valid
+           && "Explicitly registered axiom must be accepted");
+
+    ad::proof::Proof untrusted_proof;
+    untrusted_proof.addAxiom(&untrusted, "untrusted");
+    auto rejected_untrusted = checker.verify(untrusted_proof);
+    assert(!rejected_untrusted.valid
+           && "Unregistered equation must remain rejected");
+
+    ad::proof::Proof hypothesis_proof;
+    hypothesis_proof.addHypothesis(&untrusted, "assumption");
+    auto accepted_hypothesis = checker.verify(hypothesis_proof);
+    assert(accepted_hypothesis.valid
+           && "Hypotheses are explicit assumptions, not trusted axioms");
+
+    std::cout << "PASSED\n";
 }
 
 // =========================================================================
@@ -378,6 +425,7 @@ int main() {
     test_k12_dominance();
     test_equality_saturation();
     test_proof_kernel();
+    test_proof_checker_axiom_trust();
     test_multi_ring();
     test_dominant_index();
     test_zeckendorf_bigint();
