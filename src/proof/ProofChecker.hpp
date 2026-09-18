@@ -11,6 +11,7 @@
  * de Bruijn criterion: proofs can be checked by a simple algorithm.
  * 
  * Verification checks:
+ * - Each Axiom leaf belongs to an explicitly registered trust base
  * - Each step follows from its premises by the stated rule
  * - Substitutions are applied correctly
  * - The proof forms a valid DAG (no cycles)
@@ -53,6 +54,7 @@
 #include <vector>
 #include <string>
 #include <unordered_set>
+#include <utility>
 #include <cmath>
 
 namespace autodiscover {
@@ -261,6 +263,30 @@ public:
     void setVerificationLevel(VerificationLevel level) {
         level_ = level;
     }
+
+    /**
+     * @brief Register one equation as an explicitly trusted axiom.
+     *
+     * The checker stores a structural canonical key rather than trusting the
+     * caller's EquationSource tag or object identity.
+     */
+    void addTrustedAxiom(const Equation& equation) {
+        trustedAxioms_.insert(equationKey(equation));
+    }
+
+    void clearTrustedAxioms() {
+        trustedAxioms_.clear();
+    }
+
+    /**
+     * @brief Control whether Axiom leaves must belong to the explicit trust base.
+     *
+     * Strict axiom trust is enabled by default. Disabling it is intended only
+     * for legacy/debug proof objects whose assumptions are tracked externally.
+     */
+    void setRequireTrustedAxioms(bool required) {
+        requireTrustedAxioms_ = required;
+    }
     
     /**
      * @brief Verify an entire proof
@@ -402,6 +428,16 @@ private:
     Unifier unifier_;
     VerificationSignatureExtractor sigExtractor_;
     VerificationLevel level_ = VerificationLevel::Standard;
+    bool requireTrustedAxioms_ = true;
+    std::unordered_set<std::string> trustedAxioms_;
+
+    [[nodiscard]] static std::string equationKey(const Equation& equation) {
+        auto [lhs, rhs] = equation.canonical();
+        const std::string left = lhs ? lhs->encode() : std::string{"<null>"};
+        const std::string right = rhs ? rhs->encode() : std::string{"<null>"};
+        return std::to_string(left.size()) + ":" + left
+             + std::to_string(right.size()) + ":" + right;
+    }
     
     // -----------------------------------------------------------------------
     // Shared term-manipulation utilities for replay (same logic as engine)
@@ -429,13 +465,21 @@ private:
     }
     
     [[nodiscard]] VerificationResult verifyLeaf(const ProofStep& step) {
-        // Leaves (axioms, hypotheses) are valid if they have a conclusion
         if (!step.conclusion()) {
             return VerificationResult::Invalid("Leaf step missing conclusion");
         }
         if (!step.premises().empty()) {
             return VerificationResult::Invalid("Leaf step should have no premises");
         }
+
+        if (step.rule() == InferenceRule::Axiom && requireTrustedAxioms_) {
+            const std::string key = equationKey(*step.conclusion());
+            if (!trustedAxioms_.count(key)) {
+                return VerificationResult::Invalid(
+                    "Axiom leaf is not present in the explicit trusted-axiom set");
+            }
+        }
+
         return VerificationResult::Valid();
     }
     
